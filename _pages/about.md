@@ -12,12 +12,11 @@ Physics and data scientist. I am studying a PhD at Cadiz University, researching
 
 I am opened to new opportunities for collaboration and research on Machine Learning!
 
-Warning
-======
+Please note
+-----
 
 This site is still under construction.
 
-Thanks for your patience!
-
 Last update: 29th September 2021
 
+Thanks for your patience!
