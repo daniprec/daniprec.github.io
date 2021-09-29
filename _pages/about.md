@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Physics and data scientist. I am studying a PhD at Cadiz University, researching the many applications of Machine Learning in industry. I am currently enrolled in some projects of Data Science. I encourage you to check them in my Projects section, at the bottom of my profile.
+Physics and data scientist. I am studying a PhD at Cadiz University, researching the many applications of Machine Learning in industry. I am currently enrolled in some projects of Data Science.
 
 I am opened to new opportunities for collaboration and research on Machine Learning!
 
