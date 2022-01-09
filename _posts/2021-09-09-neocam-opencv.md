@@ -12,7 +12,7 @@ Our project "NeoCam: Real time telemonitoring of preterm neonates", has won the 
 ![NeoCam Project winner certificate](./images/neocam-opencv-prize.svg)
 <img src="./images/neocam-opencv-prize.svg">
 
-Caleta Team and the NeoCam Project
+Caleta Team and NeoCam Project
 ====
 
 During the past few months I, along with seven colleagues from UCA Datalab, have been participating in the first OpenCV AI Competition. Our team, named Caleta, proposed the project "NeoCam: Real time telemonitoring of preterm neonates". NeoCam project uses the Luxonis OAK-D smart camera to build a contactless monitoring system for newborn babies. Computer vision, Machine Learning, Edge Computing, Cloud Computing and Internet of Things are some of the technologies that we have combined into the proposed solution. 
