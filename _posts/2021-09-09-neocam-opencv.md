@@ -9,7 +9,7 @@ tags:
 
 Our project "NeoCam: Real time telemonitoring of preterm neonates", has won the 2nd prize at the first OpenCV AI Competition.
 
-![NeoCam Project winner certificate](https://github.com/daniprec/daniprec.github.io/tree/master/images/neocam-opencv-prize.png)
+![NeoCam Project winner certificate](images/neocam-opencv-prize.png)
 
 Caleta Team and NeoCam Project
 ====
