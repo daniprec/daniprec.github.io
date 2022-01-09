@@ -9,6 +9,9 @@ tags:
 
 Our project "NeoCam: Real time telemonitoring of preterm neonates", has won the 2nd prize at the first OpenCV AI Competition.
 
+![NeoCam Project winner certificate](./images/neocam-opencv-prize.svg)
+<img src="./images/neocam-opencv-prize.svg">
+
 Caleta Team and the NeoCam Project
 ====
 
@@ -34,6 +37,3 @@ OpenCV AI competition is focused on solutions solving real world problems using 
 The first phase of the competition involved a description of the project idea. Over 1400 submissions from more than a hundred different countries were sent. This first phase ended on March 3rd, and only 257 projects were selected and became finalist. All of the selected teams received 10 OAK-D devices, and had four months to develop their projects. Our team, Caleta, was one of these selected few.
 
 On September 6th, NeoCam project was announced to be one of the 19 Regional Prize winners. In particular, we earned 1st place in the Europe + Russia + Australasia region! Today, I am glad to announce that NeoCam also earned 2nd place in the World Finale!
-
-![NeoCam Project winner certificate](../images/neocam-opencv-prize.svg)
-<img src="../images/neocam-opencv-prize.svg">
