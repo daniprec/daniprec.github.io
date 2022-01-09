@@ -17,6 +17,6 @@ Please note
 
 This site is still under construction.
 
-Last update: 29th September 2021
+Last update: January 9th 2022
 
 Thanks for your patience!
