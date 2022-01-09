@@ -7,6 +7,8 @@ tags:
   - computer vision
 ---
 
+Our project "NeoCam: Real time telemonitoring of preterm neonates", has won the 2nd prize at the first OpenCV AI Competition.
+
 Caleta Team and the NeoCam Project
 ====
 
@@ -20,9 +22,9 @@ The ability to automate baby monitoring in NICUs (Newborn Intensive Care Units) 
 
 Check out these cool videos explaining the project:
 
-https://youtu.be/58KHGucW0dQ
+[![Neocam Spot](https://img.youtube.com/vi/58KHGucW0dQ/0.jpg)](https://www.youtube.com/watch?v=58KHGucW0dQ)
 
-https://youtu.be/ztfAAlU6diQ
+[![Neocam Technical Report](https://img.youtube.com/vi/ztfAAlU6diQ/0.jpg)](https://www.youtube.com/watch?v=ztfAAlU6diQ)
 
 The OpenCV AI Competition
 ====
