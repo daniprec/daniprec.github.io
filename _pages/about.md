@@ -8,15 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-Physics and data scientist. I am studying a PhD at Cadiz University, researching the many applications of Machine Learning in industry. I am currently enrolled in some projects of Data Science.
+Welcome to my website! I am Daniel Precioso, a data scientist and predoctoral researcher at [UCA](https://www.uca.es/). My current research focuses on the many applications of Machine Learning in industry. This covers many fields, such as time series, optimization and computer vision. I encourage you to take a look at my [publications](https://daniprec.github.io/publications/) and [posts](https://daniprec.github.io/posts/) to know about the projects I am enrolled in! My PhD is done under the supervision of [David Gómez-Ullate](http://datalab.uca.es/team/david/). Previously, I did a degree in Physics at [UCM](https://www.ucm.es/) and a MSc in Data Science at [UPM](https://www.upm.es/).
 
-I am opened to new opportunities for collaboration and research on Machine Learning!
+Related websites
+----
 
-Please note
------
+[GOAL](https://tic259.uca.es/) (Graphical Methods, Optimization, and Learning) is the research group at UCA I am currently member of.
 
-This site is still under construction.
+[UCA Datalab](http://datalab.uca.es/) is a small all-in-one team from UCA - described as "the swiss knife of data science projects" - which I am very proud to be part. I am also the admin their website!
 
-Last update: January 9th 2022
-
-Thanks for your patience!
+[Smart Shipping](https://smartshipping.es/) is one of the projects I am working on, as part of UCA Datalab, and in collaboration with the startup [Komorebi AI](https://komorebi.ai/).
