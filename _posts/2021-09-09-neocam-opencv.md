@@ -1,5 +1,5 @@
 ---
-title: 'NeoCam Project, second place in the OpenCV AI Competition'
+title: 'NeoCam, second place in the OpenCV AI Competition'
 date: 2021-09-09
 permalink: /posts/2021/09/neocam-opencv/
 tags:
