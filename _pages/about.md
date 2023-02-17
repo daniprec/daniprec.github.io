@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Daniel Precioso"
+title: "Hi, I'm Daniel"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -12,6 +12,8 @@ Welcome to my website! I am Daniel Precioso, a data scientist and predoctoral re
 
 Related websites
 ----
+
+- [Komorebi AI](http://komorebi.ai/es/) is the company I am working at the moment.
 
 - [GOAL](https://tic259.uca.es/) (Graphical Methods, Optimization, and Learning) is the research group at UCA I am currently member of.
 
