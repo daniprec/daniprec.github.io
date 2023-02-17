@@ -1,6 +1,6 @@
 ---
 title: "NILM as a regression versus classification problem: the importance of thresholding"
-collection: publications
+collection: papers
 permalink: /publication/2020-10-28-nilm-thresholding
 excerpt: 'Non-Intrusive Load Monitoring (NILM) aims to predict the status or consumption of domestic appliances in a household only by knowing the aggregated power load.'
 date: 2020-10-28
