@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# # Publications markdown generator for academicpages
+# # Papers markdown generator for academicpages
 # 
 # Takes a TSV of papers with metadata and converts them for use with [academicpages.github.io](academicpages.github.io). This is an interactive Jupyter notebook, with the core python code in papers.py. Run either from the `markdown_generator` folder after replacing `papers.tsv` with one that fits your format.
 # 
@@ -102,7 +102,7 @@ for row, item in papers.iterrows():
     
     md_filename = os.path.basename(md_filename)
        
-    with open("../_publications/" + md_filename, 'w') as f:
+    with open("../_papers/" + md_filename, 'w') as f:
         f.write(md)
 
 
