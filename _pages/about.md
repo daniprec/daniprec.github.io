@@ -8,7 +8,22 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my website! I am Daniel Precioso, a data scientist and predoctoral researcher at [UCA](https://www.uca.es/). My current research focuses on the many applications of Machine Learning in industry. This covers many fields, such as time series, optimization and computer vision. I encourage you to take a look at my [papers](https://daniprec.github.io/papers/) and [posts](https://daniprec.github.io/posts/) to know about the projects I am enrolled in! My PhD is done under the supervision of [David Gómez-Ullate](http://datalab.uca.es/team/david/). Previously, I did a degree in Physics at [UCM](https://www.ucm.es/) and a MSc in Data Science at [UPM](https://www.upm.es/).
+Welcome to my website! I am Daniel Precioso, a highly experienced and passionate Ph.D. data scientist. My current research revolves around utilizing data science to achieve sustainable development goals and promote ecological transitions. With a degree in Physics, I bring a unique perspective to my work that enables me to develop innovative solutions to complex problems.
+
+Throughout my over 4 years of career on industry, I have gained extensive experience in analyzing and interpreting data, implementing machine learning algorithms, and creating models that help organizations optimize their operations and make informed decisions.
+
+As a data scientist, I am passionate about using my skills and expertise to make a positive impact on society. I believe that data science has the potential to transform the world for the better, and I am dedicated to exploring new ways to leverage this technology for the greater good.
+
+Thank you for taking the time to read my profile smile I encourage you to take a look at my [papers](https://daniprec.github.io/papers/) and [posts](https://daniprec.github.io/posts/) to know about the projects I am enrolled in!
+
+Education
+----
+
+- PhD in Data Science, ``Applications of Machine Learning and Data Science to the Blue Economy: Sustainable Fishing and Weather Routing'' done under the supervision of [David Gómez-Ullate](https://orcid.org/0000-0002-6890-6584). [University of C\'adiz](https://www.uca.es/), Spain.
+
+- MSc in Data Science. [Universidad Polit\'ecnica de Madrid](https://www.upm.es/), Spain.
+
+- Bachelor's Degree in Physics. [University Complutense of Madrid](https://www.ucm.es/), Spain.
 
 Related websites
 ----
@@ -16,5 +31,3 @@ Related websites
 - [GOAL](https://tic259.uca.es/) (Graphical Methods, Optimization, and Learning) is the research group at UCA I am currently member of.
 
 - [UCA Datalab](http://datalab.uca.es/) is a small all-in-one team from UCA - described as "the swiss knife of data science projects" - which I am very proud to be part of. I am also the admin their website!
-
-- [Komorebi AI](http://komorebi.ai/es/) is the company I am working at the moment, as part of the collaboration for my industrial Phd. We apply our expertise on AI to solve industrial problems.
