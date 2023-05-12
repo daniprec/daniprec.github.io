@@ -1,5 +1,5 @@
 ---
-title: 'NeoCam, second place in the OpenCV AI Competition'
+title: "From Idea to Innovation: The Story of NeoCam's Success at the OpenCV AI Competition"
 date: 2021-09-09
 permalink: /posts/2021/09/neocam-opencv/
 tags:
@@ -7,20 +7,18 @@ tags:
   - computer vision
 ---
 
-During the past few months I, along with seven research fellows from [UCA Datalab](https://datalab.uca.es), have been participating in the first OpenCV AI Competition. Our team, named Caleta, proposed the project "NeoCam: Real time telemonitoring of preterm neonates". I am happy to report that NeoCam has earned the second prize in the International Final of OpenCV AI Competition.
+Hey everyone! I have some exciting news to share with you. For the past few months, I've been working with seven research fellows from [UCA Datalab](https://datalab.uca.es) on the first OpenCV AI Competition. Our team, named Caleta, proposed the innovative project "NeoCam: Real time telemonitoring of preterm neonates". And guess what? We won second prize in the International Final of OpenCV AI Competition!
 
 The NeoCam Project
 ----
 
-NeoCam project uses the Luxonis OAK-D smart camera to build a contactless monitoring system for newborn babies. Computer vision, Machine Learning, Edge Computing, Cloud Computing and Internet of Things are some of the technologies that we have combined into the proposed solution. 
+Let me tell you a bit about our project. The NeoCam project uses the Luxonis OAK-D smart camera to build a contactless monitoring system for newborn babies. We combined several advanced technologies, such as Computer Vision, Machine Learning, Edge Computing, Cloud Computing, and Internet of Things, to develop this solution. Our system can monitor pain and emotional stress, breathing rhythm, physical activity, and sleep-wake cycles of newborn babies purely using computer vision and machine learning algorithms, some of which have been developed specifically for this project.
 
-The NeoCam system is able to monitor pain and emotional stress, breathing rhythm, physical activity and sleep-wake cycles purely using computer vision and machine learning algorithms, some of which have been developed specifically for this project.
+Our Deep Learning models process images inside the OAK-D camera, outputting data that is sent to a centralized IoT server and consumed by a mobile app. This app can provide aggregated reports on the baby's progress, 24-7 surveillance, and raise alerts in case of any anomalous events. Different viewing profiles are available for parents/relatives or healthcare personnel.
 
-Images are processed by Deep Learning models inside the OAK-D camera, output data sent to a centralized IoT server and consumed by a mobile app. This app is able to show aggregated reports on the evolution of the baby with 24-7 surveillance and it raises alerts in case anomalous events are detected. Different viewing profiles are available for parents/relatives or healthcare personnel.
+The NeoCam device has the potential to revolutionize baby monitoring in NICUs (Newborn Intensive Care Units) by automating the process and providing accurate real-time data. This can help healthcare professionals assess psycho-motor cognitive development and improve patient care. Our device can also help reduce the number of sudden infant deaths by raising alerts on anomalous breathing rates. We have already built a prototype of the NeoCam device at the University of Cádiz.
 
-The ability to automate baby monitoring in NICUs (Newborn Intensive Care Units) opens new ways to assess psycho-motor cognitive development and help healthcare professionals in saturated work environments. Although still in a very premature phase, constant smart monitoring of breathing rate might raise alerts that help reduce the number of sudden infant deaths. We have built a prototype of the NeoCam device at the University of Cádiz.
-
-Check out these cool videos explaining the project:
+We created some cool videos explaining the project that you can check out here:
 
 [![Neocam Spot](https://img.youtube.com/vi/58KHGucW0dQ/0.jpg)](https://www.youtube.com/watch?v=58KHGucW0dQ)
 
@@ -29,10 +27,12 @@ Check out these cool videos explaining the project:
 The OpenCV AI Competition
 ----
 
-OpenCV AI competition is focused on solutions solving real world problems using spatial AI. Teams use the new OpenCV AI Kit D (OAK-D) to solve their challenge areas. The OAK-D is a smart camera with neural inference and depth processing capability on board.
+The OpenCV AI Competition is focused on solutions solving real-world problems using spatial AI. Teams use the new OpenCV AI Kit D (OAK-D) to solve their challenge areas. Over 1400 submissions from more than a hundred different countries were sent in the first phase of the competition, out of which only 257 projects were selected to become finalists. Our team, Caleta, was one of them!
 
-The first phase of the competition involved a description of the project idea. Over 1400 submissions from more than a hundred different countries were sent. This first phase ended on March 3rd, and only 257 projects were selected and became finalist. All of the selected teams received 10 OAK-D devices, and had four months to develop their projects. Our team, Caleta, was one of these selected few.
+On September 6th, NeoCam project was announced to be one of the 19 Regional Prize winners. In particular, we earned 1st place in the Europe + Russia + Australasia region! A few days after, NeoCam also earned 2nd place in the International Final! We are thrilled to have received this recognition for our work.
 
-On September 6th, NeoCam project was announced to be one of the 19 Regional Prize winners. In particular, we earned 1st place in the Europe + Russia + Australasia region! A few days after, NeoCam also earned 2nd place in the International Final!
+Finally, check out this awesome winner certificate for our NeoCam project:
 
 ![NeoCam Project winner certificate](https://daniprec.github.io/images/neocam-opencv-prize.png)
+
+Thank you for reading about our NeoCam project and our journey through the OpenCV AI Competition!
