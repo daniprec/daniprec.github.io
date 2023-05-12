@@ -19,9 +19,9 @@ Thank you for taking the time to read my profile smile I encourage you to take a
 Education
 ----
 
-- PhD in Data Science, ``Applications of Machine Learning and Data Science to the Blue Economy: Sustainable Fishing and Weather Routing'' done under the supervision of [David Gómez-Ullate](https://orcid.org/0000-0002-6890-6584). [University of C\'adiz](https://www.uca.es/), Spain.
+- PhD in Data Science, "Applications of Machine Learning and Data Science to the Blue Economy: Sustainable Fishing and Weather Routing" done under the supervision of [David Gómez-Ullate](https://orcid.org/0000-0002-6890-6584). [University of Cádiz](https://www.uca.es/), Spain.
 
-- MSc in Data Science. [Universidad Polit\'ecnica de Madrid](https://www.upm.es/), Spain.
+- MSc in Data Science. [Universidad Politécnica de Madrid](https://www.upm.es/), Spain.
 
 - Bachelor's Degree in Physics. [University Complutense of Madrid](https://www.ucm.es/), Spain.
 
