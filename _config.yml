@@ -10,7 +10,7 @@ locale: "en-US"
 title: "Daniel Precioso"
 title_separator: "-"
 name: &name "Daniel Precioso"
-description: &description "Physics and Data Science"
+description: &description "Data Science for the Blue Economy"
 url: https://daniprec.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "daniprec/daniprec.github.io"
@@ -80,7 +80,7 @@ analytics:
 author:
   name: "Daniel Precioso"
   avatar: "profile.png"
-  bio: "Physics and Data Science"
+  bio: "Data Science for the Blue Economy"
   location: "Cadiz, Spain"
   employer:
   pubmed:
