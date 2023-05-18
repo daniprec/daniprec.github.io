@@ -6,6 +6,7 @@ tags:
   - data science
   - optimization
   - academy
+  - blue economy
 ---
 
 I recently had the pleasure of attending the [61st Congress of Naval Engineering and Maritime Industry](https://61congreso.ingenierosnavales.com/) in Palma de Mallorca, Spain. As a PhD student specializing in data science and weather routing, I was excited to learn about the latest advancements in energy efficiency and propulsion technologies for the maritime industry.
