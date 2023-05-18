@@ -2,6 +2,7 @@
 title: "Smart Shipping Project Wins Second Prize at Ocean Hackathon 2021"
 date: 2021-12-15
 permalink: /posts/2021/12/smart-shipping-brest/
+excerpt: "Thrilled to share our success at the Ocean Hackathon 2021! Learn how our team's dedication to optimizing marine shipping routes earned us second prize, propelling us closer to a sustainable future for marine transport."
 tags:
   - data science
   - optimization

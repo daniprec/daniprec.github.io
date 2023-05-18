@@ -2,6 +2,7 @@
 title: "The Wind of Change: Discovering the Latest Advancements in Sail Technologies at the 61st Congress of Naval Engineering"
 date: 2022-10-29
 permalink: /posts/2022/10/29/naval-congress/
+excerpt: "Join me as I dive into the future of sustainable maritime technology at the 61st Congress of Naval Engineering and Maritime Industry in Palma de Mallorca."
 tags:
   - data science
   - optimization
