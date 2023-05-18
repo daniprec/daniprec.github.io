@@ -5,6 +5,7 @@ permalink: /posts/2021/12/smart-shipping-brest/
 tags:
   - data science
   - optimization
+  - blue economy
 ---
 
 Hey there! I'm thrilled to share some exciting news with you. As a researcher at [UCA Datalab](https://datalab.uca.es), I had the privilege of working on the innovative Smart Shipping project. And I'm excited to announce that our hard work has paid off - we won second prize at the International Final of Ocean Hackathon 2021, which was held in Brest (France).
