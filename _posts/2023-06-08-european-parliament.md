@@ -17,7 +17,7 @@ During my time on stage, I got to introduce our super innovative solution called
 
 ![Daniel's pitch at the European Parliament](https://daniprec.github.io/images/230607_pitch.png)
 
-I started my pitch by dropping a crazy statistic: did you know that the shipping industry emits 30 tons of CO2 into the atmosphere every second? It's a massive problem, and we need some serious solutions ASAP!
+I started my pitch by dropping a crazy statistic: did you know that the shipping industry releases 30 tons of CO2 into the atmosphere every second? It's a massive problem, and we need some serious solutions ASAP!
 
 The highlight of my pitch was introducing Green Navigation, a data-driven approach that we've developed at Canonical Green. Our tool empowers shipping companies to cut their emissions by at least 2% while making their journeys safer for everyone involved. And it can be implemented right now! All you need is a computer and Internet access to make it work. It's affordable and accessible for businesses of all sizes.
 
