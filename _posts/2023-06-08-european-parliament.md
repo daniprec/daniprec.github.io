@@ -11,11 +11,11 @@ tags:
 
 Hey there, dear readers!
 
-I'm still buzzing with excitement as I think back to the amazing experience I had yesterday. Representing [Canonical Green](canonicalgreen.com) at the European Parliament was absolutely unforgettable, and it's a moment that will stay with me for a lifetime.
+I'm still buzzing with excitement as I think back to the amazing experience I had yesterday. Representing [Canonical Green](https://canonicalgreen.com) at the European Parliament was absolutely unforgettable, and it's a moment that will stay with me for a lifetime.
 
 During my time on stage, I got to introduce our super innovative solution called [Green Navigation](https://greenavigation.com/), which is all about revolutionizing the shipping industry. We focus on sustainability and making a real impact on the environment by significantly reducing the carbon footprint of shipping operations.
 
-![Daniel's pitch at the European Parliament](images/230607_pitch.png)
+![Daniel's pitch at the European Parliament](https://daniprec.github.io/images/230607_pitch.png)
 
 I started my pitch by dropping a crazy statistic: did you know that the shipping industry emits 30 tons of CO2 into the atmosphere every second? It's a massive problem, and we need some serious solutions ASAP!
 
