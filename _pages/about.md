@@ -28,9 +28,9 @@ Education
 Related websites
 ----
 
-- [Canonical Green](canonicalgreen.com) is the start-up I'm part of, along with my co-founders David Gómez-Ullate and Javier Jiménez.
+- [Canonical Green](https://canonicalgreen.com) is the start-up I'm part of, along with my co-founders David Gómez-Ullate and Javier Jiménez.
 
-- [Green Navigation](greenavigation.com) is the eco-friendly Google Maps of the sea! We are developing this tool in Canonical Green to help with the decarbonization of the shipping industry.
+- [Green Navigation](https://greenavigation.com) is the eco-friendly Google Maps of the sea! We are developing this tool in Canonical Green to help with the decarbonization of the shipping industry.
 
 - [GOAL](https://tic259.uca.es/) (Graphical Methods, Optimization, and Learning) is the research group at UCA I am currently member of.
 
