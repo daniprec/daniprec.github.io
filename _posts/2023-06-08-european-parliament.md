@@ -6,6 +6,7 @@ excerpt: "Picture this: every single second, the shipping industry releases 30 t
 tags:
   - blue economy
   - ecological transition
+  - entrepeneurship
 ---
 
 Hey there, dear readers!
