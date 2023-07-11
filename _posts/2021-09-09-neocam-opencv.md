@@ -34,6 +34,6 @@ On September 6th, NeoCam project was announced to be one of the 19 Regional Priz
 
 Finally, check out this awesome winner certificate for our NeoCam project:
 
-![NeoCam Project winner certificate](https://daniprec.github.io/images/neocam-opencv-prize.png)
+![NeoCam Project winner certificate](https://daniprec.github.io/images/210909_neocam_prize.png)
 
 Thank you for reading about our NeoCam project and our journey through the OpenCV AI Competition!

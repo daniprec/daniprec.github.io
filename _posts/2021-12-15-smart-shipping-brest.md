@@ -11,7 +11,7 @@ tags:
 
 Hey there! I'm thrilled to share some exciting news with you. As a researcher at [UCA Datalab](https://datalab.uca.es), I had the privilege of working on the innovative Smart Shipping project. And I'm excited to announce that our hard work has paid off - we won second prize at the International Final of Ocean Hackathon 2021, which was held in Brest (France).
 
-![Ocean Hackathon 2021 second prize winners](https://daniprec.github.io/images/ocean-hackathon-winners.jpg)
+![Ocean Hackathon 2021 second prize winners](https://daniprec.github.io/images/211215_ocean_hackathon.jpg)
 
 This year, more than a hundred teams from 15 different cities presented their projects at the Ocean Hackathon. Our regional final took place in San Fernando (Cádiz), coordinated by CEEI Bahía de Cádiz and the Access2Sea project, and was hosted in Navantia Training Center. The goal of Smart Shipping is to optimize marine shipping routes using real-time information on ocean currents, wind, and waves, a technique also known as "weather routing". We estimate that this technology will help save fuel, reduce emissions, and contribute to the ecological transition of marine transport.
 
