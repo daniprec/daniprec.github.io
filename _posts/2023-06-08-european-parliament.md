@@ -27,7 +27,11 @@ I gotta give a huge shoutout to the incredible people who supported me throughou
 
 If you missed my pitch at the European Parliament, no worries! Just click the image below or follow this link: [https://youtu.be/T2VRDSczxVM](https://youtu.be/T2VRDSczxVM)
 
+[![Daniel Precioso's pitch at the European Parliament](https://img.youtube.com/vi/T2VRDSczxVM/0.jpg)](https://youtu.be/T2VRDSczxVM)
+
+<!---
 [![Daniel Precioso's pitch at the European Parliament](https://img.youtube.com/vi/OOKfo3FV5UM/0.jpg)](https://www.youtube.com/watch?v=OOKfo3FV5UM?t=2600)
+-->
 
 Let's join forces to revolutionize the shipping industry with [Green Navigation](https://greenavigation.com/). Together, we'll pave the way for a greener and more sustainable future. Let's do this!
 
