@@ -25,7 +25,7 @@ As one of the co-founders of Canonical Green, I took the opportunity to shout ou
 
 I gotta give a huge shoutout to the incredible people who supported me throughout this journey. David Gómez-Ullate Oteiza, Javier Jiménez de la Jara, Antonio Alvarez Ramirez, Nerea Quintana Vilavert, Salvador Morón Curt, and Tomasz Aleksander Miś, you all rock! Your advice and guidance were absolutely priceless in shaping my pitch. I'm beyond grateful to have such awesome individuals by my side. And of course, big thank you to [The Arch](https://www.the-arch.eu/en/) for making this possible.
 
-If you missed my pitch at the European Parliament, no worries! Just click the image below or follow this link: [https://www.youtube.com/watch?v=T2VRDSczxVM](https://www.youtube.com/watch?v=T2VRDSczxVM)
+If you missed my pitch at the European Parliament, no worries! Just click the image below or follow this link: [https://youtu.be/T2VRDSczxVM](https://youtu.be/T2VRDSczxVM)
 
 [![Daniel Precioso's pitch at the European Parliament](https://img.youtube.com/vi/OOKfo3FV5UM/0.jpg)](https://www.youtube.com/watch?v=OOKfo3FV5UM?t=2600)
 
