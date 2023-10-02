@@ -18,7 +18,7 @@ Thank you for taking the time to read my profile smile I encourage you to take a
 
 <!-- Add this section to display the three latest news articles horizontally -->
 <!-- Style -->
-<link rel="stylesheet" href="https://github.com/daniprec/daniprec.github.io/style_/blog.css">
+<link rel="stylesheet" href="https://github.com/daniprec/daniprec.github.io/blob/main/_style/blog.css">
 <!-- Body -->
 <h2>Latest News</h2>
 <div class="latest-news-container">
