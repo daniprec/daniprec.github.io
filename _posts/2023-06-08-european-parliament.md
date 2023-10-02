@@ -3,6 +3,7 @@ title: "Making Waves in Brussels: How I Took the Stage at the European Parliamen
 date: 2023-06-08
 permalink: /posts/2023/06/08/european-parliament/
 excerpt: "Picture this: every single second, the shipping industry releases 30 tons of CO2 into the atmosphere. It's a jaw-dropping fact that shook the European Parliament during my presentation!"
+featured_image: "https://daniprec.github.io/images/230607_pitch.png"
 tags:
   - blue economy
   - ecological transition
@@ -15,7 +16,7 @@ I'm still buzzing with excitement as I think back to the amazing experience I ha
 
 During my time on stage, I got to introduce our super innovative solution called [Green Navigation](https://greenavigation.com/), which is all about revolutionizing the shipping industry. We focus on sustainability and making a real impact on the environment by significantly reducing the carbon footprint of shipping operations.
 
-![Daniel's pitch at the European Parliament](https://daniprec.github.io/images/230607_pitch.png)
+<p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
 
 I started my pitch by dropping a crazy statistic: did you know that the shipping industry releases 30 tons of CO2 into the atmosphere every second? It's a massive problem, and we need some serious solutions ASAP!
 
@@ -27,11 +28,7 @@ I gotta give a huge shoutout to the incredible people who supported me throughou
 
 If you missed my pitch at the European Parliament, no worries! Just click the image below or follow this link: [https://youtu.be/T2VRDSczxVM](https://youtu.be/T2VRDSczxVM)
 
-[![Daniel Precioso's pitch at the European Parliament](https://img.youtube.com/vi/T2VRDSczxVM/0.jpg)](https://youtu.be/T2VRDSczxVM)
-
-<!---
-[![Daniel Precioso's pitch at the European Parliament](https://img.youtube.com/vi/OOKfo3FV5UM/0.jpg)](https://www.youtube.com/watch?v=OOKfo3FV5UM?t=2600)
--->
+<p align="center"><a href="https://youtu.be/T2VRDSczxVM"><img src="https://img.youtube.com/vi/T2VRDSczxVM/0.jpg" width="80%"/></a></p>
 
 Let's join forces to revolutionize the shipping industry with [Green Navigation](https://greenavigation.com/). Together, we'll pave the way for a greener and more sustainable future. Let's do this!
 

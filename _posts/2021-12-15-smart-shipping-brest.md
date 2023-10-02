@@ -20,6 +20,6 @@ The Ocean Hackathon is an international event organized by Campus Mondiale de la
 
 You can check out our presentation during the event in the video below, and see the second prize winners of Ocean Hackathon 2021.
 
-<p align="center"><a href="https://youtu.be/nzPbj88IV0c?t=5300"><img src="https://img.youtube.com/vi/nzPbj88IV0c/0.jpg" width="80%"/></a></p>
+<p align="center"><a href="https://youtu.be/nzPbj88IV0c&t=5300"><img src="https://img.youtube.com/vi/nzPbj88IV0c/0.jpg" width="80%"/></a></p>
 
 Overall, this recognition is a testament to our team's hard work and dedication to creating sustainable solutions for the shipping industry. We look forward to continuing our work on the Smart Shipping project and contributing to the ecological transition of marine transport through weather routing technology.

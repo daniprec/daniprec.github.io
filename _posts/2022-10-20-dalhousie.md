@@ -3,6 +3,7 @@ title: "My Internship Experience at Dalhousie University"
 date: 2022-10-20
 permalink: /posts/2022/10/dalhousie/
 excerpt: "Discover the incredible blend of research, cultural immersion, and natural wonders I experienced during my internship at Dalhousie University, where mathematical challenges and hiking adventures intertwined!"
+featured_image: "https://daniprec.github.io/images/220805_sia_conference.jpg"
 tags:
   - optimization
   - academy
@@ -14,6 +15,6 @@ My internship lasted from July to October 2022, and it was an incredible experie
 
 But it wasn't all work and no play! I had the chance to explore the beautiful province of Nova Scotia and discover its natural wonders. One of such memorable experiences was taking the conference participants on a hiking tour in Herring Cove. The cove is located near Halifax and is known for its scenic beauty and rich marine life. It was an incredible experience to share with my colleagues and new friends.
 
-![Hiking tour in Herring Cove](https://daniprec.github.io/images/220805_sia_conference.jpg)
+<p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
 
 Overall, my internship at Dalhousie University was an amazing experience that taught me a lot about my research field, exposed me to new cultures, and allowed me to make lifelong connections with people from around the world. I am grateful to Professor Milson and the team at Dalhousie University for giving me this opportunity, and I am excited to apply what I have learned to my future research endeavors.
