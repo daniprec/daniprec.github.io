@@ -3,6 +3,7 @@ title: "From Idea to Innovation: The Story of NeoCam's Success at the OpenCV AI 
 date: 2021-09-09
 permalink: /posts/2021/09/neocam-opencv/
 excerpt: "Join us in celebrating our team's success at the OpenCV AI Competition, where our groundbreaking NeoCam project earns second prize, revolutionizing the way we monitor and care for newborns with cutting-edge technology."
+featured_image: "https://daniprec.github.io/images/210909_neocam_prize.png"
 tags:
   - machine learning
   - computer vision
@@ -34,6 +35,6 @@ On September 6th, NeoCam project was announced to be one of the 19 Regional Priz
 
 Finally, check out this awesome winner certificate for our NeoCam project:
 
-![NeoCam Project winner certificate](https://daniprec.github.io/images/210909_neocam_prize.png)
+<p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
 
 Thank you for reading about our NeoCam project and our journey through the OpenCV AI Competition!
