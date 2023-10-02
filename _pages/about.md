@@ -17,12 +17,6 @@ As a data scientist, I am passionate about using my skills and expertise to make
 Thank you for taking the time to read my profile smile I encourage you to take a look at my [papers](https://daniprec.github.io/papers/) and [posts](https://daniprec.github.io/posts/) to know about the projects I am enrolled in!
 
 <!-- Add this section to display the three latest news articles horizontally -->
-<!-- Style -->
-<head>
-  <link rel="stylesheet" href="/_style/blog.css">
-</head>
-
-<!-- Body -->
 <h2>Latest News</h2>
 <div class="latest-news-container">
   {% for post in site.posts limit:3 %}
