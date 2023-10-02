@@ -14,6 +14,9 @@ layout: default
   {% endunless %}
 {% endif %}
 
+<!-- Style -->
+<link rel="stylesheet" href="https://github.com/daniprec/daniprec.github.io/style_/blog.css">
+
 <div id="main" role="main">
   {% include sidebar.html %}
 
@@ -93,35 +96,3 @@ layout: default
   </div>
   {% endif %}
 </div>
-
-<style>
-.latest-news-container {
-  display: flex;
-  justify-content: space-between; /* Space evenly between items */
-}
-
-.news-item {
-  text-align: center;
-  max-width: 30%; /* Adjust the maximum width as needed */
-  position: relative; /* Create a relative positioning context */
-}
-
-.news-item img {
-  width: 100%; /* Set width to 100% to fill the container */
-  height: auto;
-  object-fit: cover; /* Crop the image to fit the container */
-  border-radius: 10px; /* Add rounded borders */
-}
-
-/* Center the title over the image */
-.news-item h3 {
-  position: absolute;
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for readability */
-  padding: 10px;
-  width: 80%; /* Adjust the title width as needed */
-  border-radius: 10px; /* Add rounded borders to the title */
-}
-</style>
