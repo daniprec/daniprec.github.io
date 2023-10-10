@@ -1,7 +1,7 @@
 ---
 title: "My Internship Experience at Dalhousie University"
 date: 2022-10-20
-permalink: /posts/2022/10/dalhousie/
+permalink: /posts/2022/dalhousie/
 excerpt: "Discover the incredible blend of research, cultural immersion, and natural wonders I experienced during my internship at Dalhousie University, where mathematical challenges and hiking adventures intertwined!"
 featured_image: "https://danielprecioso.com/images/220805_sia_conference.jpg"
 tags:
