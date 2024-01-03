@@ -28,4 +28,14 @@ layout: compress
     {% include scripts.html %}
 
   </body>
+
+  <script>
+    window.onload = function() {
+      var startYear = 2019;
+      var currentYear = new Date().getFullYear();
+      var yearsOfExperience = currentYear - startYear;
+      document.getElementById('yearsOfExperience').innerText = yearsOfExperience;
+    };
+    </script>
+  
 </html>
