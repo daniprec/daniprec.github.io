@@ -1,7 +1,7 @@
 ---
 title: "Thresholding methods in non-intrusive load monitoring"
 collection: papers
-permalink: /publication/2023-04-01-nilm-thresholding
+permalink: /publication/2023/nilm-thresholding
 excerpt: 'Non-Intrusive Load Monitoring (NILM) aims to predict the status or consumption of domestic appliances in a household only by knowing the aggregated power load.'
 date: 2023-04-01
 venue: 'The Journal of Supercomputing (Q2)'
