@@ -29,51 +29,12 @@ Thank you for taking the time to read my profile smile I encourage you to take a
   {% endfor %}
 </div>
 
-<!-- Experience -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Experience</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 20px;
-        }
-        details {
-            margin-bottom: 20px;
-        }
-        summary {
-            font-weight: bold;
-            font-size: 1.2em;
-            cursor: pointer;
-            padding: 10px;
-            background-color: #f1f1f1;
-            border-radius: 5px;
-        }
-        details[open] summary {
-            background-color: #e0e0e0;
-        }
-        p.location {
-            font-style: italic;
-            margin-top: -10px;
-            margin-bottom: 10px;
-            color: #666;
-        }
-        ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-    </style>
-</head>
-<body>
+Experience
+----
 
 <details open>
     <summary>Chief Operations Officer (COO), Canonical Green [Apr 2023 - Present]</summary>
-    <p class="location">Madrid, Spain</p>
+    *Madrid, Spain*
     <ul>
         <li>Leading the implementation of innovative AI solutions that enhance the operational efficiency of our clients.</li>
         <li>Designing, developing, and implementing machine learning models and mathematical optimization to improve the competitiveness of our processes.</li>
@@ -83,7 +44,7 @@ Thank you for taking the time to read my profile smile I encourage you to take a
 
 <details>
     <summary>Postdoctoral Researcher & Adjunct Professor, IE University [Sep 2023 - Present]</summary>
-    <p class="location">Madrid and Segovia, Spain</p>
+    *Madrid and Segovia, Spain*
     <ul>
         <li>Professor for "Computer Programming I" (1st-year course) in the Bachelor's Degree in Applied Mathematics.</li>
         <li>Specialize in teaching students from the ground up.</li>
@@ -93,7 +54,7 @@ Thank you for taking the time to read my profile smile I encourage you to take a
 
 <details>
     <summary>Data Scientist, Komorebi AI [Sep 2022 - Apr 2023]</summary>
-    <p class="location">Madrid, Spain</p>
+    *Madrid, Spain*
     <ul>
         <li>Data cleaning, manipulation and visualization.</li>
         <li>Design, train and deployment of machine learning and deep learning models with scikit-learn, including GB and CNN.</li>
@@ -103,7 +64,7 @@ Thank you for taking the time to read my profile smile I encourage you to take a
 
 <details>
     <summary>Predoctoral Research Staff, University of Cádiz [Sep 2019 - Aug 2022]</summary>
-    <p class="location">Cádiz, Spain</p>
+    *Cádiz, Spain*
     <ul>
         <li>Collaboration with various industrial partners to conduct cutting-edge research in healthcare, energy and blue economy.</li>
         <li>Presentation of research findings to both technical and non-technical audiences.</li>
@@ -113,12 +74,8 @@ Thank you for taking the time to read my profile smile I encourage you to take a
 
 <details>
     <summary>Junior Data Scientist, Foqum [Jan 2019 - Jun 2019]</summary>
-    <p class="location">Madrid, Spain</p>
+    *Madrid, Spain*
 </details>
-
-</body>
-</html>
-
 
 Education
 ----
