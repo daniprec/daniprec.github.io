@@ -32,54 +32,56 @@ Thank you for taking the time to read my profile smile I encourage you to take a
 Experience
 ----
 
-**Chief Operations Officer (COO)**
+<details open>
+<summary>Chief Operations Officer (COO), Canonical Green [Apr 2023 - Present]</summary>
 
->**Apr 2023 -- Present**
->
->Canonical Green, Madrid, Spain
->
->At Canonical Green, we offer data science-based solutions for the ecological transition of the Industry 4.0. My role in this company consists of:
->
->- Leading the implementation of innovative AI solutions that enhance the operational efficiency of our clients.
->- Designing, developing, and implementing machine learning models and mathematical optimization to improve the competitiveness of our processes.
->- Conducting commercial and technical presentations to generate interest in our products as well as to secure funding.
+*Madrid, Spain*
 
-**Postdoctoral Researcher & Adjunct Professor**
+At Canonical Green, we offer data science-based solutions for the ecological transition of the Industry 4.0. My role in this company consists of:
 
-> **Sep 2023 -- Present**
-> 
-> IE University, Madrid, Spain
-> 
-> Professor for "Computer Programming I" (1st-year course) in the Bachelor's Degree in Applied Mathematics.
->
->- Specialize in teaching students from the ground up.
->- Create custom exercises tailored for mathematical applications.
+- Leading the implementation of innovative AI solutions that enhance the operational efficiency of our clients.
+- Designing, developing, and implementing machine learning models and mathematical optimization to improve the competitiveness of our processes.
+- Conducting commercial and technical presentations to generate interest in our products as well as to secure funding.
+</details>
 
-### Data Scientist
 
-**Sep 2022 -- Apr 2023**
+<details>
+<summary>Postdoctoral Researcher & Adjunct Professor, IE University [Sep 2023 - Present]</summary>
 
-Komorebi AI, Madrid, Spain
+*Madrid and Segovia, Spain*
+
+Professor for "Computer Programming I" (1st-year course) in the Bachelor's Degree in Applied Mathematics.
+
+- Specialize in teaching students from the ground up.
+- Create custom exercises tailored for mathematical applications.
+</details>
+
+<details>
+<summary>Data Scientist, Komorebi AI [Sep 2022 - Apr 2023]</summary>
+
+*Madrid, Spain*
 
 - Data cleaning, manipulation and visualization.
 - Design, train and deployment of machine learning and deep learning models with scikit-learn, including GB and CNN.
 - Development of a dashboard to guide industrial decision making with Streamlit.
+</details>
 
-### Predoctoral Research Staff
+<details>
+<summary>Predoctoral Research Staff, University of Cádiz [Sep 2019 - Aug 2022]</summary>
 
-**Sep 2019 -- Aug 2022**
-
-University of Cádiz, Cádiz, Spain
+*Cádiz, Spain*
 
 - Collaboration with various industrial partners to conduct cutting-edge research in healthcare, energy and blue economy.
 - Presentation of research findings to both technical and non-technical audiences.
 - Publication of research papers in peer-reviewed journals.
+</details>
 
-### Junior Data Scientist
+<details>
+<summary>Junior Data Scientist, Foqum [Jan 2019 - Jun 2019]</summary>
 
-**Jan 2019 -- Jun 2019**
+*Madrid, Spain*
 
-Foqum, Madrid, Spain
+</details>
 
 Education
 ----
