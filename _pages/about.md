@@ -29,6 +29,58 @@ Thank you for taking the time to read my profile smile I encourage you to take a
   {% endfor %}
 </div>
 
+Experience
+----
+
+**Chief Operations Officer (COO)**
+
+>**Apr 2023 -- Present**
+>
+>Canonical Green, Madrid, Spain
+>
+>At Canonical Green, we offer data science-based solutions for the ecological transition of the Industry 4.0. My role in this company consists of:
+>
+>- Leading the implementation of innovative AI solutions that enhance the operational efficiency of our clients.
+>- Designing, developing, and implementing machine learning models and mathematical optimization to improve the competitiveness of our processes.
+>- Conducting commercial and technical presentations to generate interest in our products as well as to secure funding.
+
+**Postdoctoral Researcher & Adjunct Professor**
+
+> **Sep 2023 -- Present**
+> 
+> IE University, Madrid, Spain
+> 
+> Professor for "Computer Programming I" (1st-year course) in the Bachelor's Degree in Applied Mathematics.
+>
+>- Specialize in teaching students from the ground up.
+>- Create custom exercises tailored for mathematical applications.
+
+### Data Scientist
+
+**Sep 2022 -- Apr 2023**
+
+Komorebi AI, Madrid, Spain
+
+- Data cleaning, manipulation and visualization.
+- Design, train and deployment of machine learning and deep learning models with scikit-learn, including GB and CNN.
+- Development of a dashboard to guide industrial decision making with Streamlit.
+
+### Predoctoral Research Staff
+
+**Sep 2019 -- Aug 2022**
+
+University of Cádiz, Cádiz, Spain
+
+- Collaboration with various industrial partners to conduct cutting-edge research in healthcare, energy and blue economy.
+- Presentation of research findings to both technical and non-technical audiences.
+- Publication of research papers in peer-reviewed journals.
+
+### Junior Data Scientist
+
+**Jan 2019 -- Jun 2019**
+
+Foqum, Madrid, Spain
+
 Education
 ----
 
@@ -45,6 +97,6 @@ Related websites
 
 - [Green Navigation](https://greenavigation.com) is the eco-friendly Google Maps of the sea! We are developing this tool in Canonical Green to help with the decarbonization of the shipping industry.
 
-- [GOAL](https://tic259.uca.es/) (Graphical Methods, Optimization, and Learning) is the research group at UCA I am currently member of.
+<!-- [GOAL](https://tic259.uca.es/) (Graphical Methods, Optimization, and Learning) is the research group at UCA I am currently member of. -->
 
-- [UCA Datalab](http://datalab.uca.es/) is a small all-in-one team from UCA - described as "the swiss knife of data science projects" - which I am very proud to be part of. I am also the admin their website!
+<!-- [UCA Datalab](http://datalab.uca.es/) is a small all-in-one team from UCA - described as "the swiss knife of data science projects" - which I am very proud to be part of. I am also the admin their website! -->
