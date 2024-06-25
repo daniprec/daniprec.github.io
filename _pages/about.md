@@ -34,7 +34,7 @@ Experience
 
 <details open>
     <summary>Chief Operations Officer (COO), Canonical Green [Apr 2023 - Present]</summary>
-    *Madrid, Spain*
+    <i>Madrid, Spain</i>
     <ul>
         <li>Leading the implementation of innovative AI solutions that enhance the operational efficiency of our clients.</li>
         <li>Designing, developing, and implementing machine learning models and mathematical optimization to improve the competitiveness of our processes.</li>
@@ -44,7 +44,7 @@ Experience
 
 <details>
     <summary>Postdoctoral Researcher & Adjunct Professor, IE University [Sep 2023 - Present]</summary>
-    *Madrid and Segovia, Spain*
+    <i>Madrid and Segovia, Spain</i>
     <ul>
         <li>Professor for "Computer Programming I" (1st-year course) in the Bachelor's Degree in Applied Mathematics.</li>
         <li>Specialize in teaching students from the ground up.</li>
@@ -54,7 +54,7 @@ Experience
 
 <details>
     <summary>Data Scientist, Komorebi AI [Sep 2022 - Apr 2023]</summary>
-    *Madrid, Spain*
+    <i>Madrid, Spain</i>
     <ul>
         <li>Data cleaning, manipulation and visualization.</li>
         <li>Design, train and deployment of machine learning and deep learning models with scikit-learn, including GB and CNN.</li>
@@ -64,7 +64,7 @@ Experience
 
 <details>
     <summary>Predoctoral Research Staff, University of Cádiz [Sep 2019 - Aug 2022]</summary>
-    *Cádiz, Spain*
+   <i>Cádiz, Spain</i>
     <ul>
         <li>Collaboration with various industrial partners to conduct cutting-edge research in healthcare, energy and blue economy.</li>
         <li>Presentation of research findings to both technical and non-technical audiences.</li>
@@ -74,7 +74,7 @@ Experience
 
 <details>
     <summary>Junior Data Scientist, Foqum [Jan 2019 - Jun 2019]</summary>
-    *Madrid, Spain*
+    <i>Madrid, Spain</i>
 </details>
 
 Education
