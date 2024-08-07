@@ -33,7 +33,7 @@ Experience
 ----
 
 <details open>
-    <summary>Chief Operations Officer (COO), Canonical Green [Apr 2023 - Present]</summary>
+    <summary>COO, Canonical Green [Apr 2023 - Present]</summary>
     <i>Madrid, Spain</i>
     <p>At Canonical Green, we offer data science-based solutions for the ecological transition of the Industry 4.0. My role in this company consists of:</p>
     <ul>
@@ -44,7 +44,7 @@ Experience
 </details>
 
 <details>
-    <summary>Postdoctoral Researcher & Adjunct Professor, IE University [Sep 2023 - Present]</summary>
+    <summary>Researcher & Professor, IE University [Sep 2023 - Present]</summary>
     <i>Madrid and Segovia, Spain</i>
     <p>Professor of "Computer Programming I" with Python (1st-year course) in the Bachelor's Degree in Applied Mathematics.</p>
     <ul>
@@ -64,7 +64,7 @@ Experience
 </details>
 
 <details>
-    <summary>Predoctoral Research Staff, University of Cádiz [Sep 2019 - Aug 2022]</summary>
+    <summary>Research Staff, University of Cádiz [Sep 2019 - Aug 2022]</summary>
    <i>Cádiz, Spain</i>
     <ul>
         <li>Collaboration with various industrial partners to conduct cutting-edge research in healthcare, energy and blue economy.</li>
