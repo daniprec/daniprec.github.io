@@ -54,7 +54,7 @@ Experience
 </details>
 
 <details>
-    <summary>Data Scientist, Komorebi AI [Sep 2022 - Apr 2023]</summary>
+    <summary>Data Scientist, Komorebi AI [Sep 2020 - Apr 2023]</summary>
     <i>Madrid, Spain</i>
     <ul>
         <li>Data cleaning, manipulation and visualization.</li>
