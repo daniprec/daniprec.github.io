@@ -27,4 +27,5 @@ Check out our presentation from the event in the video below:
 This achievement reflects our team's commitment to advancing sustainable solutions for shipping. We’re eager to continue our work and contribute to a greener future for marine transport.
 
 All the best,
+
 Daniel Precioso

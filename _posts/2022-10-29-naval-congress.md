@@ -24,4 +24,5 @@ Discussions on "slow steaming" and other methods to reduce emissions while maint
 Thank you to the Asociación de Ingenieros Navales y Oceánicos de España for organizing this insightful event. I am excited to see how these innovations will shape the future of maritime transportation and am eager to contribute to this progress.
 
 All the best,
+
 Daniel Precioso

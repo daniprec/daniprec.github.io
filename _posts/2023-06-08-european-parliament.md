@@ -33,4 +33,5 @@ Watch my pitch [here](https://youtu.be/T2VRDSczxVM) or click the image below!
 Let’s revolutionize the shipping industry with [Green Navigation](https://greenavigation.com/) and work towards a greener, more sustainable future!
 
 All the best,
+
 Daniel Precioso

@@ -22,4 +22,5 @@ Beyond work, I enjoyed Nova Scotia’s natural beauty, including a memorable hik
 I'm grateful to Professor Milson and Dalhousie University for this enriching experience. It broadened my research perspective, introduced me to new cultures, and forged lasting connections.
 
 All the best,
+
 Daniel Precioso

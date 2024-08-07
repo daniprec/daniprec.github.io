@@ -38,3 +38,7 @@ Finally, check out this awesome winner certificate for our NeoCam project:
 <p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
 
 Thank you for reading about our NeoCam project and our journey through the OpenCV AI Competition!
+
+All the best,
+
+Daniel Precioso
