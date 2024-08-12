@@ -43,6 +43,7 @@ redirect_from:
             color: #007bff;
         }
         .timeline-year {
+            grid-column: 2/3; /* Center the year */
             padding: 0px;
             background-color: #007bff;
             color: white;
@@ -52,9 +53,33 @@ redirect_from:
             flex-direction: column;
             justify-content: flex-end;
         }
+        /* Warning for small screens */
+        .mobile-warning {
+            display: none;
+            background-color: #ffcc00;
+            color: #000;
+            padding: 10px;
+            text-align: center;
+            font-size: 1em;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        @media (max-width: 768px) {
+            .mobile-warning {
+                display: block;
+            }
+            .timeline-year {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
+
+<div class="mobile-warning">
+    For the best experience, please rotate your device to landscape orientation.
+</div>
 
 <div class="timeline-container">
     <div class="section-title" style="grid-column: 1/2;
@@ -71,31 +96,31 @@ redirect_from:
         color: #007bff;">
         Academic Experience
     </div>
-    <div class="timeline-year" style="grid-column: 2/3; grid-row: -7/-1;">
+    <div class="timeline-year" style="grid-row: -7/-1;">
         <h3>2017</h3>
     </div>
-    <div class="timeline-year" style="grid-column: 2/3; grid-row: -19/-7;">
+    <div class="timeline-year" style="grid-row: -19/-7;">
         <h3>2018</h3>
     </div>
-    <div class="timeline-year" style="grid-column: 2/3; grid-row: -31/-19;">
+    <div class="timeline-year" style="grid-row: -31/-19;">
         <h3>2019</h3>
     </div>
-    <div class="timeline-year" style="grid-column: 2/3; grid-row: -43/-31;">
+    <div class="timeline-year" style="grid-row: -43/-31;">
         <h3>2020</h3>
     </div>
-    <div class="timeline-year" style="grid-column: 2/3; grid-row: -55/-43;">
+    <div class="timeline-year" style="grid-row: -55/-43;">
         <h3>2021</h3>
     </div>
-    <div class="timeline-year" style="grid-column: 2/3; grid-row: -67/-55;">
+    <div class="timeline-year" style="grid-row: -67/-55;">
         <h3>2022</h3>
     </div>
-    <div class="timeline-year" style="grid-column: 2/3; grid-row: -79/-67;">
+    <div class="timeline-year" style="grid-row: -79/-67;">
         <h3>2023</h3>
     </div>
-    <div class="timeline-year" style="grid-column: 2/3; grid-row: -91/-79;">
+    <div class="timeline-year" style="grid-row: -91/-79;">
         <h3>2024</h3>
     </div>
-    <div class="timeline-item" style="grid-column: 1/2; grid-row: -91/-73;">
+    <div class="timeline-professional" style="grid-row: -91/-73;">
         <h3>COO @ Canonical Green</h3>
         <p>1+ years</p>
         <i>Madrid, Spain</i>
