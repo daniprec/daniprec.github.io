@@ -65,9 +65,13 @@ redirect_from:
             width: 100%;
             z-index: 1000;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 700px) {
             .mobile-warning {
                 display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
             }
             .timeline-container {
                 grid-template-columns: 49% 2% 49%; /* 3 columns with specified widths */
@@ -82,7 +86,7 @@ redirect_from:
 <body>
 
 <div class="mobile-warning">
-    For the best experience, please rotate your device to landscape orientation.
+    For the best experience, please use a wider screen.
 </div>
 
 <div class="timeline-container">
