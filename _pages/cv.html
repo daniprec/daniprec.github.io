@@ -24,23 +24,18 @@ redirect_from:
         }
         .timeline-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0px;
+            grid-template-columns: 45% 10% 45%; /* 3 columns with specified widths */
+            grid-template-rows: repeat(91, auto); /* Num rows */
+            gap: 10px; /* Gap between grid items */
             margin: 0 auto;
             width: 80%;
             padding-top: 0px;
         }
-        .timeline-column {
-            position: relative;
-        }
         .timeline-item {
-            position: relative;
             padding: 15px;
             background-color: #f9f9f9;
             border-radius: 5px;
-            margin-bottom: 5px;
             border-left: 3px solid #007bff;
-            width: calc(100% - 30px);
             box-sizing: border-box;
         }
         .timeline-item h3 {
@@ -55,74 +50,91 @@ redirect_from:
 <body>
 
 <div class="timeline-container">
-    <div class="timeline-column">
-        <h2>Industrial Experience</h2>
-        <div class="timeline-item">
-            <h3>COO @ Canonical Green</h3>
-            <p>1+ years</p>
-            <i>Madrid, Spain</i>
-            <p>At Canonical Green, we offer data science-based solutions for the ecological transition of the Industry 4.0. My role in this company consists of:</p>
-            <ul>
-                <li>Leading the implementation of innovative AI solutions that enhance the operational efficiency of our clients.</li>
-                <li>Designing, developing, and implementing machine learning models and mathematical optimization to improve the competitiveness of our processes.</li>
-                <li>Conducting commercial and technical presentations to generate interest in our products as well as to secure funding.</li>
-            </ul>
-        </div>
-        <div class="timeline-item">
-            <h3>Data Scientist @ Komorebi AI</h3>
-            <p>3 years</p>
-            <i>Madrid, Spain</i>
-            <ul>
-                <li>Data cleaning, manipulation and visualization.</li>
-                <li>Design, train and deployment of machine learning and deep learning models with scikit-learn, including GB and CNN.</li>
-                <li>Development of a dashboard to guide industrial decision making with Streamlit.</li>
-            </ul>
-        </div>
-        <div class="timeline-item">
-            <h3>Junior Data Scientist @ Foqum</h3>
-            <p>6 months</p>
-            <p>Gaining foundational experience in data science and AI.</p>
-        </div>
+    <div class="timeline-item" style="grid-column: 2/3; grid-row: -7/-1">
+        <h3>2017</h3>
     </div>
-    <div class="timeline-column">
-        <h2>Academic Experience</h2>
-        <div class="timeline-item">
-            <h3>Researcher & Professor @ IE University</h3>
-            <p>1+ years</p>
-            <i>Madrid and Segovia, Spain</i>
-            <p>Professor of "Computer Programming I" with Python (1st-year course) in the Bachelor's Degree in Applied Mathematics.</p>
-            <ul>
-                <li>Specialize in teaching students from the ground up.</li>
-                <li>Create custom exercises tailored for mathematical applications.</li>
-            </ul>
-        </div>
-        <div class="timeline-item">
-            <h3>PhD in Data Science @ UCA</h3>
-            <p>4 years</p>
-            <i>University of Cádiz, Spain</i>
-            <ul>
-                <li>Collaboration with various industrial partners to conduct cutting-edge research in healthcare, energy and blue economy.</li>
-                <li>Presentation of research findings to both technical and non-technical audiences.</li>
-                <li>Publication of research papers in peer-reviewed journals.</li>
-            </ul>
-        </div>
-        <div class="timeline-item">
-            <h3>MSc in Data Science @ UPM</h3>
-            <p>1 year</p>
-            <i>Polythecnic University of Madrid, Spain</i>
-            <p>Statistical and Computational Information Processing.</p>
-            <p>The MSc on SCIP taught me all the essential skills for any good data scientist: data analysis, data mining, graphs, neural networks, Big Data, soft computing.</p>
-        </div>
-        <div class="timeline-item">
-            <h3>BSc in Physics @ UCM</h3>
-            <p>4 years</p>
-            <i>Complutense University of Madrid, Spain</i>
-            <p>I started studying Physics drived by my scientific curiosity and my eagerness for research. I built a successful career, having graduated after only four years and having passed with honors a total of four subject - related to Quantum Physics and Astrophysics.</p>
-            <p>Apart from the Physics-related knowledge, this career made me develop a critical and creative thinking, which has proven to be essential for the rest of my life. It is also thanks to this degree that I have my first steps into the field of Machine Learning.</p>
-        </div>
+    <div class="timeline-item" style="grid-column: 2/3; grid-row: -19/-7">
+        <h3>2018</h3>
+    </div>
+    <div class="timeline-item" style="grid-column: 2/3; grid-row: -31/-19">
+        <h3>2019</h3>
+    </div>
+    <div class="timeline-item" style="grid-column: 2/3; grid-row: -43/-31">
+        <h3>2020</h3>
+    </div>
+    <div class="timeline-item" style="grid-column: 2/3; grid-row: -55/-43">
+        <h3>2021</h3>
+    </div>
+    <div class="timeline-item" style="grid-column: 2/3; grid-row: -67/-55">
+        <h3>2022</h3>
+    </div>
+    <div class="timeline-item" style="grid-column: 2/3; grid-row: -79/-67">
+        <h3>2023</h3>
+    </div>
+    <div class="timeline-item" style="grid-column: 2/3; grid-row: -91/-79">
+        <h3>2024</h3>
+    </div>
+    <div class="timeline-item" style="grid-column: 1/2; grid-row: -91/-73">
+        <h3>COO @ Canonical Green</h3>
+        <p>1+ years</p>
+        <i>Madrid, Spain</i>
+        <p>At Canonical Green, we offer data science-based solutions for the ecological transition of the Industry 4.0. My role in this company consists of:</p>
+        <ul>
+            <li>Leading the implementation of innovative AI solutions that enhance the operational efficiency of our clients.</li>
+            <li>Designing, developing, and implementing machine learning models and mathematical optimization to improve the competitiveness of our processes.</li>
+            <li>Conducting commercial and technical presentations to generate interest in our products as well as to secure funding.</li>
+        </ul>
+    </div>
+    <div class="timeline-item" style="grid-column: 1/2; grid-row: -73/-37">
+        <h3>Data Scientist @ Komorebi AI</h3>
+        <p>3 years</p>
+        <i>Madrid, Spain</i>
+        <ul>
+            <li>Data cleaning, manipulation and visualization.</li>
+            <li>Design, train and deployment of machine learning and deep learning models with scikit-learn, including GB and CNN.</li>
+            <li>Development of a dashboard to guide industrial decision making with Streamlit.</li>
+        </ul>
+    </div>
+    <div class="timeline-item" style="grid-column: 1/2; grid-row: -25/-19">
+        <h3>Junior Data Scientist @ Foqum</h3>
+        <p>6 months</p>
+        <p>Gaining foundational experience in data science and AI.</p>
+    </div>
+    <div class="timeline-item" style="grid-column: 3/4; grid-row: -91/-73">
+        <h3>Researcher & Professor @ IE University</h3>
+        <p>1+ years</p>
+        <i>Madrid and Segovia, Spain</i>
+        <p>Professor of "Computer Programming I" with Python (1st-year course) in the Bachelor's Degree in Applied Mathematics.</p>
+        <ul>
+            <li>Specialize in teaching students from the ground up.</li>
+            <li>Create custom exercises tailored for mathematical applications.</li>
+        </ul>
+    </div>
+    <div class="timeline-item" style="grid-column: 3/4; grid-row: -73/-25">
+        <h3>PhD in Data Science @ UCA</h3>
+        <p>4 years</p>
+        <i>University of Cádiz, Spain</i>
+        <ul>
+            <li>Collaboration with various industrial partners to conduct cutting-edge research in healthcare, energy and blue economy.</li>
+            <li>Presentation of research findings to both technical and non-technical audiences.</li>
+            <li>Publication of research papers in peer-reviewed journals.</li>
+        </ul>
+    </div>
+    <div class="timeline-item" style="grid-column: 3/4; grid-row: -25/-13">
+        <h3>MSc in Data Science @ UPM</h3>
+        <p>1 year</p>
+        <i>Polythecnic University of Madrid, Spain</i>
+        <p>Statistical and Computational Information Processing.</p>
+        <p>The MSc on SCIP taught me all the essential skills for any good data scientist: data analysis, data mining, graphs, neural networks, Big Data, soft computing.</p>
+    </div>
+    <div class="timeline-item" style="grid-column: 3/4; grid-row: -13/-1">
+        <h3>BSc in Physics @ UCM</h3>
+        <p>4 years</p>
+        <i>Complutense University of Madrid, Spain</i>
+        <p>I started studying Physics driven by my scientific curiosity and my eagerness for research. I built a successful career, having graduated after only four years and having passed with honors a total of four subjects related to Quantum Physics and Astrophysics.</p>
+        <p>Apart from the Physics-related knowledge, this career made me develop critical and creative thinking, which has proven to be essential for the rest of my life. It is also thanks to this degree that I have my first steps into the field of Machine Learning.</p>
     </div>
 </div>
 
 </body>
 </html>
-</div>
