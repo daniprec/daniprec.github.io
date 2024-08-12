@@ -25,45 +25,23 @@ redirect_from:
         .timeline-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            gap: 0px;
             margin: 0 auto;
             width: 80%;
-            max-width: 900px;
-            padding-top: 20px;
+            padding-top: 0px;
         }
         .timeline-column {
             position: relative;
-        }
-        .timeline-column::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            width: 3px;
-            background: #007bff;
-            transform: translateX(-50%);
         }
         .timeline-item {
             position: relative;
             padding: 15px;
             background-color: #f9f9f9;
             border-radius: 5px;
-            margin-bottom: 20px;
+            margin-bottom: 0px;
             border-left: 3px solid #007bff;
             width: calc(100% - 30px);
             box-sizing: border-box;
-        }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -15px;
-            top: 15px;
-            width: 15px;
-            height: 15px;
-            background: #007bff;
-            border-radius: 50%;
-            transform: translateX(-50%);
         }
         .timeline-item h3 {
             margin-top: 0;
@@ -71,7 +49,6 @@ redirect_from:
         }
         .timeline-item p {
             margin: 0;
-            font-style: italic;
         }
     </style>
 </head>
@@ -80,36 +57,37 @@ redirect_from:
 <div class="timeline-container">
     <div class="timeline-column">
         <h2>Industrial Experience</h2>
-        <div class="timeline-item" style="grid-row: span 2;">
+        <div class="timeline-item" style="height: 240px;">
             <h3>COO, Canonical Green</h3>
-            <p>Apr 2023 - Present</p>
-            <p>Leading operations in green technology initiatives, driving sustainability projects, and overseeing a team of experts.</p>
+            <p>1+ years</p>
+            <p>Leading the implementation of innovative AI solutions that enhance the operational efficiency of our clients.</p>
         </div>
-        <div class="timeline-item" style="grid-row: span 3;">
+        <div class="timeline-item" style="height: 360px;">
             <h3>Data Scientist, Komorebi AI</h3>
-            <p>Sep 2020 - Apr 2023</p>
-            <p>Developed AI solutions for environmental monitoring, focusing on predictive modeling and data analysis.</p>
+            <p>3 years</p>
+            <p>Data cleaning, manipulation and visualization. Design, train and deployment of AI models.</p>
         </div>
-        <div class="timeline-item" style="grid-row: span 1;">
+        <div class="timeline-item" style="height: 120px;">
             <h3>Junior Data Scientist, Foqum</h3>
-            <p>Jan 2019 - Jun 2019</p>
-            <p>Assisted in the development of machine learning models for financial applications, gaining foundational experience in data science.</p>
+            <p>6 months</p>
+            <p>Gaining foundational experience in data science and AI.</p>
         </div>
     </div>
     <div class="timeline-column">
         <h2>Academic Experience</h2>
-        <div class="timeline-item" style="grid-row: span 2;">
+        <div class="timeline-item" style="height: 120px;">
             <h3>Researcher & Professor, IE University</h3>
-            <p>Sep 2023 - Present</p>
+            <p>1+ years</p>
             <p>Teaching courses on data science and conducting research on AI applications in environmental sustainability.</p>
         </div>
-        <div class="timeline-item" style="grid-row: span 3;">
+        <div class="timeline-item" style="height: 360px;">
             <h3>Research Staff, University of Cádiz</h3>
-            <p>Sep 2019 - Aug 2022</p>
-            <p>Worked on research projects in marine science, focusing on the use of AI to model oceanographic phenomena.</p>
+            <p>3 years</p>
+            <p>Worked on research projects in data science, focusing on Industry 4.0.</p>
         </div>
     </div>
 </div>
 
 </body>
 </html>
+</div>
