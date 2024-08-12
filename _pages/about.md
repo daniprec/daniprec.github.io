@@ -10,7 +10,7 @@ redirect_from:
 
 Welcome to my website! I am Daniel Precioso, a highly experienced and passionate Ph.D. data scientist. My current research revolves around utilizing data science to achieve sustainable development goals and promote ecological transitions. With a degree in Physics, I bring a unique perspective to my work that enables me to develop innovative solutions to complex problems.
 
-Throughout my <span id="yearsOfExperience">X</span>+ years of career on industry, I have gained extensive experience in analyzing and interpreting data, implementing machine learning algorithms, and creating models that help organizations optimize their operations and make informed decisions.
+Throughout my [<span id="yearsOfExperience">X</span>+ years of career](https://danielprecioso.com/cv/) on industry, I have gained extensive experience in analyzing and interpreting data, implementing machine learning algorithms, and creating models that help organizations optimize their operations and make informed decisions.
 
 As a data scientist, I am passionate about using my skills and expertise to make a positive impact on society. I believe that data science has the potential to transform the world for the better, and I am dedicated to exploring new ways to leverage this technology for the greater good.
 
