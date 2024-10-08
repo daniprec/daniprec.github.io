@@ -8,11 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my website! I am Daniel Precioso, a highly experienced and passionate Ph.D. data scientist. My current research revolves around utilizing data science to achieve sustainable development goals and promote ecological transitions. With a degree in Physics, I bring a unique perspective to my work that enables me to develop innovative solutions to complex problems.
+Welcome to my website! I am Daniel Precioso, Ph.D. in Data Science. I have over [<span id="yearsOfExperience">X</span> years of experience] in \textbf{machine learning} and \textbf{Python}. My journey has taken me through both academic research and industry roles, where I participated in projects related to healthcare, energy, and logistics. My main skills include problem-solving, automating tasks and simplifying complex ideas.
 
-Throughout my [<span id="yearsOfExperience">X</span>+ years of career](https://danielprecioso.com/cv/) on industry, I have gained extensive experience in analyzing and interpreting data, implementing machine learning algorithms, and creating models that help organizations optimize their operations and make informed decisions.
-
-As a data scientist, I am passionate about using my skills and expertise to make a positive impact on society. I believe that data science has the potential to transform the world for the better, and I am dedicated to exploring new ways to leverage this technology for the greater good.
+I am enthusiastic about working with others, mentoring team members, and exchanging ideas. One of my most exciting projects was creating the "Google Maps of the Sea", which utilized mathematical optimization and weather data to minimize GHG emissions from shipping routes. I had the honor of [presenting this work to the European Parliament](https://danielprecioso.com/posts/2023/european-parliament/)! Additionally, I love teaching at the university, where I bring the latest technologies to my students, such as using [prompt engineering](https://danielprecioso.com/posts/2024/chatgpt-bam) to teach programming.
 
 Thank you for taking the time to read my profile smile I encourage you to take a look at my [papers](https://danielprecioso.com/papers/) and [posts](https://danielprecioso.com/posts/) to know about the projects I am enrolled in!
 
