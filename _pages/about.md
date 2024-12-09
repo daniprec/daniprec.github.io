@@ -20,7 +20,7 @@ Thank you for taking the time to read my profile smile I encourage you to take a
   {% for post in site.posts limit:3 %}
     <div class="news-item">
       <a href="{{ post.url }}">
-        <img src="{{ post.featured_image }}" alt="{{ post.title }}" style="max-width: 100%; height: auto;">
+        <img src="{{ post.featured_image }}" alt="{{ post.title }}">
         <h3>{{ post.title }}</h3>
       </a>
     </div>
