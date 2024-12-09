@@ -14,9 +14,8 @@ overflow: hidden; /* Ensure nothing spills out of the box */
 
 /* Styles for the image of the news item */
 .news-item img {
-width: 100%;
 display: block; /* Removes any gaps below the image */
-object-fit: fill; /* Crop the image to fit the container */
+object-fit: cover; /* Crop the image to fit the container */
 border-radius: 10px; /* Add rounded borders */
 transition: transform 0.3s; /* Smooth zoom on hover for a more interactive effect */
 }
