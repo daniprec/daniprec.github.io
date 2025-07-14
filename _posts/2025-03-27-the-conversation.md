@@ -3,7 +3,7 @@ title: "A voice in The Conversation Weekly"
 date: 2025-03-27
 permalink: /posts/2025/the-conversation
 excerpt: "I was invited to speak on The Conversation Weekly podcast to share insights about Green Navigation and the future of low-emission maritime transport."
-featured_image: "https://danielprecioso.com/images/250327_theconversation.jpg"
+featured_image: "https://danielprecioso.com/images/250327_the_conversation.jpg"
 tags:
   - podcast
   - the conversation
