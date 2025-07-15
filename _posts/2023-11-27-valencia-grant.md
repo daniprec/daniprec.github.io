@@ -29,4 +29,5 @@ Many thanks to **Chema Leal**, who represented our startup at the award ceremony
 If you'd like to learn more about our work, visit [greenavigation.com](https://greenavigation.com) or [get in touch](mailto:daniel.precioso@canonicalgreen.com). Let's keep pushing for smarter, cleaner seas.
 
 Warm regards,  
+
 Daniel Precioso, PhD
