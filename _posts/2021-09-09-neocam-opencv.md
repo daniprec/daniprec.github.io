@@ -3,7 +3,7 @@ title: "From Idea to Innovation: The Story of NeoCam's Success at the OpenCV AI 
 date: 2021-09-09
 permalink: /posts/2021/neocam-opencv/
 excerpt: "Join us in celebrating our team's success at the OpenCV AI Competition, where our groundbreaking NeoCam project earns second prize, revolutionizing the way we monitor and care for newborns with cutting-edge technology."
-featured_image: "https://danielprecioso.com/images/210909_neocam_prize.png"
+featured_image: "https://danielprecioso.com/images/2021-09-09-neocam-prize.png"
 tags:
   - machine learning
   - computer vision

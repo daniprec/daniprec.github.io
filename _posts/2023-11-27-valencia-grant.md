@@ -3,7 +3,7 @@ title: "Green Navigation wins €93K grant from Missions València 2030"
 date: 2023-11-27
 permalink: /posts/2023/valencia-grant
 excerpt: "Our weather routing project, Green Navigation, was awarded €93,000 by the Missions València 2030 initiative for its contribution to reducing GHG emissions in maritime transport."
-featured_image: "https://danielprecioso.com/images/231127_valencia_grant.jpg"
+featured_image: "https://danielprecioso.com/images/2023-11-27-valencia-grant.jpg"
 tags:
   - green navigation
   - missions valència

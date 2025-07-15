@@ -3,7 +3,7 @@ title: "Making Waves in Brussels: How I Took the Stage at the European Parliamen
 date: 2023-06-08
 permalink: /posts/2023/european-parliament/
 excerpt: "Picture this: every single second, the shipping industry releases 30 tons of CO2 into the atmosphere. It's a jaw-dropping fact that shook the European Parliament during my presentation!"
-featured_image: "https://danielprecioso.com/images/230607_pitch.png"
+featured_image: "https://danielprecioso.com/images/2023-06-07-pitch.png"
 tags:
   - blue economy
   - ecological transition
