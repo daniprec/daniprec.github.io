@@ -12,7 +12,7 @@ tags:
   - route planning
 ---
 
-This past weekend, I had the chance to participate in the **Ocean Hackathon 2020** in Cádiz alongside my colleagues from **UCA Datalab**. Our team joined the challenge titled *"Route optimization for vessels in the ocean"*, with the goal of reducing fuel consumption and travel time by designing ship routes that take advantage of real-time ocean currents.
+This past weekend, I had the chance to participate in the [**Ocean Hackathon 2020**](https://www.zonafrancacadiz.com/los-57-investigadores-ya-trabajan-en-los-nueve-retos-para-salvar-los-oceanos/) in Cádiz alongside my colleagues from **UCA Datalab**. Our team joined the challenge titled *"Route optimization for vessels in the ocean"*, with the goal of reducing fuel consumption and travel time by designing ship routes that take advantage of real-time ocean currents.
 
 With less than 48 hours on the clock, we developed a complete pipeline: processing raw current data, applying a **genetic algorithm** to search for optimal paths, and deploying a simple **web interface** to visualize the solutions. The combination of **machine learning**, **marine data**, and a bit of sleep deprivation paid off: our project was awarded **third place**, just two points shy of the runner-up.
 
