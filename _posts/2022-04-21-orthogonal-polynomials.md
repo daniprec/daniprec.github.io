@@ -18,7 +18,7 @@ This week, I had the privilege of helping organize the **International Conferenc
 
 This year's edition was especially meaningful: it celebrated the **70th birthday of Francisco Marcellán**, a leading figure in the field and a cornerstone of the mathematical community in Spain. The program included talks on approximation theory, orthogonal polynomials, integrable systems, and operator theory—many of the topics shaped by Marcellán's career and mentorship.
 
-As part of the organizing team, it was a joy to see the return of in-person international collaboration after two years of remote interaction. Seeing so many colleagues reconnect, share research, and honor a respected scholar made for a truly memorable event.
+As part of the organizing team, it was a joy to see the return of in-person international collaboration after two years of remote interaction. The event was **led by David Gómez-Ullate**, with support from **Javier Jiménez**, **Francisco Amor**, and **Praduman Goyal**. Seeing so many colleagues reconnect, share research, and honor a respected scholar made for a truly memorable experience.
 
 All the best,
 
