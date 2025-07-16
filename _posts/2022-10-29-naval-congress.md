@@ -1,7 +1,7 @@
 ---
 title: "Discovering the Latest Advancements in Sail Technologies at the 61st Congress of Naval Engineering"
 date: 2022-10-29
-permalink: /posts/2022/naval-congress/
+permalink: /posts/2022/naval-congress
 excerpt: "Dive into the future of sustainable maritime technology at the 61st Congress of Naval Engineering and Maritime Industry in Palma de Mallorca."
 featured_image: "https://upci.es/wp-content/uploads/61-CIN-1.png"
 tags:

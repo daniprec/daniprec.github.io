@@ -1,7 +1,7 @@
 ---
 title: "Smart Shipping Project Wins Second Prize at Ocean Hackathon 2021"
 date: 2021-12-15
-permalink: /posts/2021/smart-shipping-brest/
+permalink: /posts/2021/smart-shipping-brest
 excerpt: "Thrilled to share our success in Brest, propelling us closer to a sustainable future for marine transport!"
 featured_image: "https://danielprecioso.com/images/2021-12-15-ocean-hackathon.jpg"
 tags:
