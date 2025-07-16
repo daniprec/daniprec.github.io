@@ -12,13 +12,17 @@ tags:
   - route planning
 ---
 
-This past weekend, I had the chance to participate in the [**Ocean Hackathon 2020**](https://www.zonafrancacadiz.com/los-57-investigadores-ya-trabajan-en-los-nueve-retos-para-salvar-los-oceanos/) in Cádiz alongside my colleagues from **UCA Datalab**. Our team joined the challenge titled *"Route optimization for vessels in the ocean"*, with the goal of reducing fuel consumption and travel time by designing ship routes that take advantage of real-time ocean currents.
+This past weekend, our team at [**UCA Datalab**](https://datalab.uca.es) participated in the [**Ocean Hackathon 2020**](https://www.zonafrancacadiz.com/los-57-investigadores-ya-trabajan-en-los-nueve-retos-para-salvar-los-oceanos/) hosted in Cádiz. We joined the challenge *"Route optimization for vessels in the ocean"*, aiming to reduce fuel consumption and travel time by designing ship routes that follow ocean currents.
 
-With less than 48 hours on the clock, we developed a complete pipeline: processing raw current data, applying a **genetic algorithm** to search for optimal paths, and deploying a simple **web interface** to visualize the solutions. The combination of **machine learning**, **marine data**, and a bit of sleep deprivation paid off: our project was awarded **third place**, just two points shy of the runner-up.
+With less than 48 hours to work, we rolled up our sleeves and built an end-to-end solution: we processed raw marine current data, trained a **genetic algorithm** to optimize vessel paths, and developed a simple **web interface** to display the results in real time. The outcome? A functional demo that blended **machine learning**, **ocean data**, and a solid amount of determination (and caffeine).
+
+Our efforts were rewarded with **third place**, just two points behind the runner-up. Not bad for a weekend sprint!
 
 <img src="{{ page.featured_image }}" alt="Ocean Hackathon 2020" width="100%"/>
 
-This hackathon experience was more than just a competition. It was a hands-on opportunity to apply AI to ocean sustainability, working shoulder-to-shoulder with researchers and developers passionate about innovation at sea. For us at UCA Datalab, this recognition is a small but meaningful step toward smarter, greener maritime solutions, and hopefully the first of many!
+It wasn't our first experience pushing through sleepless nights. Some of you might remember our [ICU forecasting model](https://danielprecioso.com/news/2020/covid) from earlier this year during the first COVID-19 wave. But this time, the challenge was maritime, the setting was the port of Cádiz, and the energy was pure collaboration.
+
+For us, this hackathon was more than just a competition. It was a chance to apply AI to real-world sustainability challenges, connect with an inspiring community, and reaffirm that great things can emerge under pressure. Especially with the right team.
 
 All the best,
 
