@@ -71,8 +71,9 @@
   overflow: hidden;
   img {
     width: 100%;
-    max-height: 200px;
-    object-fit: cover;
+    height: 300px;
+    object-fit: cover;          // this crops instead of shrinking
+    object-position: center;    // keeps crop centered vertically
   }
 }
 
