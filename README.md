@@ -32,3 +32,27 @@ See more info at [https://academicpages.github.io/](https://academicpages.github
 There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
 
 To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+
+# Resume Pro-Tips
+
+Most people don't need more experience they just need to sound like they've already earned trust. These five lines instantly make you sound more senior:
+
+1 "Responsible for managing projects" -> "Led projects from idea to delivery hit every deadline."
+    
+    "Responsible" is filler. Seniors show ownership, not obligation.
+
+2.	"Worked with clients" -> "Partnered with clients to fix gaps  raised satisfaction by 20%."
+
+    "Worked with" sounds like you followed orders. "Partnered" shows trust and impact.
+
+3.	"Assisted with financial reporting" -> "Built reports leadership used for budget decisions."
+
+    "Assisted" kills authority. Always show the result of your work.
+
+4.	"Helped with operations" -> "Fixed messy processes saved the team hours each week."
+
+    "Helped" is vague. "Fixed" tells the recruiter you solve problems.
+
+5.	"Looking to grow my skills" -> "I bring structure, clarity, and accountability."
+
+    Juniors talk about what they want. Seniors talk about what they bring.

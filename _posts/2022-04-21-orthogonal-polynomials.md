@@ -2,7 +2,7 @@
 title: "Co-organizing the International Conference on Orthogonal Polynomials"
 date: 2022-04-21
 permalink: /news/2022/orthogonal-polynomials
-excerpt: "I helped organize the International Conference on Orthogonal Polynomials in Cádiz, bringing together experts from around the world to honor Francisco Marcellán."
+excerpt: "I organized the International Conference on Orthogonal Polynomials in Cádiz, bringing together experts from around the world to honor Francisco Marcellán."
 featured_image: "https://danielprecioso.com/images/2022-04-21-orthogonal.jpg"
 tags:
   - orthogonal polynomials
