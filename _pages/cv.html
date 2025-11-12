@@ -53,6 +53,30 @@ redirect_from:
             flex-direction: column;
             justify-content: flex-end;
         }
+        /* Download PDF Button */
+        .download-pdf-container {
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px 0;
+        }
+        .download-pdf-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .download-pdf-btn:hover {
+            background-color: #0056b3;
+        }
+        .download-pdf-btn:before {
+            content: "📄 ";
+            margin-right: 5px;
+        }
         /* Warning for small screens */
         .mobile-warning {
             display: none;
@@ -87,6 +111,10 @@ redirect_from:
 
 <div class="mobile-warning">
     For the best experience, please use a wider screen.
+</div>
+
+<div class="download-pdf-container">
+    <a href="{{ base_path }}/cv/cv_daniel_precioso.pdf" class="download-pdf-btn" download>Download PDF Version</a>
 </div>
 
 <div class="timeline-container">
