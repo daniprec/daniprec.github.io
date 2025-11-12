@@ -1,0 +1,376 @@
+%-------------------------
+% https://www.overleaf.com/latex/templates/rezume/kfrvqywfkwjs
+% Rezume, a latex resume template for developers
+% Author : Nanu Panchamurthy
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+
+% Hope this resume template helps you land an awesome job. If you found this helpful, please consider starring the github repo here, .
+%-------------------------
+
+
+
+%------------PACKAGES----------------
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{verbatim} % reimplements the "verbatim" and "verbatim*" environments
+
+\usepackage{titlesec} % provides an interface to sectioning commands i.e. custom elements
+
+\usepackage{color} % provides both foreground and background color management
+
+\usepackage{enumitem} % provides control over enumerate, itemize and description
+
+\usepackage{fancyhdr} % provides extensive facilities for constructing headers, footers and also controlling their use
+
+\usepackage{tabularx} % defines an environment tabularx, extension of "tabular" with an extra designator x, paragraph like column whose width automatically expands to fill the width of the environment
+
+\usepackage{latexsym} % provides mathematical symbols
+
+\usepackage{marvosym} % provides martin vogel's symbol font which contains various symbols
+
+\usepackage[empty]{fullpage} % sets margins to one inch and removes headers, footers etc..
+
+\usepackage[hidelinks]{hyperref} % removes color and shadow of hyperlinks
+
+\usepackage[normalem]{ulem} % provides "\ul" (uline) command which will break at line breaks
+
+\usepackage[english]{babel} % provides culturally determined typographical rules for wide range of languages
+%-----------------------------------------
+
+\input glyphtounicode % converts glyph names to unicode
+\pdfgentounicode=1 % ensures pdfs generated are ats readable
+
+%----------FONT OPTIONS-------------------
+\usepackage[default]{sourcesanspro} % uses the font source sans pro
+\urlstyle{same} % changes url font from default urlfont to font being used by the document
+%-----------------------------------------
+
+
+%----------MARGIN OPTIONS-----------------
+\pagestyle{fancy} % set page style to one configured by fancyhdr
+\fancyhf{} % clear all header and footer fields
+
+\renewcommand{\headrulewidth}{0in} % sets thickness of linerule under header to zero
+\renewcommand{\footrulewidth}{0in} % sets thickness of linerule over footer to zero
+
+\setlength{\tabcolsep}{0in} % sets thickness of column separator in tables to zero
+
+% origin of the document is one inch from the top and from and the left
+% oddsidemargin and evensidemargin both refer to the left margin
+% right margin is indirectly set using oddsidemargin
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\topmargin}{-0.5in}
+
+\addtolength{\textwidth}{1.0in} % sets width of text area in the page to one inch
+\addtolength{\textheight}{1.0in} % sets height of text area in the page to one inch
+
+\raggedbottom{} % makes all pages the height of current page, no extra vertical space added
+\raggedright{} % makes all pages the width of current page, no extra horizontal space added
+%------------------------------------------
+
+
+%--------SECTIONING COMMANDS---------
+% \titleformat{<command>}
+%   [<shape>]{<format>}{<label>}{<sep>}
+%     {<before-code>}[<after-code>]
+
+% command is the sectioning command to be redefined
+% shape is the style of the font; scshape stands for small caps style
+% format is the format to be applied to whole title- label and text; absent here
+% label defines the label
+% sep is the horizontal separation between label and title body
+% before-code is the code to be executed before
+% after-code is the code to be executed after
+
+\titleformat{\section}
+{\scshape\large}{}
+{0em}{\color{blue}}[\color{black}\titlerule\vspace{0pt}]
+%-------------------------------------
+
+
+%--------REDEFINITIONS----------------
+% redefines the style of the bullet point
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% redefines the underline depth to 2pt
+\renewcommand{\ULdepth}{2pt}
+%-------------------------------------
+
+
+%--------CUSTOM COMMANDS--------------
+%\vspace{} defines a vertical space of given size, modifying this in custom commands can help stretch or shrink resume to remove or add content
+
+% resumeItem renders a bullet point
+\newcommand{\resumeItem}[1]{
+	\item\small{#1}
+}
+
+% commands to start and end itemization of resumeItem, rightmargin set to 0.11in to avoid the overflow of resumetItem beyond whatever resumeItemHeading is being used
+\newcommand{\resumeItemListStart}{\begin{itemize}[rightmargin=0.11in]}
+	\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+% resumeSectionType renders a bolded type to be used under a section, used as skill type here, middle element is used to keep ":"s in the same vertical line
+\newcommand{\resumeSectionType}[3]{
+	\item\begin{tabular*}{0.96\textwidth}[t]{
+			p{0.15\linewidth}p{0.02\linewidth}p{0.81\linewidth}
+		}
+		\textbf{#1} & #2 & #3
+	\end{tabular*}\vspace{-2pt}
+}
+
+% resumeTrioHeading renders three elements in three columns with second element being italicized and first element bolded, can be used for projects with three elements
+\newcommand{\resumeTrioHeading}[3]{
+	\item\small{
+		\begin{tabular*}{0.96\textwidth}[t]{
+				l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r
+			}
+			\textbf{#1} & \textit{#2} & #3
+		\end{tabular*}
+	}
+}
+
+% resumeQuadHeading renders four elements in a two columns with the second row being italicized and first element of first row bolded, can be used for experience and projects with four elements
+\newcommand{\resumeQuadHeading}[4]{
+	\item
+	\begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}
+}
+
+% resumeQuadHeadingChild renders the second row of resumeQuadHeading, can be used for experience if different roles in the same company need to added
+\newcommand{\resumeQuadHeadingChild}[2]{
+	\item
+	\begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{\small#1} & {\small#2} \\
+	\end{tabular*}
+}
+
+% commands to start and end itemization of resumeQuadHeading, lefmargin for left indent of 0.15in for resumeItems
+\newcommand{\resumeHeadingListStart}{
+	\begin{itemize}[leftmargin=0.15in, label={}]
+	}
+	\newcommand{\resumeHeadingListEnd}{\end{itemize}}
+%-------------------------------------------
+
+
+%__________________RESUME____________________
+% You can rearrange sections in any order you may prefer
+\begin{document}
+	
+	%-----------CONTACT DETAILS------------------
+	% Make sure all the details are correct, you can add more links in the first row of second column if needed
+	
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{\Huge Daniel Precioso, PhD \vspace{2pt}} & % row = 1, col = 1
+		Location: Madrid, Spain \\ % row = 1, col = 2
+		\href{https://danielprecioso.com}{\uline{danielprecioso.com}} $|$ % row = 2, col = 1
+		\href{https://www.linkedin.com/in/daniel-precioso-garcelan}{\uline{LinkedIn}} $|$ % row = 2, col = 1
+		\href{https://github.com/daniprec}{\uline{GitHub}} % row = 2, col = 1
+		$|$ \href{https://www.researchgate.net/profile/Daniel-Precioso-Garcelan}{\uline{ResearchGate}} % row = 2, col = 1
+		& % row = 2, col = 1
+		Email: \href{mailto:daniel.precioso@ie.edu}{\uline{daniel.precioso@ie.edu}} \\ % row = 2, col = 2
+		& % row = 3, col = 1
+		ORCID: \href{https://orcid.org/0000-0003-3836-1429}{\uline{0000-0003-3836-1429}} \\ % row = 3, col = 2
+	\end{tabular*}
+	%--------------------------------------------
+	
+	
+	%-----------SUMMARY--------------------------
+	% Keep this short, simple and straigth to point
+	
+	\section{Data Scientist}
+	% \small{
+	 I have \textbf{more than 6 years of experience} in \textbf{knowledge transfer} between academia and industry. My diverse skill set includes problem-solving, automation, and simplifying complex ideas, using my expertise in \textbf{Data Science} and \textbf{Machine Learning}. This unique combination of skills has enabled me to address challenges across various sectors such as healthcare, energy, aerospace, and logistics.
+	 
+	 My goal is to not only solve industry challenges but also advance technology by publishing academic research. I enjoy sharing ideas at conferences and exhibitions and teaching new generations of scientists and professionals. I am passionate about collaboration, mentoring teammates, and transforming scientific ideas into industrial projects.
+		% }
+	%--------------------------------------------
+	
+	
+	%--------------SKILLS------------------------
+	% Add or remove resumeSectionTypes according to your needs
+	
+	\section{Technical Skills}
+	\resumeHeadingListStart{}
+	\resumeSectionType{Languages}{:}{Python, Matlab, R}
+	\resumeSectionType{Libraries}{:}{NumPy, Pandas, scikit-learn, TensorFlow, JAX, Streamlit}
+	\resumeSectionType{Dev Tools}{:}{Visual Studio Code, Git, Github}
+	\resumeSectionType{Academic Tools}{:}{Latex, Overleaf, Blackboard, Wordpress}
+	\resumeHeadingListEnd{}
+	%--------------------------------------------
+	
+	
+	%-----------EXPERIENCE-----------------------
+	% Distill all your talking points to small bullet points which follow the pattern "challenge-action-result" for maximum efficiency. Try to quantify (use numbers) your points whenver possible, highlist words of importance
+	
+	\section{Experience}
+	\resumeHeadingListStart{}
+	
+	\resumeQuadHeading{Postdoctoral Researcher \& Adjunct Professor}{Sep 2023 -- Present}
+	{IE University}{Madrid, Spain}
+	\resumeItemListStart{}
+	\resumeItem{Contributed to three research projects delivering measurable impact:
+		\begin{itemize}
+			\item Built climate impact models simulating insurance risk under SSP-RCP scenarios that VIG used for portfolio strategy.
+			\item Implemented Kolmogorov-Arnold Networks (KANs) for weather forecasting, improving prediction accuracy.
+			\item Designed optimization algorithms that reduce ship GHG emissions through real-time weather-based routing.
+		\end{itemize}}
+	\resumeItem{Built and maintained IE Research Datalab's official website, increasing research visibility and collaboration opportunities.}
+	\resumeItem{Delivered 4 courses (Computer Programming I, Coding Lab, Time Series Analysis, Applied Math Lab) to 100+ students with consistently high satisfaction ratings.}
+	\resumeItemListEnd{}
+	
+	\resumeQuadHeading{COO}{Apr 2023 -- Present}
+	{Canonical Green}{Madrid, Spain}
+	\resumeItemListStart{}
+	\resumeItem{Built and deployed data science solutions that enable maritime clients to optimize routes and reduce carbon emissions by up to 10\%.}
+	\resumeItem{Delivered technical presentations to investors and stakeholders, translating complex algorithms into business value.}
+	\resumeItemListEnd{}
+	
+	\resumeQuadHeading{Data Scientist}{Sep 2022 -- Apr 2023}
+	{Komorebi AI}{Madrid, Spain}
+	\resumeItemListStart{}
+	\resumeItem{Cleaned and processed 500K+ data points from raw sensor data, enabling accurate fish population monitoring for overfishing prevention.}
+	\resumeItem{Designed and deployed gradient-boosted and CNN models using scikit-learn that achieved 90\%+ accuracy in real-time tuna detection.}
+	\resumeItem{Built an interactive Streamlit dashboard that leadership used daily for operational decisions, reducing analysis time by 80\%.}
+	\resumeItemListEnd{}
+	
+	\resumeQuadHeading{Predoctoral Research Staff}{Sep 2019 -- Aug 2022}
+	{University of C\'adiz}{C\'adiz, Spain}
+	\resumeItemListStart{}
+	\resumeItem{Built machine learning models for Industry 4.0 applications in energy monitoring and sustainable fishing, reducing operational costs for industrial partners.}
+	\resumeItem{Partnered with Spain's Health Alerts Centre to create COVID-19 ICU forecasting models that informed national policy decisions during the pandemic.}
+	\resumeItem{Delivered presentations at international conferences, translating complex research into actionable insights for diverse audiences.}
+	\resumeItem{Published 5 peer-reviewed papers in Q1/Q2 journals, advancing the field of applied machine learning and data science.}
+	\resumeItemListEnd{}
+	
+	\resumeQuadHeading{Junior Data Scientist}{Jan 2019 -- Jun 2019}{Foqum}{Madrid, Spain}
+	
+	\resumeHeadingListEnd{}
+	%---------------------------------------------
+	
+	
+	%-----------EDUCATION-------------------------
+	% Mention your CGPA, if its good, in the first row of second column
+	
+	\section{Education}
+	\resumeHeadingListStart{}
+	
+	\resumeQuadHeading{Phd in Computer Engineering}{Sep 2019 -- Jul 2023}
+	{University of C\'adiz}{C\'adiz, Spain}
+	
+	\resumeQuadHeading{MSc in Statistical and Computational Information Processing}{Sep 2018 -- Jul 2019}
+	{Universidad Polit\'ecnica de Madrid}{Madrid, Spain}
+	
+	\resumeQuadHeading{Degree in Physics}{Sep 2014 -- Jul 2018}
+	{Complutense University of Madrid}{Madrid, Spain}
+	
+	\resumeHeadingListEnd{}
+	%---------------------------------------------
+	
+	
+	%-----------PROJECTS--------------------------
+	% Use resumeQuadHeading if four elements are feasible (ex: demo video link), else use resumeTrioHeading. Keep the bullet points simple and concise and try to cover wide variety of skills you have used to build these projects
+	
+	\section{Projects}
+	\resumeHeadingListStart{}
+	
+	\resumeTrioHeading{KAN4Met}{Machine Learning, Meteorology}{IE University}
+	\resumeItemListStart{}
+	\resumeItem{Implemented Kolmogorov-Arnold Networks for weather forecasting, advancing ML-based meteorological prediction accuracy.}
+	\resumeItem{Contributed to research team that secured funding from Spanish Ministerio de Ciencia, Educación y Universidades.}
+	\resumeItemListEnd{}
+	
+	\resumeTrioHeading{Insurance and Tech}{Data Science, Actuarial Science}{IE University}
+	\resumeItemListStart{}
+	\resumeItem{Built predictive models analyzing climate change impact on insurance risk that VIG used for data-driven portfolio strategies.}
+	\resumeItem{Contributed to industry-academic partnership with Vienna Insurance Group (VIG), translating complex climate models into actionable business insights.}
+	\resumeItemListEnd{}
+	
+	\resumeTrioHeading{Weather Navigation}{Mathematical Optimization, Maritime Transport}{IE University}
+	\resumeItemListStart{}
+	\resumeItem{Designed optimization algorithms that reduced maritime fuel consumption by 10\% while improving route safety and cutting carbon emissions.}
+	\resumeItem{Contributed to research team that secured substantial funding from BBVA Foundation and Spanish Agencia Estatal (grant TED2021-129455B-I00).}
+	\resumeItem{Built and maintained the official project website \href{https://weathernavigation.com/}{\uline{https://weathernavigation.com/}}.}
+	\resumeItem{Presented technology to \href{https://www.youtube.com/watch?v=T2VRDSczxVM&t}{\uline{the European Parliament}}, positioning the innovation for EU-wide adoption.}
+	\resumeItemListEnd{}
+	
+	\resumeTrioHeading{Tun-AI}{Deep Learning, Fishing Industry}{Komorebi AI}
+	\resumeItemListStart{}
+	\resumeItem{Partnered with Satlink to build AI-powered tuna monitoring systems that automated fish detection with 90\%+ accuracy.}
+	\resumeItem{Transformed 500K+ raw echosounder readings into clean, structured datasets that powered machine learning models.}
+	\resumeItem{Deployed gradient-boosted trees and CNNs optimized for real-time fish detection on cloud, enabling instant monitoring decisions.}
+	\resumeItemListEnd{}
+	
+	\resumeTrioHeading{NeoCam}{Computer Vision, Healthcare}{Univesidad de C\'adiz}
+	\resumeItemListStart{}
+	\resumeItem{Built a contactless monitoring system using Luxonis OAK-D cameras that enabled health experts to track newborn vitals in NICUs.}
+	\resumeItem{Won 2nd place globally at \href{https://opencv.org/opencv-ai-competition-2021/\#regional-winners}{\uline{OpenCV AI Competition 2021}} among 1,400+ teams, demonstrating innovation and technical excellence.}
+	\resumeItem{Co-inventor on \href{https://drive.google.com/file/d/1AN-C6Wb77trgd3riLIXcsKpQlfIfOlGk/view?usp=sharing}{\uline{official patent registration}} in 2023, protecting intellectual property for future commercialization.}
+	\resumeItemListEnd{}
+	
+	\resumeTrioHeading{COVID-19}{Time Series Forecasting, Healthcare}{Univesidad de C\'adiz}
+	\resumeItemListStart{}
+	\resumeItem{Partnered with Spain's Coordination Centre for Health Alerts to build ICU occupancy forecasting models that informed resource allocation during peak pandemic periods.}
+	\resumeItem{Analyzed non-pharmaceutical interventions (NPIs) impact on COVID-19 spread, providing evidence-based recommendations that shaped public health policy.}
+	\resumeItemListEnd{}
+	
+	\resumeTrioHeading{UCAnFly}{Computer Modeling, Astrophysics}{Univesidad de C\'adiz}
+	\resumeItemListStart{}
+	\resumeItem{Built MATLAB simulations modeling Earth's electromagnetic field effects on gravitational test mass for space-based detectors like \href{https://www.elisascience.org/}{\uline{LISA}}.}
+	\resumeItem{Contributed electromagnetic modeling expertise to multidisciplinary team selected by ESA's \href{https://www.esa.int/Education/CubeSats_-_Fly_Your_Satellite}{\uline{Fly Your Satellite!}} programme.}
+	\resumeItemListEnd{}
+	
+	\resumeTrioHeading{ATENEA}{Computer Vision, Industrial Automation}{Univesidad de C\'adiz}
+	\resumeItemListStart{}
+	\resumeItem{Built ML and NLP solutions for Airbus D\&S that automated production processes, reducing manual inspection time.}
+	\resumeItem{Contributed to industry partnership funded by CDTI Interconnecta program.}
+	\resumeItemListEnd{}
+	
+	\resumeHeadingListEnd{}
+	%--------------------------------------------
+	
+	
+	%----------------OTHERS----------------------
+	% You can add your acheivements, accolades, certifications etc. here.
+	
+	\section{Courses and Certifications}
+	\resumeItemListStart{}
+	
+	\resumeItem{\href{https://www.coursera.org/learn/wharton-ai-in-education-leveraging-chatgpt-for-teaching}{\uline{AI in Education: Leveraging ChatGPT for Teaching}} (Coursera)}
+	
+	\resumeItem{\href{https://openbadgefactory.com/v1/assertion/4d76a8035a509add2f9b01f1c19cdb9a0eef56ca.html}{\uline{Machine learning in Python with scikit-learn}} (France Universit\'e Num\'erique)}
+	
+	\resumeItem{\href{https://drive.google.com/file/d/1hNx8BzQxnWpydmgg9RoCtc44FBE6HSEG/view?usp=sharing}{\uline{XV Modeling Week at UCM (Coordinator)}} (UCM)}
+	
+	\resumeItem{\href{https://drive.google.com/file/d/1GrqmPLSJoitdC7otmq_SRfqXVbEOuW_F/view?usp=sharing}{\uline{Fly your Satellite - 3 CDR Virtual Workshop}} (ESA)}
+	
+	\resumeItem{\href{https://www.coursera.org/account/accomplishments/specialization/WXQQSYVFLA78}{\uline{TensorFlow in Practice Specialization}} (Coursera)}
+	%\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/FE4HNB2LFVRU}{\uline{Convolutional Neural Networks in TensorFlow}} (Coursera)}
+	%\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/XG8F2HMXUH4V}{\uline{Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning}} (Coursera)}
+	%\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/FPHZBNAU29ZK}{\uline{Natural Language Processing in TensorFlow}} (Coursera)}
+	%\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/DKX6PA6UFBQC}{\uline{Sequences, Time Series and Prediction}} (Coursera)}
+	
+	\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/JEZRF6VKSWUE}{\uline{Applied Social Network Analysis in Python}} (Coursera)}
+	\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/HKSAYBJFPQGU}{\uline{Applied Machine Learning in Python}} (Coursera)}
+	\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/PMFZNFG755X3}{\uline{Applied Text Mining in Python}} (Coursera)}
+	\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/2SDFQS2HSAE3}{\uline{Introduction to Data Science in Python}} (Coursera)}
+	
+	\resumeItemListEnd{}
+	
+	\section{Publications}
+	\resumeItemListStart{}
+	\resumeItem{\href{https://doi.org/10.1016/j.marstruc.2025.103863}{\uline{New analysis in the preliminary design for LNG and LPG ships}}. Marine Structures, Elsevier, 2025 (Q1).}
+	\resumeItem{\href{https://benchmark.weathernavigation.com/static/pdfs/benchmarks-1.pdf}{\uline{HADAD: Hexagonal A-Star with Differential Algorithm Designed for weather routing}}. Ocean Engineering, 2024 (Q1)}
+	\resumeItem{\href{https://doi.org/10.1007/s40314-024-02756-w}{\uline{Hybrid Search method for Zermelo's navigation problem}}. Computational and Applied Mathematics, 2024 (Q2)}
+	\resumeItem{\href{https://doi.org/10.3354/meps14338}{\uline{Aggregation dynamics of tropical tunas around drifting floating objects based on large-scale echo-sounder data}}. Marine Ecology Progress Series, 2023 (Q1)}
+	\resumeItem{\href{https://doi.org/10.21203/rs.3.rs-1732801/v1}{\uline{Effectiveness of non-pharmaceutical interventions in nine fields of activity to decrease SARS-CoV-2 transmission (Spain, September 2020-May 2021)}}. Frontiers in Public Health, 2023 (Q1)}
+	\resumeItem{\href{https://doi.org/10.21203/rs.3.rs-1923023/v1}{\uline{Thresholding Methods in Non-Intrusive Load Monitoring}}. The Journal of Supercomputing, 2023 (Q2)}
+	\resumeItem{\href{https://doi.org/10.1109/JBHI.2023.3240245}{\uline{NeoCam: An edge-cloud platform for non-invasive real-time monitoring in neonatal intensive care units}}. IEEE Journal of Biomedical and Health Informatics, 2023 (Q1)}
+	\resumeItem{\href{https://doi.org/10.1016/j.fishres.2022.106263}{\uline{TUN-AI: Tuna biomass estimation with Machine Learning models trained on oceanography and echosounder FAD data}}. Fisheries Research, 2022 (Q2)}
+	%\resumeItem{\href{}{\uline{}}}
+	\resumeItemListEnd{}
+	%--------------------------------------------
+	
+\end{document}
