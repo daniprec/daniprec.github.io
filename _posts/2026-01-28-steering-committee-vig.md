@@ -15,7 +15,7 @@ Hello dear readers,
 
 Big day yesterday: I had the privilege of participating for the third time in the **Steering Committee** meeting of the **IE Insurance and Tech Lab**, our research initiative with Vienna Insurance Group (VIG) on climate change and life insurance.
 
-<p align="center"><img src="{{ page.featured_image }}" alt="Steering Committee meeting with Vienna Insurance Group" width="80%"/></p>
+<p align="center"><img src="{{ page.featured_image }}" alt="Steering Committee meeting with Vienna Insurance Group" width="100%"/></p>
 
 The goal of the meeting was to review the progress of our research project, "Climate Change Effects on Life & Health Insurance", and to align on the next steps. I had a great discussion with VIG's leadership team, including their Head of Group Development and Strategy, and also with our academic partners from IE University.
 
