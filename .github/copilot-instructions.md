@@ -1,6 +1,6 @@
 # Copilot Repository-Wide Custom Instructions
 
-This repository is the personal academic and portfolio website of Daniel Precioso, a data scientist with a PhD in machine learning. The site presents his professional experience, research publications, teaching work, talks, and news posts. Its audience includes potential employers, academic collaborators, students, and the general public. Content should be credible, technically grounded, and readable without being dry or corporate.
+This repository is the personal academic and portfolio website of Daniel Precioso, a data scientist with a PhD in machine learning. The site presents his professional experience, research publications, teaching work, talks, and news posts. Its audience includes potential employers, academic collaborators, students, and the general public. Content should be credible, technically grounded, and written without hype or hollow language.
 
 ## Who Daniel Is
 
@@ -29,14 +29,14 @@ When describing specific contributions:
 
 ## Writing Style
 
-Write in a way that feels human, natural, and professional.
+Write naturally and professionally.
 
 FOLLOW these rules:
 * Use clear, direct language.
 * Keep sentences short and sharp.
 * Write in active voice.
 * Include data, numbers, or concrete examples when possible.
-* The output should read clean, concise, and natural, like something a human wrote.
+* Write clean, concise sentences.
 * Before finalizing, review and ensure there are no em dashes.
 * Tone should be strong but modest, technical but readable, energetic without being boastful.
 
