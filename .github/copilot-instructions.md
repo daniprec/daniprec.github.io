@@ -1,11 +1,10 @@
-
 # Copilot Repository-Wide Custom Instructions
 
 This repository is the personal academic and portfolio website of Daniel Precioso, a data scientist with a PhD in machine learning. The site presents his professional experience, research publications, teaching work, talks, and news posts. Its audience includes potential employers, academic collaborators, students, and the general public. Content should be credible, technically grounded, and readable without being dry or corporate.
 
 ## Who Daniel Is
 
-- Data scientist with a PhD in machine learning and more than six years of experience across academia and industry.
+- Data scientist with a PhD in machine learning and experience across academia and industry since 2018.
 - Strong in predictive modeling, optimization, decision support, and applied machine learning.
 - Works on weather routing for ships, climate risk modeling for insurance, and related domains.
 - Teaches programming, data analysis, and AI at IE University.
@@ -22,6 +21,11 @@ When writing or editing any content on this site:
 - Avoid: led, owned, managed, scaled, drove, spearheaded, architected (unless the evidence is explicit and precise).
 - Every strong claim must be backed by a project, publication, award, talk, or collaboration.
 - Do not imply formal people management experience, production ownership at scale, or deep expertise in LLMs or multimodal systems unless Daniel provides explicit evidence.
+
+When describing specific contributions:
+- Avoid filler openers. Do not write "Responsible for" or "Assisted with." Say what was built, designed, or presented.
+- Show the result of the work where possible. "Built a dashboard used daily by the team" is stronger than "helped with data visualization."
+- Avoid vague obligation language. "Responsible" implies assignment; concrete verbs imply action.
 
 ## Writing Style
 
@@ -59,7 +63,7 @@ Before writing or editing any content:
 * Prioritize rigorous, academically sound references when citing external sources.
 * Ensure cited datasets and links are reliably accessible online.
 
-## Site Structure Notes
+## Site Structure
 
 - `_pages/about.md`: Homepage bio. Entry point for all visitors. Should explain who Daniel is in 10 seconds.
 - `_pages/cv.html`: Timeline of professional and academic experience. Keep entries factual, specific, and linked to evidence.
@@ -68,4 +72,14 @@ Before writing or editing any content:
 - `_teaching/`: Teaching experience entries.
 - `_talks/`: Talk and presentation entries.
 - Never use enumerations in section titles or headings.
+
+## Local Development
+
+To run the site locally:
+
+1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
+1. Run `bundle clean` to clean up the directory.
+1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+   - If you see `cannot load such file -- webrick (LoadError)`, run `bundle add webrick`.
+1. Run `bundle exec jekyll liveserve` to serve the site from `localhost:4000`. The server will rebuild and refresh automatically on changes.
 
