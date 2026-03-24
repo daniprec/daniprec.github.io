@@ -8,17 +8,17 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I'm Daniel Precioso, a Data Scientist with a PhD in Machine Learning and more than <span id="yearsOfExperience">X</span> years of experience turning data into real-world solutions. I focus on applied AI, optimization, and analytics. My projects span healthcare, energy, insurance, and the spaces where science meets decision-making.
+I'm Daniel Precioso, a data scientist with a PhD in machine learning and more than <span id="yearsOfExperience">X</span> years of experience across academia and industry.
 
-My career bridges academic research and industry practice. I've built forecasting tools, decision systems, and machine learning models that don't just work in notebooks: they're used by real teams to solve real problems. As COO of a climate-tech startup, I led our data strategy and secured €93K in competitive funding from [Missions València 2030](https://danielprecioso.com/posts/2023/valencia-grant). Our solution was ranked top by the jury.
+I work on predictive models, optimization, and decision support systems for sectors including healthcare, logistics, energy, and climate. My focus is on building technically sound solutions and communicating results clearly to both technical and non-technical audiences.
 
-Along the way, I've pitched ideas at high-level forums, including the [European Parliament](https://danielprecioso.com/posts/2023/european-parliament/), helping raise visibility and trust in data-driven innovation.
+At Canonical Green, a climate-tech startup, I contributed to maritime route optimization and helped secure €93K in competitive funding from [Missions València 2030](https://danielprecioso.com/posts/2023/valencia-grant), with our project ranked top by the jury. I also presented this work at the [European Parliament](https://danielprecioso.com/posts/2023/european-parliament/).
 
-One of the projects I'm proudest of? Building the "Google Maps for the Sea": a weather-optimized routing system for ships that cuts fuel use and reduces GHG emissions, without retrofitting a single vessel.
+One project I worked on extensively: a weather-optimized routing system for ships that reduces fuel use and GHG emissions without modifying vessels. The system uses real-time weather data and graph-based optimization to compute efficient routes at sea.
 
-I also teach. At the university, I mentor students in programming and AI literacy, and experiment with new tools like [ChatGPT](https://danielprecioso.com/posts/2024/chatgpt-bam) to help learners think more clearly, not just code faster.
+I also teach. I deliver courses in programming, data analysis, and AI at university level, and have explored tools like [ChatGPT in the classroom](https://danielprecioso.com/posts/2024/chatgpt-bam) to support student learning.
 
-If you're interested in data-driven decision-making, applied AI, or collaborations at the edge of science and society, feel free to explore my [papers](https://danielprecioso.com/papers/) and [posts](https://danielprecioso.com/posts/). Let's build something useful!
+Explore my [papers](https://danielprecioso.com/papers/) and [posts](https://danielprecioso.com/posts/), or get in touch if you work on applied data problems in the areas I cover.
 
 <!-- Add this section to display the three latest news articles horizontally -->
 <h2>Latest News</h2>
