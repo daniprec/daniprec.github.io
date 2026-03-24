@@ -16,7 +16,7 @@ Communication runs through most of what I do. I have presented research to speci
 
 Teaching is one of the parts of my job I am most invested in. At IE University I deliver courses in computer programming, time series analysis, and applied mathematics. My students awarded me a [Teaching Excellence Award](https://danielprecioso.com/posts/2025/teaching-excellence-award) in 2025, which I'm genuinely proud of.
 
-My research focuses on weather routing for ships and climate risk modeling for insurance. I contribute to [Canonical Green](https://canonicalgreen.com), a climate-tech startup developing maritime routing software, and work on climate impact models for the insurance sector at [IE University](https://www.ie.edu/ieresearchdatalab/), with results presented regularly to Vienna Insurance Group.
+My research focuses on weather routing for ships and climate risk modeling for insurance. I co-founded [Canonical Green](https://canonicalgreen.com), a climate-tech startup developing maritime routing software, and work on climate impact models for the insurance sector at [IE University](https://www.ie.edu/ieresearchdatalab/), with results presented regularly to Vienna Insurance Group.
 
 Browse my [papers](https://danielprecioso.com/papers/) and [posts](https://danielprecioso.com/posts/), or reach out if you work on applied data or modeling problems.
 
