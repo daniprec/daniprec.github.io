@@ -1,0 +1,19 @@
+---
+title: "Tun-AI: Machine Learning for Tuna Biomass Estimation"
+collection: portfolio
+permalink: /portfolio/tun-ai/
+date: 2019-07-01
+excerpt: "ML system that estimates tuna biomass from echosounder buoy and oceanographic data, deployed commercially for over 1500 fishing vessels."
+category: Maritime
+tags: [machine learning, fisheries, echosounder, oceanography, time series]
+paperurl: "https://doi.org/10.1016/j.fishres.2022.106263"
+featured_image: "https://ars.els-cdn.com/content/image/1-s2.0-S0165783622000406-gr3.jpg"
+---
+
+<p>Smart buoys attached to drifting Fish Aggregating Devices (dFADs) are deployed across tropical oceans by tuna purse-seine fleets. Each buoy carries an echosounder that measures acoustic backscatter in the water column and transmits data hourly by satellite. The raw signal is rich in information about fish presence, but interpreting it at scale required automation and a model that combined acoustic and environmental data.</p>
+
+<p>Tun-AI uses three-day windows of echosounder data alongside satellite-derived oceanographic variables (sea surface temperature, currents, chlorophyll) to estimate tuna biomass under the buoy. As training signal, the model draws on more than 5000 documented capture events with confirmed tuna catch tonnage, provided by OPAGAC. The resulting system automated a task previously handled by expert biologists, reducing cost and bias while scaling to thousands of vessels simultaneously.</p>
+
+<p>I developed Tun-AI as the lead researcher at Komorebi AI, collaborating with Satlink, the buoy manufacturer. The model is currently in use by more than 1500 commercial fishing vessels. The work was published in Fisheries Research (Q2) and attracted coverage in Research Features magazine.</p>
+
+<p><a href="{{ page.paperurl }}">Read the paper</a></p>
