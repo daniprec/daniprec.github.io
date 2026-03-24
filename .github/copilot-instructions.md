@@ -5,6 +5,7 @@ This repository is the personal academic and portfolio website of Daniel Precios
 ## Who Daniel Is
 
 - Data scientist with a PhD in machine learning and experience across academia and industry since 2018.
+- Co-founder of a climate-tech startup developing maritime routing software, Canonical Green.
 - Strong in predictive modeling, optimization, decision support, and applied machine learning.
 - Works on weather routing for ships, climate risk modeling for insurance, and related domains.
 - Teaches programming, data analysis, and AI at IE University.
