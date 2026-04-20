@@ -34,6 +34,69 @@
   }
 }
 
+.page--teaching {
+  @include breakpoint($large) {
+    @include span(8 of 12);
+    @include prefix(2 of 12);
+    @include suffix(2 of 12);
+  }
+
+  .page__inner-wrap {
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background: #fff;
+
+    @include breakpoint($large) {
+      padding: 2rem;
+    }
+  }
+
+  .teaching__hero {
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #f4f8fb 0%, #eef3f8 100%);
+    border: 1px solid mix($border-color, #d8e5f2, 60%);
+  }
+
+  .teaching__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .teaching__pill {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-family: $sans-serif;
+    font-size: $type-size-6;
+    color: mix($gray, #000, 35%);
+    background: #fff;
+    border: 1px solid $border-color;
+    line-height: 1.4;
+  }
+
+  .teaching__lead {
+    margin: 0 0 1rem;
+    font-size: $type-size-5;
+    line-height: 1.55;
+  }
+
+  .teaching__cta {
+    margin-top: 0.25rem;
+  }
+
+  .page__content {
+    p {
+      font-size: $type-size-5;
+      line-height: 1.65;
+    }
+  }
+}
+
 .page__title {
   margin-top: 0;
   line-height: 1;

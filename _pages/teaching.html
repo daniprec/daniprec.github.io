@@ -12,8 +12,13 @@ author_profile: true
 <div class="courses-grid">
   {% assign sorted_teaching = site.teaching | sort: 'date' | reverse %}
   {% for course in sorted_teaching %}
+    {% if course.courseurl %}
+      {% assign course_target = course.courseurl %}
+    {% else %}
+      {% assign course_target = base_path | append: course.url %}
+    {% endif %}
     <div class="course-card">
-      <h3 class="course-title">{{ course.title }}</h3>
+      <h3 class="course-title"><a href="{{ course_target }}" class="course-title-link">{{ course.title }}</a></h3>
       <p class="course-meta"><strong>{{ course.type }}</strong></p>
       <p class="course-meta">{{ course.venue }}</p>
       <p class="course-meta">{{ course.location }} &middot; {{ course.date | date: "%Y" }}</p>
@@ -21,9 +26,7 @@ author_profile: true
         <p class="course-excerpt">{{ course.excerpt }}</p>
       {% endif %}
       <div class="course-links">
-        {% if course.courseurl %}
-          <a href="{{ course.courseurl }}" class="course-btn" target="_blank">View course materials</a>
-        {% endif %}
+        <a href="{{ course_target }}" class="course-btn"{% if course.courseurl %} target="_blank" rel="noopener noreferrer"{% endif %}>View course materials</a>
       </div>
     </div>
   {% endfor %}
@@ -45,8 +48,15 @@ author_profile: true
   }
   .course-title {
     margin-top: 0;
-    color: #007bff;
     font-size: 1.1em;
+  }
+  .course-title-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .course-title-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
   }
   .course-meta {
     margin: 3px 0;
