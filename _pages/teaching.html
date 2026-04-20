@@ -7,32 +7,39 @@ author_profile: true
 
 {% include base_path %}
 
-<p>I teach programming, data analysis, and applied mathematics at IE University. Some courses include publicly available materials.</p>
+<div class="courses-page-content">
+  <p>I teach programming, data analysis, and applied mathematics at IE University. Some courses include publicly available materials.</p>
 
-<div class="courses-grid">
-  {% assign sorted_teaching = site.teaching | sort: 'date' | reverse %}
-  {% for course in sorted_teaching %}
-    {% if course.courseurl %}
-      {% assign course_target = course.courseurl %}
-    {% else %}
-      {% assign course_target = base_path | append: course.url %}
-    {% endif %}
-    <div class="course-card">
-      <h3 class="course-title"><a href="{{ course_target }}" class="course-title-link">{{ course.title }}</a></h3>
-      <p class="course-meta"><strong>{{ course.type }}</strong></p>
-      <p class="course-meta">{{ course.venue }}</p>
-      <p class="course-meta">{{ course.location }} &middot; {{ course.date | date: "%Y" }}</p>
-      {% if course.excerpt %}
-        <p class="course-excerpt">{{ course.excerpt }}</p>
+  <div class="courses-grid">
+    {% assign sorted_teaching = site.teaching | sort: 'date' | reverse %}
+    {% for course in sorted_teaching %}
+      {% if course.courseurl %}
+        {% assign course_target = course.courseurl %}
+      {% else %}
+        {% assign course_target = base_path | append: course.url %}
       {% endif %}
-      <div class="course-links">
-        <a href="{{ course_target }}" class="course-btn"{% if course.courseurl %} target="_blank" rel="noopener noreferrer"{% endif %}>View course materials</a>
+      <div class="course-card">
+        <h3 class="course-title"><a href="{{ course_target }}" class="course-title-link">{{ course.title }}</a></h3>
+        <p class="course-meta"><strong>{{ course.type }}</strong></p>
+        <p class="course-meta">{{ course.venue }}</p>
+        <p class="course-meta">{{ course.location }} &middot; {{ course.date | date: "%Y" }}</p>
+        {% if course.excerpt %}
+          <p class="course-excerpt">{{ course.excerpt }}</p>
+        {% endif %}
+        <div class="course-links">
+          <a href="{{ course_target }}" class="course-btn"{% if course.courseurl %} target="_blank" rel="noopener noreferrer"{% endif %}>View course materials</a>
+        </div>
       </div>
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>
 
 <style>
+  .courses-page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
   .courses-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -85,5 +92,10 @@ author_profile: true
     background-color: #0056b3;
     color: white;
     text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    .courses-page-content {
+      padding: 0 16px;
+    }
   }
 </style>

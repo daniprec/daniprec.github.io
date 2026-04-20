@@ -7,39 +7,46 @@ author_profile: true
 
 {% include base_path %}
 
-<p>Applied research and industry projects in machine learning, optimization, and data science, spanning maritime transport, energy, health, public policy, and climate risk for insurance.</p>
+<div class="projects-page-content">
+  <p>Applied research and industry projects in machine learning, optimization, and data science, spanning maritime transport, energy, health, public policy, and climate risk for insurance.</p>
 
-<div class="projects-grid">
-  {% assign sorted_portfolio = site.portfolio | sort: 'date' | reverse %}
-  {% for project in sorted_portfolio %}
-    <div class="project-card">
-      {% if project.featured_image %}
-        <div class="project-image">
-          <img src="{{ project.featured_image }}" alt="{{ project.title }}" loading="lazy" />
-        </div>
-      {% endif %}
-      <div class="project-body">
-        <h3 class="project-title"><a href="{{ project.url }}">{{ project.title }}</a></h3>
-        {% if project.category %}
-          <p class="project-meta"><strong>{{ project.category }}</strong> &middot; {{ project.date | date: "%Y" }}</p>
-        {% else %}
-          <p class="project-meta">{{ project.date | date: "%Y" }}</p>
+  <div class="projects-grid">
+    {% assign sorted_portfolio = site.portfolio | sort: 'date' | reverse %}
+    {% for project in sorted_portfolio %}
+      <div class="project-card">
+        {% if project.featured_image %}
+          <div class="project-image">
+            <img src="{{ project.featured_image }}" alt="{{ project.title }}" loading="lazy" />
+          </div>
         {% endif %}
-        {% if project.excerpt %}
-          <p class="project-excerpt">{{ project.excerpt }}</p>
-        {% endif %}
-        <div class="project-links">
-          <a href="{{ project.url }}" class="project-btn">Read more</a>
-          {% if project.paperurl %}
-            <a href="{{ project.paperurl }}" class="project-btn project-btn-outline" target="_blank" rel="noopener noreferrer">Paper</a>
+        <div class="project-body">
+          <h3 class="project-title"><a href="{{ project.url }}">{{ project.title }}</a></h3>
+          {% if project.category %}
+            <p class="project-meta"><strong>{{ project.category }}</strong> &middot; {{ project.date | date: "%Y" }}</p>
+          {% else %}
+            <p class="project-meta">{{ project.date | date: "%Y" }}</p>
           {% endif %}
-        </div>
+          {% if project.excerpt %}
+            <p class="project-excerpt">{{ project.excerpt }}</p>
+          {% endif %}
+          <div class="project-links">
+            <a href="{{ project.url }}" class="project-btn">Read more</a>
+            {% if project.paperurl %}
+              <a href="{{ project.paperurl }}" class="project-btn project-btn-outline" target="_blank" rel="noopener noreferrer">Paper</a>
+            {% endif %}
+          </div>
       </div>
     </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>
 
 <style>
+  .projects-page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -122,6 +129,11 @@ author_profile: true
   .project-btn-outline:hover {
     background-color: #007bff;
     color: white;
+  }
+  @media (max-width: 768px) {
+    .projects-page-content {
+      padding: 0 16px;
+    }
   }
 </style>
 
