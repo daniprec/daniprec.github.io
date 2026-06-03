@@ -1,8 +1,8 @@
 ---
-title: "VIG Board Meeting in Vienna: Climate Risk, Mortality, and Next Steps"
+title: "VIG Vienna Board Update: Climate Risk and Life Insurance Reserves"
 date: 2026-05-13
 permalink: /posts/2026/vig-vienna-board
-excerpt: "At Vienna Insurance Group in Vienna, I presented the technical results of our IE University project on temperature, mortality risk, and life insurance reserves. The board approved extending the collaboration for one more year, with new work on air quality and mental health."
+excerpt: "At VIG in Vienna, I presented IE University results on temperature-driven mortality risk and life insurance reserves, and the project was extended one more year."
 featured_image: "https://danielprecioso.com/images/2026-01-28-steering-committee.jpg"
 tags:
   - ie university
