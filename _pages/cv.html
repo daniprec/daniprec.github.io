@@ -105,6 +105,83 @@ redirect_from:
                 display: none;
             }
         }
+        /* Technical Skills Section */
+        .skills-section {
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px auto;
+            width: 80%;
+            border-left: 4px solid #007bff;
+        }
+
+        .skills-section h2 {
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .skills-grid div {
+            padding: 10px;
+            background-color: white;
+            border-radius: 3px;
+            border-left: 2px solid #007bff;
+        }
+
+        /* Bottom sections (Publications, Awards, Languages) */
+        .section {
+            margin: 30px auto;
+            width: 80%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            border-left: 3px solid #007bff;
+        }
+
+        .section h2 {
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        .section ul {
+            margin-top: 10px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+        }
+
+        /* Meta and highlight styles */
+        .meta {
+            color: #666;
+            font-style: italic;
+            margin: 5px 0;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        /* Mobile optimization for skills grid */
+        @media (max-width: 700px) {
+            .skills-section {
+                width: 95%;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            .section {
+                width: 95%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -115,6 +192,36 @@ redirect_from:
 
 <div class="download-pdf-container">
     <a href="{{ base_path }}/cv/cv_daniel_precioso.pdf" class="download-pdf-btn" download>Download PDF Version</a>
+</div>
+
+<div class="skills-section">
+    <h2 style="margin-top: 0;">Technical Skills</h2>
+    <div class="skills-grid">
+        <div>
+            <strong>Languages & Core:</strong> Python (expert), R, MATLAB, SQL
+        </div>
+        <div>
+            <strong>ML/DL Frameworks:</strong> scikit-learn, TensorFlow, Keras, PyTorch, JAX
+        </div>
+        <div>
+            <strong>GenAI & LLMs:</strong> OpenAI API, Claude, Gemini, Multi-agent systems, Prompt engineering
+        </div>
+        <div>
+            <strong>MLOps & DevOps:</strong> Git (CI/CD, pre-commit hooks), Docker (basics), Version control workflows
+        </div>
+        <div>
+            <strong>Deployment & Web:</strong> Flask, Streamlit, PythonAnywhere, REST APIs
+        </div>
+        <div>
+            <strong>Cloud & Data:</strong> AWS S3, Data pipelines (ETL), Pandas, NumPy
+        </div>
+        <div>
+            <strong>Visualization:</strong> Matplotlib, Seaborn, Interactive dashboards
+        </div>
+        <div>
+            <strong>Soft Skills:</strong> Client-facing communication, Stakeholder management, Technical presentations
+        </div>
+    </div>
 </div>
 
 <div class="timeline-container">
@@ -163,46 +270,47 @@ redirect_from:
         <h3>2026</h3>
     </div>
     <div class="timeline-item" style="grid-row: -115/-97;">
-        <h3>Senior Data Scientist @ IE University</h3>
-        <p>June 2025 - Present</p>
-        <i>Madrid, Spain</i>
+        <h3>Senior Data Scientist & Technical Lead @ IE University × Vienna Insurance Group</h3>
+        <p class="meta">June 2025 - Present | Madrid, Spain</p>
+        <p class="meta">Client: Vienna Insurance Group (Fortune 500 Insurance Company)</p>
         <p>I work on climate risk data science at IE Insurance and Tech Lab, drawing on methods from ML, statistics, and climate science to address real insurance problems.</p>
         <ul>
-            <li>Built Discrete Lag Non-linear Models (DLNMs) and Relative Risk (RR) curves to support climate risk analysis for insurers.</li>
-            <li>Built interactive visual dashboards (Flask, PythonAnywhere) to communicate climate risk results to insurers and the public.</li>
-            <li>Implemented Kolmogorov-Arnold Networks (KANs) for weather forecasting, applying a new architecture to a practical domain problem.</li>
-            <li>Presented research findings in Steering Committee sessions with Vienna Insurance Group, in front of industry leadership and academic partners.</li>
+            <li><strong>Lead client-facing technical delivery</strong> for Vienna Insurance Group collaboration, managing stakeholder presentations, steering committee communications, and project roadmap coordination with international insurance executives.</li>
+            <li><strong>Present research findings directly to VIG executive leadership</strong> and cross-functional teams, translating complex climate models into actionable insurance risk insights for portfolio analysis.</li>
+            <li>Deployed <strong>interactive Flask web application</strong> (hosted on PythonAnywhere) for climate mortality risk visualization, enabling real-time exploration of SSP-RCP scenarios by insurance analysts and public stakeholders.</li>
+            <li>Built production-grade <strong>climate risk models using DLNMs and Relative Risk curves</strong>, integrating weather data, mortality statistics, and insurance portfolio analysis for quantitative risk assessment.</li>
+            <li>Established <strong>CI/CD workflows and pre-commit hooks</strong> for data pipeline quality control, ensuring reproducible research outputs and streamlined client deliverables.</li>
+            <li>Leveraged <strong>GenAI tools (Claude, OpenAI, Gemini via OpenCode)</strong> for research acceleration, automated code generation, and multi-agent workflows.</li>
         </ul>
-        <p><strong>Highlight:</strong> <a href="https://danielprecioso.com/posts/2025/insurance-tech-lab">Launching the IE Insurance and Tech Lab</a>.</p>
-        <i><strong>Skills:</strong> Stakeholder Communication, Forecast Modeling, Risk Analysis, DLNMs, Flask, KANs, Cross-Disciplinary Modeling</i>
+            <p><span class="highlight"><strong>Highlight:</strong> Presented research at ICMS Climate Change and Insurance 2025 workshop in Edinburgh to actuaries, climate scientists, and industry representatives.</span></p>
     </div>
     <div class="timeline-item" style="grid-row: -97/-73;">
-    <h3>COO @ Canonical Green</h3>
-        <p>Apr 2023 - Present</p>
-        <i>Madrid, Spain</i>
-        <p>Canonical Green develops data science solutions for the ecological transition of the maritime industry.</p>
+        <h3>COO & Technical Lead @ Canonical Green</h3>
+        <p class="meta">April 2023 - Present | Madrid, Spain</p>
         <ul>
-            <li>Built and deployed route optimization models for maritime clients, targeting reductions in fuel use and carbon emissions of up to 10%.</li>
-            <li>Presented to diverse audiences including investors, funding juries, institutional stakeholders, and the general public, adapting the message for each setting.</li>
-            <li>Showcased the project at <a href="https://danielprecioso.com/posts/2024/dubai">Prototypes for Humanity 2024 in Dubai</a>, selected among 100 innovations from over 2,000 global submissions.</li>
-            <li>Invited onto <a href="https://danielprecioso.com/posts/2025/the-conversation">The Conversation Weekly podcast</a> to discuss maritime decarbonization for a broad audience.</li>
-            <li>Awarded a Torres Quevedo Grant (2023) by the Spanish Ministry of Science (grant declined for strategic reasons).</li>
-            <li>Helped secure €93K in competitive funding from <a href="https://danielprecioso.com/posts/2023/valencia-grant">Missions València 2030</a>, with our project ranked top by the jury.</li>
+            <li>Built and deployed <strong>route optimization models for maritime clients</strong>, targeting reductions in fuel use and carbon emissions of up to 40% through weather-integrated navigation algorithms.</li>
+            <li>Managed data workflows using <strong>AWS S3</strong> for large-scale climate dataset storage and retrieval.</li>
+            <li><strong>Led technical presentations to diverse audiences</strong> including investors, funding juries, institutional stakeholders, and the general public, adapting technical content for each setting.</li>
+            <li>Showcased the project at <strong>Prototypes for Humanity 2024 in Dubai</strong>, selected among 100 innovations from over 2,000 global submissions.</li>
+            <li><strong>Invited to present technology at the European Parliament</strong> as one of top 5 ecological transition solutions in Europe.</li>
+            <li>Featured on <strong>The Conversation Weekly podcast</strong> discussing maritime decarbonization for international audience.</li>
+            <li>Secured <strong>€93K in competitive funding from Missions València 2030</strong>, with project ranked #1 by evaluation jury.</li>
+            <li>Utilized <strong>LLM-powered tools for technical documentation</strong> and presentation generation, streamlining stakeholder communication.</li>
         </ul>
-        <p><strong>Highlight:</strong> <a href="https://danielprecioso.com/posts/2023/european-parliament/">Presented the technology at the European Parliament</a>.</p>
-        <i><strong>Skills:</strong> Applied AI, Data Products, Public Speaking, Science Communication, Project Coordination</i>
     </div>
-    <div class="timeline-item" style="grid-column: 1/2; grid-row: -73/-37;">
-    <h3>Data Scientist @ Komorebi AI</h3>
-        <p>Sep 2022 - Apr 2023</p>
-        <i>Madrid, Spain</i>
-        <p>I worked as a full-stack data scientist on applied projects for industrial clients, quickly adapting to a new problem domain (marine biology, computer vision) and building end-to-end solutions within months.</p>
+    <div class="timeline-item" style="grid-column: 3/4; grid-row: -115/-78;">
+        <h3>Postdoctoral Researcher & Adjunct Professor @ IE University</h3>
+        <p class="meta">September 2023 - Present | Madrid and Segovia, Spain</p>
+        <p>Lead applied research on cutting-edge machine learning architectures and climate modeling, while teaching technical courses to diverse student audiences.</p>
         <ul>
-            <li>Cleaned and processed 500K+ data points from raw sensor data, enabling accurate fish population monitoring for overfishing prevention.</li>
-            <li>Designed and deployed gradient-boosted and CNN models using scikit-learn that achieved 90%+ accuracy in real-time tuna detection.</li>
-            <li>Built an interactive Streamlit dashboard used daily by the team for operational decisions, reducing analysis time by 80%.</li>
+            <li><strong>Implemented Kolmogorov-Arnold Networks (KANs) for weather forecasting</strong>, applying a novel neural architecture (published 2024) to meteorological time series.</li>
+            <li><strong>Developed optimization algorithms for weather-based maritime routing</strong>, integrating meteorological data with route planning to reduce GHG emissions in shipping industry.</li>
+            <li>Presented research at the <a href="https://danielprecioso.com/posts/2025/edinburgh">ICMS Climate Change and Insurance 2025 workshop</a> in Edinburgh to an international audience of actuaries, climate scientists, and industry practitioners.</li>
+            <li><strong>Delivered 4 technical courses to 100+ students</strong> (Computer Programming I, Coding Lab, Time Series Analysis, Applied Math Lab), translating complex programming and statistics concepts for undergraduate audiences.</li>
+            <li>Built and maintained <strong>IE Research Datalab's official website</strong>, improving research group visibility and communication of technical projects to broader audiences.</li>
+            <li><strong>Mentored undergraduate researchers</strong> on data science projects, developing curriculum materials and guiding student development in Python, ML frameworks, and research methodologies.</li>
         </ul>
-        <i><strong>Skills:</strong> Machine Learning, Deep Learning, Streamlit, Data Pipelines, Scikit-Learn, PyTorch, Git</i>
+        <p><strong>Teaching philosophy:</strong> Technical education is about bridging the gap between complex concepts and practical understanding; the same skill needed for client-facing technical consulting.</p>
     </div>
     <div class="timeline-item" style="grid-column: 1/2; grid-row: -37/-25">
         <h3>Predoctoral Research Staff @ University of Cádiz</h3>
@@ -219,15 +327,12 @@ redirect_from:
     </div>
     <div class="timeline-item" style="grid-column: 1/2; grid-row: -25/-19;">
         <h3>Junior Data Scientist @ Foqum</h3>
-        <p>Jan 2019 - Jun 2019</p>
-        <i>Madrid, Spain</i>
-        <p>My first industry role, working on real ML problems in the energy sector alongside experienced engineers.</p>
+        <p class="meta">January 2019 - June 2019 | Madrid, Spain</p>
         <ul>
-            <li>Built and tested neural network models using Keras and TensorFlow for non-intrusive load monitoring (NILM) to estimate appliance usage from aggregate power data.</li>
-            <li>Contributed to energy disaggregation projects that helped optimize power consumption analysis.</li>
-            <li>Picked up version control, reproducibility, and professional workflows for presenting technical results in a team setting.</li>
+            <li>Built neural network models using <strong>Keras and TensorFlow for NILM (Non-Intrusive Load Monitoring)</strong> to estimate appliance usage from aggregate power data.</li>
+            <li>Contributed to energy disaggregation projects optimizing power consumption analysis for energy sector clients.</li>
+            <li>Adopted professional <strong>Git workflows and reproducibility practices</strong> for production ML systems.</li>
         </ul>
-        <i><strong>Skills:</strong> Python, Keras, TensorFlow, Git, Energy Disaggregation, ML Prototyping</i>
     </div>
     <!-- Academia -->
     <div class="timeline-item" style="grid-column: 3/4; grid-row: -115/-78;">
@@ -247,33 +352,51 @@ redirect_from:
     </div>
     <div class="timeline-item" style="grid-column: 3/4; grid-row: -78/-25;">
         <h3>PhD in Computer Engineering @ University of Cádiz</h3>
-        <p>Sep 2019 - Jul 2023</p>
-        <i>Cádiz, Spain</i>
-        <p>Thesis: <a href="https://produccioncientifica.uca.es/documentos/6532bf8ac0b4af7ce4e86ab6">"Applications of Machine Learning and Data Science to the Blue Economy"</a> under the supervision of <a href="https://orcid.org/0000-0002-6890-6584">David Gómez-Ullate</a>.</p>
+        <p class="meta">September 2019 - July 2023 | Cádiz, Spain</p>
+        <p><strong>Thesis:</strong> "Applications of Machine Learning and Data Science to the Blue Economy" (Cum Laude)</p>
         <ul>
-            <li>Collaborated with industrial clients in healthcare, energy, and marine transport to build applied ML solutions.</li>
-            <li>Developed machine learning models for Industry 4.0 applications in energy monitoring and sustainable fishing, in collaboration with industrial partners.</li>
-            <li>Collaborated with Spain's Health Alerts Centre to develop COVID-19 ICU forecasting models used to support national policy decisions during the pandemic.</li>
-            <li>Presented research at international conferences to technical and mixed audiences.</li>
-            <li>Published 5 peer-reviewed papers in Q1/Q2 journals on applied machine learning and data science.</li>
+            <li>Collaborated with <strong>industrial clients in healthcare, energy, and maritime transport</strong> to build applied ML solutions.</li>
+            <li>Developed <strong>computer vision system (NeoCam)</strong> for neonatal monitoring that won 2nd prize in OpenCV AI Competition 2021 (1,400+ teams).</li>
+            <li>Built <strong>COVID-19 ICU forecasting models</strong> in collaboration with Spain's Health Alerts Centre, supporting national policy decisions during pandemic.</li>
+            <li>Published <strong>5 papers in Q1/Q2 journals</strong> on applied machine learning and data science.</li>
+            <li>Developed <strong>automated data pipelines in Python/R</strong> from raw data ingestion to production-ready research outputs.</li>
         </ul>
-        <p><strong>Highlights:</strong> <a href="https://danielprecioso.com/posts/2023/phd">Cum Laude distinction</a> -- International awards in <a href="https://danielprecioso.com/posts/2021/smart-shipping-brest/">sustainability</a> and <a href="https://danielprecioso.com/posts/2021/neocam-opencv">computer vision</a> -- <a href="https://danielprecioso.com/publication/2023/covid">COVID response research</a></p>
-        <i><strong>Skills:</strong> Machine Learning, Computer Vision, Scientific Communication, Model Development, Cross-Sector Collaboration</i>
     </div>
     <div class="timeline-item" style="grid-column: 3/4; grid-row: -25/-13;">
         <h3>MSc in Statistical and Computational Information Processing @ UPM</h3>
-        <p>Sep 2018 - Jul 2019</p>
-        <i>Polytechnic University of Madrid, Spain</i>
-        <p>I completed my master's degree specializing in data science, acquiring essential skills in data analysis, data mining, neural networks, and Big Data technologies.</p>
-        <i><strong>Skills:</strong> Matlab, R, Python, SAS, Hadoop, SQL</i>
+        <p class="meta">September 2018 - July 2019 | Madrid, Spain</p>
+        <p>Specialization in data science, machine learning, and big data technologies.</p>
     </div>
     <div class="timeline-item" style="grid-column: 3/4; grid-row: -13/-1;">
         <h3>Degree in Physics @ Complutense University of Madrid</h3>
-        <p>Sep 2014 - Jul 2018</p>
-        <i>Complutense University of Madrid, Spain</i>
-        <p>I completed my bachelor's degree in Physics, earning honors in four subjects related to Quantum Physics and Astrophysics. This foundation in rigorous analytical thinking prepared me for advanced work in data science and machine learning.</p>
-        <i><strong>Skills:</strong> Physics, Mathematics, Matlab</i>
+        <p class="meta">September 2014 - July 2018 | Madrid, Spain</p>
+        <p>Honors in Quantum Physics and Astrophysics. Foundation in rigorous analytical thinking.</p>
     </div>
+</div>
+
+<div class="section">
+    <h2>Selected Publications & Patents</h2>
+    <ul>
+        <li><strong>5 papers in Q1/Q2 journals</strong> (h-index: 5) in Ocean Engineering, IEEE Journal of Biomedical and Health Informatics, Marine Ecology Progress Series, Frontiers in Public Health, and Applied Energy</li>
+        <li><strong>Patent registered (2023)</strong> for NeoCam non-invasive neonatal monitoring technology</li>
+        <li>H-index: 5 (Google Scholar)</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Awards & Recognition</h2>
+    <ul>
+        <li><strong>European Parliament invitation (2023)</strong> - Top 5 ecological transition solutions in Europe</li>
+        <li><strong>OpenCV AI Competition 2021</strong> - 2nd prize among 1,400+ international teams</li>
+        <li><strong>Prototypes for Humanity 2024</strong> - Selected from 2,000+ global submissions</li>
+        <li><strong>Teaching Excellence Award (2025)</strong> - Recognized by students at IE University</li>
+        <li><strong>Missions València 2030</strong> - €93K funding, ranked #1 by evaluation jury</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Languages</h2>
+    <p><strong>Spanish:</strong> Native | <strong>English:</strong> Fluent (C1) - Academic publications, international presentations</p>
 </div>
 
 </body>
