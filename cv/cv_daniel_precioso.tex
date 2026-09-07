@@ -38,7 +38,7 @@
 \usepackage[english]{babel} % provides culturally determined typographical rules for wide range of languages
 %-----------------------------------------
 
-\input glyphtounicode % converts glyph names to unicode
+\input{glyphtounicode} % converts glyph names to unicode
 \pdfgentounicode=1 % ensures pdfs generated are ats readable
 
 %----------FONT OPTIONS-------------------
@@ -181,7 +181,7 @@
 	%-----------SUMMARY--------------------------
 	\section{Data Scientist}
 	% \small{
-	\textbf{7+ years} taking ML/DL projects from concept to production across healthcare, energy, insurance, and maritime logistics. I combine technical rigor (PhD, 5 Q1 publications) with \textbf{client-facing delivery}: presenting to executives, deploying production systems (Flask, CI/CD), and translating complex models into business value. Currently coordinating technical delivery for \textbf{Vienna Insurance Group}, where I manage stakeholder communications and deploy ML applications for climate risk analysis.
+	\textbf{7+ years} delivering ML/DL systems across healthcare, energy, insurance, and maritime logistics. I combine technical rigor (PhD, 5 Q1 publications) with strong technical communication, presenting model outputs to executives, building production applications, and designing clear materials for clients and public audiences.
 	% }
 	%--------------------------------------------
 	
@@ -193,7 +193,7 @@
 	\resumeSectionType{ML/DL}{:}{scikit-learn, TensorFlow, PyTorch, Keras, JAX}
 	\resumeSectionType{GenAI \& LLMs}{:}{OpenAI API, Claude, Gemini, Multi-agent systems}
 	\resumeSectionType{MLOps \& DevOps}{:}{Git (CI/CD, pre-commit hooks), Flask, Docker (basics)}
-	\resumeSectionType{Cloud \& Data}{:}{AWS S3, Pandas, NumPy, Streamlit}
+	\resumeSectionType{Cloud \& Data}{:}{AWS S3, IAM, Pandas, NumPy, Streamlit}
 	\resumeSectionType{Academic Tools}{:}{LaTeX, Overleaf, Blackboard, WordPress}
 	\resumeHeadingListEnd{}
 	%--------------------------------------------
@@ -210,7 +210,6 @@
 	\resumeItemListStart{}
 	\resumeItem{Coordinate \textbf{client-facing technical delivery} for Vienna Insurance Group: manage stakeholder presentations, deploy \textbf{production Flask applications} (PythonAnywhere), and implement \textbf{CI/CD workflows}. Built climate risk models (DLNMs, Relative Risk curves) used by VIG for portfolio decisions.}
 	\resumeItem{Implemented Kolmogorov-Arnold Networks (KANs) for weather forecasting, improving prediction accuracy.}
-	\resumeItem{Leverage \textbf{GenAI tools} (Claude, OpenAI, Gemini) for development acceleration.}
 	\resumeItem{Built and maintained IE Research Datalab's website, increasing research visibility and collaboration opportunities.}
 	\resumeItem{Delivered technical courses to 100+ students with consistently high satisfaction ratings.}
 	\resumeItemListEnd{}
@@ -218,9 +217,10 @@
 	\resumeQuadHeading{COO}{Apr 2023 -- Present}
 	{Canonical Green}{Madrid, Spain}
 	\resumeItemListStart{}
-	\resumeItem{Built and deployed route optimization models for maritime clients, demonstrating \textbf{5-40\% reductions} in fuel consumption through weather-integrated navigation. Managed data workflows using \textbf{AWS S3} for large-scale datasets.}
-	\resumeItem{Delivered technical presentations to investors and stakeholders, translating complex algorithms into business value.}
-	\resumeItem{Awarded a prestigious Torres Quevedo Grant (2023) by the Spanish Ministry of Science to develop R\&D activities at Canonical Green (grant declined for strategic reasons).}
+	\resumeItem{Built and deployed route optimization models for maritime clients, demonstrating \textbf{5-40\% reductions} in fuel consumption through weather-integrated navigation.}
+	\resumeItem{Managed large-scale \textbf{AWS S3} datasets, configured access permissions, and maintained cloud-to-on-prem data transfer workflows.}
+	\resumeItem{Prepared and delivered technical presentations in pitches, conferences, and client meetings, translating routing algorithms into clear operational and business value.}
+	\resumeItem{Built and maintained startup communication assets, including website updates, news content, and talk materials that increased visibility among potential clients and collaborators.}
 	\resumeItemListEnd{}
 	
 	\resumeQuadHeading{Data Scientist}{Sep 2022 -- Apr 2023}
@@ -229,7 +229,6 @@
 	\resumeItem{Cleaned and processed 500K+ data points from raw sensor data, enabling accurate fish population monitoring.}
 	\resumeItem{Designed and deployed gradient-boosted and CNN models that achieved 90\%+ accuracy in real-time tuna detection.}
 	\resumeItem{Built an interactive dashboard that leadership used daily for operational decisions, reducing analysis time by 80\%.}
-	\resumeItem{Implemented \textbf{Git workflows with CI/CD practices} for team collaboration on production codebase.}
 	\resumeItemListEnd{}
 	
 	\resumeQuadHeading{Predoctoral Research Staff}{Sep 2019 -- Aug 2022}
@@ -237,7 +236,6 @@
 	\resumeItemListStart{}
 	\resumeItem{Built ML models for Industry 4.0 applications in energy monitoring and non-destructive testing, reducing operational costs for industrial partners.}
 	\resumeItem{Partnered with Spain's Health Alerts Centre to create COVID-19 ICU forecasting models that informed national policy decisions during the pandemic.}
-	\resumeItem{Delivered presentations at international conferences, translating complex research into actionable insights for diverse audiences.}
 	\resumeItem{Published 5 peer-reviewed papers in Q1/Q2 journals, advancing the field of applied ML and DS.}
 	\resumeItemListEnd{}
 	
@@ -256,7 +254,7 @@
 	\section{Education}
 	\resumeHeadingListStart{}
 	
-	\resumeQuadHeading{Phd in Computer Engineering}{Sep 2019 -- Jul 2023}
+	\resumeQuadHeading{PhD in Computer Engineering}{Sep 2019 -- Jul 2023}
 	{University of C\'adiz}{C\'adiz, Spain}
 	
 	\resumeQuadHeading{MSc in Statistical and Computational Information Processing}{Sep 2018 -- Jul 2019}
@@ -274,7 +272,7 @@
 	
 	\section{Projects}
 	\resumeHeadingListStart{}
-	
+		
 	\resumeTrioHeading{KAN4Met}{Machine Learning, Meteorology}{IE University}
 	\resumeItemListStart{}
 	\resumeItem{Implemented Kolmogorov-Arnold Networks for weather forecasting, advancing ML-based prediction accuracy.}
@@ -302,26 +300,26 @@
 	\resumeItem{Deployed gradient-boosted trees and CNNs optimized for real-time fish detection on cloud, enabling instant monitoring decisions.}
 	\resumeItemListEnd{}
 	
-	\resumeTrioHeading{NeoCam}{Computer Vision, Healthcare}{Univesidad de C\'adiz}
+	\resumeTrioHeading{NeoCam}{Computer Vision, Healthcare}{University of C\'adiz}
 	\resumeItemListStart{}
 	\resumeItem{Built a contactless monitoring system using Luxonis OAK-D cameras that enabled health experts to track newborn vitals in NICUs.}
 	\resumeItem{Won 2nd place globally at \href{https://opencv.org/opencv-ai-competition-2021/\#regional-winners}{\uline{OpenCV AI Competition 2021}} among 1,400+ teams.}
 	\resumeItem{Co-inventor on \href{https://drive.google.com/file/d/1AN-C6Wb77trgd3riLIXcsKpQlfIfOlGk/view?usp=sharing}{\uline{official patent registration}} in 2023, protecting intellectual property for future commercialization.}
 	\resumeItemListEnd{}
 	
-	\resumeTrioHeading{COVID-19}{Time Series Forecasting, Healthcare}{Univesidad de C\'adiz}
+	\resumeTrioHeading{COVID-19}{Time Series Forecasting, Healthcare}{University of C\'adiz}
 	\resumeItemListStart{}
 	\resumeItem{Partnered with Spain's Coordination Centre for Health Alerts to build ICU occupancy forecasting models that informed resource allocation during peak pandemic periods.}
 	\resumeItem{Analyzed non-pharmaceutical interventions (NPIs) impact on COVID-19 spread, providing evidence-based recommendations that shaped public health policy.}
-	\resumeItemListEnd{}
+		\resumeItemListEnd{}
 	
-	\resumeTrioHeading{UCAnFly}{Computer Modeling, Astrophysics}{Univesidad de C\'adiz}
+	\resumeTrioHeading{UCAnFly}{Computer Modeling, Astrophysics}{University of C\'adiz}
 	\resumeItemListStart{}
 	\resumeItem{Built MATLAB simulations modeling Earth's electromagnetic field effects on gravitational test mass for space-based detectors like \href{https://www.elisascience.org/}{\uline{LISA}}.}
 	\resumeItem{Contributed electromagnetic modeling expertise to multidisciplinary team selected by ESA's \href{https://www.esa.int/Education/CubeSats_-_Fly_Your_Satellite}{\uline{Fly Your Satellite!}} programme.}
 	\resumeItemListEnd{}
 	
-	\resumeTrioHeading{ATENEA}{Computer Vision, Industrial Automation}{Univesidad de C\'adiz}
+	\resumeTrioHeading{ATENEA}{Computer Vision, Industrial Automation}{University of C\'adiz}
 	\resumeItemListStart{}
 	\resumeItem{Built ML and NLP solutions for Airbus D\&S that automated production processes, reducing manual inspection time.}
 	\resumeItem{Contributed to industry partnership funded by CDTI Interconnecta program.}
@@ -337,24 +335,26 @@
 	\section{Courses and Certifications}
 	\resumeItemListStart{}
 	
-	\resumeItem{\href{https://www.coursera.org/learn/wharton-ai-in-education-leveraging-chatgpt-for-teaching}{\uline{AI in Education: Leveraging ChatGPT for Teaching}} (Coursera)}
+	%\resumeItem{\href{https://www.coursera.org/learn/wharton-ai-in-education-leveraging-chatgpt-for-teaching}{\uline{AI in Education: Leveraging ChatGPT for Teaching}} (Coursera)}
 	
-	\resumeItem{\href{https://openbadgefactory.com/v1/assertion/4d76a8035a509add2f9b01f1c19cdb9a0eef56ca.html}{\uline{Machine learning in Python with scikit-learn}} (France Universit\'e Num\'erique)}
+	\resumeItem{AWS, \href{https://danielprecioso.com/files/certificates/aws-cloud-practitioner-essentials-2026-08.pdf}{\uline{AWS Cloud Practitioner Essentials}}.}
+		
+	\resumeItem{France Universit\'e Num\'erique, \href{https://openbadgefactory.com/v1/assertion/4d76a8035a509add2f9b01f1c19cdb9a0eef56ca.html}{\uline{Machine learning in Python with scikit-learn}}.}
 	
-	\resumeItem{\href{https://drive.google.com/file/d/1hNx8BzQxnWpydmgg9RoCtc44FBE6HSEG/view?usp=sharing}{\uline{XV Modeling Week at UCM (Coordinator)}} (UCM)}
+	\resumeItem{UCM, \href{https://danielprecioso.com/files/certificates/ucm-xv-modeling-week-2021.pdf}{\uline{XV Modeling Week at UCM (Coordinator)}}.}
 	
-	\resumeItem{\href{https://drive.google.com/file/d/1GrqmPLSJoitdC7otmq_SRfqXVbEOuW_F/view?usp=sharing}{\uline{Fly your Satellite - 3 CDR Virtual Workshop}} (ESA)}
+	\resumeItem{ESA, \href{https://danielprecioso.com/files/certificates/esa-fly-your-satellite-3cdr-virtual-workshop-2020.pdf}{\uline{Fly your Satellite - 3 CDR Virtual Workshop}}.}
 	
-	\resumeItem{\href{https://www.coursera.org/account/accomplishments/specialization/WXQQSYVFLA78}{\uline{TensorFlow in Practice Specialization}} (Coursera)}
+	\resumeItem{DeepLearning.AI (Coursera), \href{https://www.coursera.org/account/accomplishments/specialization/WXQQSYVFLA78}{\uline{TensorFlow in Practice Specialization}}.}
 	%\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/FE4HNB2LFVRU}{\uline{Convolutional Neural Networks in TensorFlow}} (Coursera)}
 	%\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/XG8F2HMXUH4V}{\uline{Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning}} (Coursera)}
 	%\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/FPHZBNAU29ZK}{\uline{Natural Language Processing in TensorFlow}} (Coursera)}
 	%\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/DKX6PA6UFBQC}{\uline{Sequences, Time Series and Prediction}} (Coursera)}
 	
-	\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/JEZRF6VKSWUE}{\uline{Applied Social Network Analysis in Python}} (Coursera)}
-	\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/HKSAYBJFPQGU}{\uline{Applied Machine Learning in Python}} (Coursera)}
-	\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/PMFZNFG755X3}{\uline{Applied Text Mining in Python}} (Coursera)}
-	\resumeItem{\href{https://www.coursera.org/account/accomplishments/verify/2SDFQS2HSAE3}{\uline{Introduction to Data Science in Python}} (Coursera)}
+	\resumeItem{University of Michigan (Coursera), \href{https://www.coursera.org/account/accomplishments/verify/2SDFQS2HSAE3}{\uline{Introduction to Data Science in Python}}.}
+	\resumeItem{University of Michigan (Coursera), \href{https://www.coursera.org/account/accomplishments/verify/PMFZNFG755X3}{\uline{Applied Text Mining in Python}}.}
+	\resumeItem{University of Michigan (Coursera), \href{https://www.coursera.org/account/accomplishments/verify/JEZRF6VKSWUE}{\uline{Applied Social Network Analysis in Python}}.}
+	\resumeItem{University of Michigan (Coursera), \href{https://www.coursera.org/account/accomplishments/verify/HKSAYBJFPQGU}{\uline{Applied Machine Learning in Python}}.}
 	
 	\resumeItemListEnd{}
 	
@@ -372,11 +372,4 @@
 	\resumeItemListEnd{}
 	%--------------------------------------------
 	
-\end{document}
-\begin{document}
-
-\maketitle
-
-\section{Introduction}
-
 \end{document}
