@@ -1,0 +1,155 @@
+---
+layout: default
+title: "Creative Work"
+permalink: /creative-work/
+author_profile: true
+---
+
+<div class="creative-work-page">
+  <p>Outside my research and teaching, I have been making short films for several years. These projects have given me a different way to explore storytelling, visual communication, and collaborative work.</p>
+
+  <h2>Short Films</h2>
+
+  <div class="films-grid">
+    <article class="film-card">
+      <a class="film-image" href="https://www.youtube.com/watch?v=6suIU1pQuoc" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.youtube.com/vi/6suIU1pQuoc/hqdefault.jpg" alt="Watch Discordias Primaverales on YouTube" loading="lazy" />
+        <span class="play-button" aria-hidden="true">&#9654;</span>
+      </a>
+      <div class="film-body">
+        <h3><a href="https://www.youtube.com/watch?v=6suIU1pQuoc" target="_blank" rel="noopener noreferrer"><em>Discordias Primaverales</em></a></h3>
+        <p>My first short film, made as a parody of classic black-and-white cinema. I helped produce the film and played the father. It won Best Film in our school competition.</p>
+        <p class="film-role"><strong>Roles:</strong> Actor and producer</p>
+      </div>
+    </article>
+
+    <article class="film-card">
+      <a class="film-image" href="https://www.youtube.com/watch?v=QCDRiB7Nfos" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.youtube.com/vi/QCDRiB7Nfos/hqdefault.jpg" alt="Watch El Ruido del Silencio on YouTube" loading="lazy" />
+        <span class="play-button" aria-hidden="true">&#9654;</span>
+      </a>
+      <div class="film-body">
+        <h3><a href="https://www.youtube.com/watch?v=QCDRiB7Nfos" target="_blank" rel="noopener noreferrer"><em>El Ruido del Silencio</em></a></h3>
+        <p>Filmed on New Year's Day, it uses an unusually empty Madrid—and no special effects—to tell an introspective story about being alone. It won second place in the Comillas University film competition.</p>
+        <p class="film-role"><strong>Roles:</strong> Story, lead actor, and editor</p>
+      </div>
+    </article>
+
+    <article class="film-card">
+      <a class="film-image" href="https://www.youtube.com/watch?v=51qKY-t9bIs" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.youtube.com/vi/51qKY-t9bIs/hqdefault.jpg" alt="Watch Tick Tock Bang on YouTube" loading="lazy" />
+        <span class="play-button" aria-hidden="true">&#9654;</span>
+      </a>
+      <div class="film-body">
+        <h3><a href="https://www.youtube.com/watch?v=51qKY-t9bIs" target="_blank" rel="noopener noreferrer"><em>Tick Tock Bang</em></a></h3>
+        <p>A silly, playful little film presented at Notodofilmfest.</p>
+        <p class="content-note"><strong>Content note:</strong> References to suicide.</p>
+        <p class="film-role"><strong>Roles:</strong> Story, lead actor, and editor</p>
+      </div>
+    </article>
+
+    <article class="film-card">
+      <a class="film-image" href="https://www.youtube.com/watch?v=chyq8mVuqdw" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.youtube.com/vi/chyq8mVuqdw/hqdefault.jpg" alt="Watch Y de repente yo on YouTube" loading="lazy" />
+        <span class="play-button" aria-hidden="true">&#9654;</span>
+      </a>
+      <div class="film-body">
+        <h3><a href="https://www.youtube.com/watch?v=chyq8mVuqdw" target="_blank" rel="noopener noreferrer"><em>Y de repente yo</em></a></h3>
+        <p>A short musical film presented in the special edition of Notodofilmfest held during the COVID-19 lockdown.</p>
+        <p class="film-role"><strong>Roles:</strong> Story and editor</p>
+      </div>
+    </article>
+  </div>
+
+  <p class="more-films">And <a href="https://www.youtube.com/playlist?list=PLUgC3DbzOg_UtsivX6-p2oEp6wepmvVGd" target="_blank" rel="noopener noreferrer">some others on YouTube</a>.</p>
+</div>
+
+<style>
+  .creative-work-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  .films-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+  }
+  .film-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #f9f9f9;
+    border-left: 3px solid #007bff;
+    border-radius: 5px;
+  }
+  .film-image {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  .film-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    width: 54px;
+    height: 38px;
+    padding-left: 3px;
+    border-radius: 9px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.76);
+    font-size: 20px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  .film-image:hover .play-button {
+    background: #ff0000;
+    transform: translate(-50%, -50%) scale(1.06);
+  }
+  .film-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .film-body h3 {
+    margin-top: 0;
+    font-size: 1.05em;
+  }
+  .film-body h3 a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .film-body h3 a:hover {
+    text-decoration: underline;
+  }
+  .film-body p {
+    font-size: 0.93em;
+  }
+  .film-role {
+    margin-top: auto;
+    margin-bottom: 0;
+    color: #555;
+  }
+  .content-note {
+    color: #555;
+  }
+  .more-films {
+    margin-top: 24px;
+  }
+  @media (max-width: 768px) {
+    .creative-work-page {
+      padding: 0 16px;
+    }
+  }
+</style>
