@@ -21,7 +21,7 @@ It was my first time participating, so I took it easy. I walked with my friends 
 
 <p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
 
-Also, I got a medal (only for the top 500 finishers). Not Olympic gold, but it shines enough for me. Most important, I shared this experience with my IE community.
+Also, I got a finisher medal. Not Olympic gold, but it shines enough for me. Most important, I shared this experience with my IE community.
 
 Keep pushing your limits, and remember: the only way to go is up!
 

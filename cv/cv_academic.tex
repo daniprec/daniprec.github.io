@@ -1,0 +1,348 @@
+%-------------------------
+% https://www.overleaf.com/latex/templates/rezume/kfrvqywfkwjs
+% Rezume, a latex resume template for developers
+% Author : Nanu Panchamurthy
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+
+% Hope this resume template helps you land an awesome job. If you found this helpful, please consider starring the github repo here, .
+%-------------------------
+
+
+
+%------------PACKAGES----------------
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{verbatim} % reimplements the "verbatim" and "verbatim*" environments
+
+\usepackage{titlesec} % provides an interface to sectioning commands i.e. custom elements
+
+\usepackage{color} % provides both foreground and background color management
+
+\usepackage{enumitem} % provides control over enumerate, itemize and description
+
+\usepackage{fancyhdr} % provides extensive facilities for constructing headers, footers and also controlling their use
+
+\usepackage{tabularx} % defines an environment tabularx, extension of "tabular" with an extra designator x, paragraph like column whose width automatically expands to fill the width of the environment
+
+\usepackage{latexsym} % provides mathematical symbols
+
+\usepackage{marvosym} % provides martin vogel's symbol font which contains various symbols
+
+\usepackage[empty]{fullpage} % sets margins to one inch and removes headers, footers etc..
+
+\usepackage[hidelinks]{hyperref} % removes color and shadow of hyperlinks
+
+\usepackage[normalem]{ulem} % provides "\ul" (uline) command which will break at line breaks
+
+\usepackage[english]{babel} % provides culturally determined typographical rules for wide range of languages
+\usepackage[T1]{fontenc} % proper glyphs for accented characters
+%-----------------------------------------
+
+\input{glyphtounicode} % converts glyph names to unicode
+\pdfgentounicode=1 % ensures pdfs generated are ats readable
+
+%----------FONT OPTIONS-------------------
+\usepackage[scaled]{helvet} % uses the font helvetica
+\renewcommand{\familydefault}{\sfdefault} % sets sans-serif as default
+\urlstyle{same} % changes url font from default urlfont to font being used by the document
+%-----------------------------------------
+
+
+%----------MARGIN OPTIONS-----------------
+\pagestyle{fancy} % set page style to one configured by fancyhdr
+\fancyhf{} % clear all header and footer fields
+
+\renewcommand{\headrulewidth}{0in} % sets thickness of linerule under header to zero
+\renewcommand{\footrulewidth}{0in} % sets thickness of linerule over footer to zero
+
+\setlength{\tabcolsep}{0in} % sets thickness of column separator in tables to zero
+
+% origin of the document is one inch from the top and from and the left
+% oddsidemargin and evensidemargin both refer to the left margin
+% right margin is indirectly set using oddsidemargin
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\topmargin}{-0.5in}
+
+\addtolength{\textwidth}{1.0in} % sets width of text area in the page to one inch
+\addtolength{\textheight}{1.0in} % sets height of text area in the page to one inch
+
+\raggedbottom{} % makes all pages the height of current page, no extra vertical space added
+\raggedright{} % makes all pages the width of current page, no extra horizontal space added
+%------------------------------------------
+
+
+%--------SECTIONING COMMANDS---------
+% \titleformat{<command>}
+%   [<shape>]{<format>}{<label>}{<sep>}
+%     {<before-code>}[<after-code>]
+
+% command is the sectioning command to be redefined
+% shape is the style of the font; scshape stands for small caps style
+% format is the format to be applied to whole title- label and text; absent here
+% label defines the label
+% sep is the horizontal separation between label and title body
+% before-code is the code to be executed before
+% after-code is the code to be executed after
+
+\titleformat{\section}
+{\scshape\large}{}
+{0em}{\color{blue}}[\color{black}\titlerule\vspace{0pt}]
+%-------------------------------------
+
+
+%--------REDEFINITIONS----------------
+% redefines the style of the bullet point
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% redefines the underline depth to 2pt
+\renewcommand{\ULdepth}{2pt}
+%-------------------------------------
+
+
+%--------CUSTOM COMMANDS--------------
+%\vspace{} defines a vertical space of given size, modifying this in custom commands can help stretch or shrink resume to remove or add content
+
+% resumeItem renders a bullet point
+\newcommand{\resumeItem}[1]{
+	\item\small{#1}
+}
+
+% commands to start and end itemization of resumeItem, rightmargin set to 0.11in to avoid the overflow of resumetItem beyond whatever resumeItemHeading is being used
+\newcommand{\resumeItemListStart}{\begin{itemize}[rightmargin=0.11in]}
+	\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+% resumeSectionType renders a bolded type to be used under a section, used as skill type here, middle element is used to keep ":"s in the same vertical line
+\newcommand{\resumeSectionType}[3]{
+	\item\begin{tabular*}{0.96\textwidth}[t]{
+			p{0.15\linewidth}p{0.02\linewidth}p{0.81\linewidth}
+		}
+		\textbf{#1} & #2 & #3
+	\end{tabular*}\vspace{-2pt}
+}
+
+% resumeTrioHeading renders three elements in three columns with second element being italicized and first element bolded, can be used for projects with three elements
+\newcommand{\resumeTrioHeading}[3]{
+	\item\small{
+		\begin{tabular*}{0.96\textwidth}[t]{
+				l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r
+			}
+			\textbf{#1} & \textit{#2} & #3
+		\end{tabular*}
+	}
+}
+
+% resumeQuadHeading renders four elements in a two columns with the second row being italicized and first element of first row bolded, can be used for experience and projects with four elements
+\newcommand{\resumeQuadHeading}[4]{
+	\item
+	\begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}
+}
+
+% resumeQuadHeadingChild renders the second row of resumeQuadHeading, can be used for experience if different roles in the same company need to added
+\newcommand{\resumeQuadHeadingChild}[2]{
+	\item
+	\begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{\small#1} & {\small#2} \\
+	\end{tabular*}
+}
+
+% commands to start and end itemization of resumeQuadHeading, lefmargin for left indent of 0.15in for resumeItems
+\newcommand{\resumeHeadingListStart}{
+	\begin{itemize}[leftmargin=0.15in, label={}]
+	}
+	\newcommand{\resumeHeadingListEnd}{\end{itemize}}
+%-------------------------------------------
+
+
+%__________________RESUME____________________
+% You can rearrange sections in any order you may prefer
+\begin{document}
+
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{\Huge Daniel Precioso, PhD \vspace{2pt}} &
+		Location: Madrid, Spain \\
+		\href{https://danielprecioso.com}{\uline{danielprecioso.com}} $|$
+		\href{https://www.linkedin.com/in/daniel-precioso-garcelan}{\uline{LinkedIn}} $|$
+		\href{https://github.com/daniprec}{\uline{GitHub}}
+		$|$ \href{https://www.researchgate.net/profile/Daniel-Precioso-Garcelan}{\uline{ResearchGate}}
+		&
+		Email: \href{mailto:daniel.precioso@ie.edu}{\uline{daniel.precioso@ie.edu}} \\
+		&
+		ORCID: \href{https://orcid.org/0000-0003-3836-1429}{\uline{0000-0003-3836-1429}} \\
+	\end{tabular*}
+
+
+	\section{Research Profile}
+	\small{Applied mathematician working on optimization and modeling for physical and climate systems: variational and optimal-control methods for maritime weather routing, scientific machine learning for physical models, and statistical models of climate risk. Postdoctoral researcher and adjunct professor at IE University since 2023. Over 100 citations on Google Scholar.}
+
+
+	\section{Academic Positions}
+	\resumeHeadingListStart{}
+
+	\resumeQuadHeading{Postdoctoral Researcher \& Adjunct Professor}{Sep 2023 -- Present}
+	{IE School of Science and Technology, IE University}{Madrid \& Segovia, Spain}
+	\resumeItemListStart{}
+	\resumeItem{Member of the IE Research Datalab and the IE Insurance and Tech Lab.}
+	\resumeItemListEnd{}
+
+	\resumeQuadHeading{Predoctoral Researcher}{Sep 2019 -- Aug 2022}
+	{University of C\'adiz}{C\'adiz, Spain}
+
+	\resumeQuadHeading{Visiting Researcher (intermittent stays)}{2022 -- 2024}
+	{Dept.\ of Mathematics and Statistics, Dalhousie University (host: Prof.\ R. Milson)}{Halifax, Canada}
+	\resumeItemListStart{}
+	\resumeItem{10 Jul -- 12 Oct 2022, 28 Jul -- 28 Aug 2023 and 12 Apr -- 7 May 2024, working on maritime weather routing.}
+	\resumeItemListEnd{}
+
+	\resumeHeadingListEnd{}
+
+
+	\section{Other Positions}
+	\resumeHeadingListStart{}
+	\resumeQuadHeading{COO (technical contributor)}{Apr 2023 -- Present}
+	{Canonical Green, maritime routing software}{Madrid, Spain}
+	\resumeQuadHeading{Data Scientist}{Sep 2022 -- Apr 2023}
+	{Komorebi AI}{Madrid, Spain}
+	\resumeQuadHeading{Junior Data Scientist}{Jan 2019 -- Jun 2019}
+	{Foqum}{Madrid, Spain}
+	\resumeHeadingListEnd{}
+
+
+	\section{Education}
+	\resumeHeadingListStart{}
+	\resumeQuadHeading{PhD in Computer Engineering (Cum Laude)}{Sep 2019 -- Jul 2023}
+	{University of C\'adiz}{C\'adiz, Spain}
+	\resumeItemListStart{}
+	\resumeItem{Thesis: \textit{Applications of Machine Learning and Data Science to the Blue Economy}.}
+	\resumeItemListEnd{}
+	\resumeQuadHeading{MSc in Statistical and Computational Information Processing}{Sep 2018 -- Jul 2019}
+	{Universidad Polit\'ecnica de Madrid}{Madrid, Spain}
+	\resumeQuadHeading{Degree in Physics}{Sep 2014 -- Jul 2018}
+	{Complutense University of Madrid}{Madrid, Spain}
+	\resumeHeadingListEnd{}
+
+
+	\section{Research Funding}
+	\resumeHeadingListStart{}
+
+	\resumeQuadHeading{KAN4Met: Kolmogorov--Arnold Networks with applications in weather forecasting}{Jul 2025 -- Present}
+	{Agencia Estatal de Investigaci\'on, PID2024-155187OB-I00}{Team member}
+	\resumeItemListStart{}
+	\resumeItem{PI: D. G\'omez-Ullate. Implementing Kolmogorov--Arnold Networks for weather forecasting and its use in maritime routing.}
+	\resumeItemListEnd{}
+
+	\resumeQuadHeading{Climate Change Effects on Life and Health Insurance}{2025 -- Present}
+	{IE Insurance and Tech Lab $\times$ Vienna Insurance Group (industry contract)}{Lead of Phase 2}
+	\resumeItemListStart{}
+	\resumeItem{Phase 1 (2025/26), research team member: climate and mortality, with distributed lag non-linear models and climate-adjusted life tables.}
+	\resumeItem{Phase 2 (2026/27), lead: EU rollout, model extensions and scientific publication. Approved by the VIG board in May 2026.}
+	\resumeItemListEnd{}
+
+	\resumeQuadHeading{Green Navigator: maritime routing with real-time oceanographic and weather data}{Dec 2023 -- Mar 2026}
+	{Missions Val\`encia 2030 innovation grants, Val\`encia City Council (beneficiary: Canonical Green)}{Pitched the project (COO)}
+	\resumeItemListStart{}
+	\resumeItem{\textbf{EUR 93,362.84} awarded; ranked first by the evaluation jury. Execution period extended by 9 months in May 2025.}
+	\resumeItemListEnd{}
+
+	\resumeQuadHeading{Weather Navigation}{Dec 2022 -- Nov 2024}
+	{Agencia Estatal de Investigaci\'on (TED 2021), TED2021-129455B-I00}{Team member}
+	\resumeItemListStart{}
+	\resumeItem{\textit{Optimization of maritime routes with real-time oceanographic and meteorological data}. \textbf{EUR 101,200} (direct costs). PI: D. G\'omez-Ullate. Optimization algorithms for weather routing; main editor of \href{https://weathernavigation.com/}{\uline{weathernavigation.com}}.}
+	\resumeItemListEnd{}
+
+	\resumeQuadHeading{Smart Shipping}{Sep 2022 -- Jun 2025}
+	{BBVA Foundation, Research Projects in Mathematics 2021}{Team member}
+	\resumeItemListStart{}
+	\resumeItem{\textit{Mathematical optimization for a more efficient, safer and decarbonized maritime transport} (IE University and University of C\'adiz). PI: D. G\'omez-Ullate. Evolutionary, graph-based and variational algorithms for ship weather routing.}
+	\resumeItemListEnd{}
+
+	\resumeHeadingListEnd{}
+
+
+	\section{Publications}
+	\resumeItemListStart{}
+	\resumeItem{\textbf{D. Precioso}, F. Su\'arez, J. Jim\'enez de la Jara, R. Ballester-Ripoll, D. G\'omez-Ullate. \href{https://arxiv.org/abs/2605.31533}{\uline{BERS: Locally Optimal Continuous Algorithm for Maritime Weather Routing with Just-in-Time Arrival}}. arXiv:2605.31533, 2026. \textit{Under review at \textit{Ocean Engineering} (second round, minor revision).}}
+	\resumeItem{M. Marcos-P\'erez, J. Jim\'enez de la Jara, \textbf{D. Precioso}, A. Mu\~noz, M. V. Redondo-Neble, D. G\'omez-Ullate. \href{https://doi.org/10.1016/j.marstruc.2025.103863}{\uline{New analysis in the preliminary design for LNG and LPG ships}}. \textit{Marine Structures} 104, 2025 (Q1).}
+	\resumeItem{J. Jim\'enez de la Jara, \textbf{D. Precioso}, L. Bu, M. V. Redondo-Neble, R. Milson, R. Ballester-Ripoll, D. G\'omez-Ullate. \href{https://doi.org/10.1016/j.oceaneng.2024.120050}{\uline{HADAD: Hexagonal A-Star with Differential Algorithm Designed for weather routing}}. \textit{Ocean Engineering} 319, 120050, 2025 (Q1).}
+	\resumeItem{\textbf{D. Precioso}, R. Milson, L. Bu, Y. Menchions, D. G\'omez-Ullate. \href{https://doi.org/10.1007/s40314-024-02756-w}{\uline{Hybrid search method for Zermelo's navigation problem}}. \textit{Computational and Applied Mathematics} 43, 250, 2024 (Q2).}
+	\resumeItem{M. Navarro-Garc\'ia, \textbf{D. Precioso}, K. Gavira-O'Neill, A. Torres-Barr\'an, D. Gordo, V. Gallego, D. G\'omez-Ullate. \href{https://doi.org/10.3354/meps14338}{\uline{Aggregation dynamics of tropical tunas around drifting floating objects based on large-scale echo-sounder data}}. \textit{Marine Ecology Progress Series} 715, 129--143, 2023 (Q1).}
+	\resumeItem{I. Barbeito, \textbf{D. Precioso}, M. J. Sierra, S. Vegas-Azc\'arate, S. Fern\'andez Balbuena, B. Vitoriano, D. G\'omez-Ullate, R. Cao, S. Monge, and the Study Group for Non-Pharmaceutical Interventions in Spain. \href{https://doi.org/10.3389/fpubh.2023.1061331}{\uline{Effectiveness of non-pharmaceutical interventions in nine fields of activity to decrease SARS-CoV-2 transmission (Spain, September 2020 -- May 2021)}}. \textit{Frontiers in Public Health} 11, 2023 (Q1).}
+	\resumeItem{\textbf{D. Precioso}, D. G\'omez-Ullate. \href{https://doi.org/10.1007/s11227-023-05149-8}{\uline{Thresholding methods in non-intrusive load monitoring}}. \textit{The Journal of Supercomputing} 79, 14039--14062, 2023 (Q2).}
+	\resumeItem{\'A. Ruiz-Zafra, \textbf{D. Precioso}, B. Salvador, S. P. Lubi\'an-L\'opez, J. Jim\'enez de la Jara, I. Benavente-Fern\'andez, J. Pigueiras-del-Real, D. G\'omez-Ullate, L. Cervera-Gontard. \href{https://doi.org/10.1109/JBHI.2023.3240245}{\uline{NeoCam: An edge-cloud platform for non-invasive real-time monitoring in neonatal intensive care units}}. \textit{IEEE Journal of Biomedical and Health Informatics} 27(6), 2614--2624, 2023 (Q1).}
+	\resumeItem{\textbf{D. Precioso}, M. Navarro-Garc\'ia, K. Gavira-O'Neill, A. Torres-Barr\'an, D. Gordo, V. Gallego, D. G\'omez-Ullate. \href{https://doi.org/10.1016/j.fishres.2022.106263}{\uline{TUN-AI: Tuna biomass estimation with Machine Learning models trained on oceanography and echosounder FAD data}}. \textit{Fisheries Research} 250, 2022 (Q2).}
+	\resumeItemListEnd{}
+
+
+	\section{Patents and Open Resources}
+	\resumeItemListStart{}
+	\resumeItem{\textbf{NeoCam}, non-invasive neonatal monitoring system. Utility model, Spain, 2023. Co-inventor.}
+	\resumeItem{\textbf{Weather Routing Bench 1.0}: first open benchmark for maritime weather routing.}
+	\resumeItem{\textbf{SWOPP3 Phase 2} benchmark on CodaBench (2026), 8 participating teams.}
+	\resumeItemListEnd{}
+
+
+	\section{Teaching (IE University)}
+	\resumeHeadingListStart{}
+	\resumeQuadHeading{Computer Programming I}{2023 -- Present}
+	{Bachelor in Applied Mathematics}{}
+	\resumeItemListStart{}
+	\resumeItem{Student evaluations (overall / professor): 2025/26 4.73 / 4.87 (15 of 25 responses); 2024/25 4.25 / 4.31 (16 of 26); 2023/24 4.33 / 4.21 (14 of 15).}
+	\resumeItemListEnd{}
+	\resumeQuadHeading{Applied Math Lab}{2024 -- Present}
+	{Bachelor in Applied Mathematics}{}
+	\resumeQuadHeading{Coding Lab}{2024/25}
+	{Bachelor in Applied Mathematics}{}
+	\resumeItemListStart{}
+	\resumeItem{Student evaluation 2024/25: 4.25/5 overall; 4.40/5 professor (5 of 13 responses).}
+	\resumeItemListEnd{}
+	\resumeQuadHeading{Time Series Analysis}{2024/25}
+	{Bachelor in Philosophy, Politics, Law and Economics + Business Administration (PPLE-DBA)}{}
+	\resumeItemListStart{}
+	\resumeItem{Student evaluation 2024/25: 4.73/5 overall; 4.80/5 professor (5 of 8 responses).}
+	\resumeItemListEnd{}
+	\resumeHeadingListEnd{}
+	\resumeItemListStart{}
+	\resumeItem{Public course materials: \href{https://danielprecioso.com/Python-Course}{\uline{Python Course}} and \href{https://danielprecioso.com/BAM-Applied-Math-Lab}{\uline{Applied Math Lab}}.}
+	\resumeItemListEnd{}
+
+
+	\section{Supervision}
+	\resumeItemListStart{}
+	\resumeItem{Master's thesis, co-director: \textit{T\'ecnicas de interpolaci\'on de campo magn\'etico con Machine Learning en observatorios espaciales de ondas gravitatorias}. University of C\'adiz, Research Master in Systems and Computing Engineering. Defended 16 December 2024, grade Sobresaliente.}
+	\resumeItem{Bachelor's Capstone projects, IE University: 2 students, Sep 2026 -- Jul 2027 (in progress).}
+	\resumeItem{Mentor in IE Sustainability Datathons and hackathons.}
+	\resumeItemListEnd{}
+
+
+	\section{Awards and Recognition}
+	\resumeItemListStart{}
+	\resumeItem{Missions Val\`encia 2030: EUR 93,362.84, ranked first by the jury (2023).}
+	\resumeItem{Pitched Green Navigation at \href{https://www.youtube.com/watch?v=T2VRDSczxVM&t}{\uline{the European Parliament}} through The Arch programme (2023).}
+	\resumeItem{Prototypes for Humanity, Dubai (2024): selected among 100 innovations from more than 2,000 submissions.}
+	\resumeItem{2nd prize, \href{https://opencv.org/opencv-ai-competition-2021/\#regional-winners}{\uline{OpenCV AI Competition 2021}} (NeoCam), among more than 1,400 teams.}
+	\resumeItemListEnd{}
+
+
+	\section{Talks and Service}
+	\resumeItemListStart{}
+	\resumeItem{Organizing committee, Climate Change and Insurance Conference 2026 (CCI26), IE University, Segovia and Madrid, 2--4 September 2026.}
+	\resumeItem{Launched the SWOPP3 Phase 2 benchmark and presented BERS, SWOPP3 workshop, RISE/SSPA, Gothenburg, June 2026.}
+	\resumeItem{Presentations to the VIG steering committee (2025--2026) and to the VIG board, Vienna (May 2026).}
+	\resumeItem{Talk, Climate Change and Insurance 2025, ICMS, Edinburgh.}
+	\resumeItem{Guest on \textit{The Conversation Weekly} (2025) on maritime decarbonization.}
+	\resumeItem{Editor and designer of the IE Research Datalab website.}
+	\resumeItemListEnd{}
+
+
+	\section{Skills and Languages}
+	\resumeHeadingListStart{}
+	\resumeSectionType{Programming}{:}{Python (expert), R, MATLAB, SQL}
+	\resumeSectionType{Scientific ML}{:}{PyTorch, JAX, TensorFlow, scikit-learn}
+	\resumeSectionType{Tools}{:}{LaTeX, Git and CI/CD, Flask}
+	\resumeSectionType{Languages}{:}{Spanish (native), English (C1)}
+	\resumeHeadingListEnd{}
+
+\end{document}

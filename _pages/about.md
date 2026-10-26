@@ -20,11 +20,11 @@ Communication and design run through most of what I do. I have presented researc
 
 ## Teaching
 
-Teaching is one of the parts of my job I am most invested in. At IE University I deliver courses in computer programming, time series analysis, and applied mathematics. My students awarded me a [Teaching Excellence Award](https://danielprecioso.com/posts/2025/teaching-excellence-award) in 2025, which I'm genuinely proud of.
+Teaching is one of the parts of my job I am most invested in. At IE University I teach in the Bachelor of Applied Mathematics, where I adapt Python fundamentals for mathematicians and use applied-maths examples all the time (you can see them in the [course materials](https://danielprecioso.com/Python-Course/)). I also teach time series analysis and an applied maths lab.
 
 ## Current research
 
-My research focuses on weather routing for ships and climate risk modeling for insurance. I co-founded [Canonical Green](https://canonicalgreen.com), a climate-tech startup developing maritime routing software, and currently own and deliver Phase 1 (climate and mortality) of a climate impact modeling project for the insurance sector at [IE University](https://www.ie.edu/ieresearchdatalab/), with results presented regularly to Vienna Insurance Group.
+My research focuses on weather routing for ships and climate risk modeling for insurance. I co-founded [Canonical Green](https://canonicalgreen.com), a climate-tech startup developing maritime routing software, and work on a climate impact modeling project for the insurance sector at [IE University](https://www.ie.edu/ieresearchdatalab/), together with Vienna Insurance Group. I worked on Phase 1 (climate and mortality), I lead Phase 2, and I present results regularly to VIG.
 
 Browse my [projects](/portfolio/), [papers](/papers/), [posts](/posts/), and [creative work](/creative-work/), or get in touch if you would like to collaborate on an applied data or modeling problem.
 
