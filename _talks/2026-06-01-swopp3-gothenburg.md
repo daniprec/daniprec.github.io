@@ -1,5 +1,5 @@
 ---
-title: "BERS and the SWOPP3 weather routing benchmark"
+title: "BERS and the Weather Routing Benchmark"
 collection: talks
 type: "Workshop talk"
 permalink: /talks/2026-06-01-swopp3-gothenburg

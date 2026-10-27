@@ -16,6 +16,6 @@ As part of the Green Navigation project, funded by Fundación BBVA and the Spani
 
 I also contributed to a hybrid global-local search method for Zermelo's navigation problem, extending an existing algorithm to support more complex vector fields and obstacle avoidance.
 
-To support reproducible benchmarking in this field, the project released Weather Routing Bench 1.0, the first open benchmark for maritime weather routing. The work led to publications in Ocean Engineering and Computational and Applied Mathematics.
+To support reproducible benchmarking in this field, the project helped create the Weather Routing Benchmark, with RISE, the first open benchmark for maritime weather routing. The work led to publications in Ocean Engineering and Computational and Applied Mathematics.
 
 [Read the HADAD paper]({{ page.paperurl }})
