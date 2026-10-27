@@ -5,7 +5,7 @@ collection: publications
 permalink: /publications/2024/hybrid-search
 excerpt: "A novel Hybrid Search algorithm is introduced to address Zermelo's Navigation Problem, demonstrating improved efficiency and real-world applicability."
 date: 2024-05-20
-venue: 'Computational and Applied Mathematics'
+venue: 'Computational and Applied Mathematics 43, 250 (2024)'
 paperurl: 'https://doi.org/10.1007/s40314-024-02756-w'
 featured_image: "https://weathernavigation.com/images/2023-10-06-hybrid-search.jpg"
 

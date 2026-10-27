@@ -5,6 +5,7 @@ type: "Bachelor's course"
 permalink: /teaching/computer-programming-1
 venue: "IE University, Bachelor of Applied Mathematics"
 date: 2023-09-01
+evaluation: "4.73/5 in 2025/26 (15 of 25 students answered)"
 location: "Madrid, Spain"
 excerpt: "An introductory Python programming course for first-year students in Applied Mathematics. Topics include variables, data structures, functions, file I/O, and basic data visualization."
 courseurl: "https://danielprecioso.com/Python-Course/"

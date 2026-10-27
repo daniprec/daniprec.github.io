@@ -59,7 +59,7 @@ Browse my [projects](/portfolio/), [papers](/papers/), [posts](/posts/), and [cr
   {% for post in site.posts limit:3 %}
     <div class="news-item">
       <a href="{{ post.url }}">
-        <img src="{{ post.featured_image }}" alt="{{ post.title }}">
+        {% if post.featured_image %}<img src="{{ post.featured_image }}" alt="{{ post.title }}">{% endif %}
         <h3>{{ post.title }}</h3>
       </a>
     </div>

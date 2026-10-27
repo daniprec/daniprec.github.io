@@ -5,7 +5,7 @@ collection: publications
 permalink: /publications/2025/lng-lpg-design
 excerpt: "This paper presents statistical and machine learning analyses over a large dataset of LNG and LPG ships to improve the accuracy of early-stage vessel design."
 date: 2025-10-15
-venue: "Marine Structures"
+venue: "Marine Structures 104 (2025)"
 paperurl: "https://doi.org/10.1016/j.marstruc.2025.103863"
 featured_image: "https://danielprecioso.com/images/2025-10-15-marine-structures.jpg"
 

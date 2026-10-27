@@ -23,6 +23,9 @@ author_profile: true
         <p class="course-meta"><strong>{{ course.type }}</strong></p>
         <p class="course-meta">{{ course.venue }}</p>
         <p class="course-meta">{{ course.location }} &middot; {{ course.date | date: "%Y" }}</p>
+        {% if course.evaluation %}
+          <p class="course-meta">Student evaluation: {{ course.evaluation }}</p>
+        {% endif %}
         {% if course.excerpt %}
           <p class="course-excerpt">{{ course.excerpt }}</p>
         {% endif %}
@@ -32,6 +35,9 @@ author_profile: true
       </div>
     {% endfor %}
   </div>
+
+  <h2>Supervision</h2>
+  <p>I supervise two Capstone projects this year and co-supervised one last year. In December 2024 I co-directed a master's thesis at the University of Cádiz, on machine-learning interpolation of magnetic fields for space-based gravitational-wave observatories (<a href="/posts/2024/master-thesis-cadiz">read more</a>). I also mentor students in the IE sustainability datathons.</p>
 </div>
 
 <style>
