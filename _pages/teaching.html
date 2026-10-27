@@ -19,7 +19,7 @@ author_profile: true
         {% assign course_target = base_path | append: course.url %}
       {% endif %}
       <div class="course-card">
-        <h3 class="course-title"><a href="{{ course_target }}" class="course-title-link">{{ course.title }}</a></h3>
+        <h3 class="course-title">{% if course.courseurl %}<a href="{{ course_target }}" class="course-title-link">{{ course.title }}</a>{% else %}{{ course.title }}{% endif %}</h3>
         <p class="course-meta"><strong>{{ course.type }}</strong></p>
         <p class="course-meta">{{ course.venue }}</p>
         <p class="course-meta">{{ course.location }} &middot; {{ course.date | date: "%Y" }}</p>
@@ -29,9 +29,11 @@ author_profile: true
         {% if course.excerpt %}
           <p class="course-excerpt">{{ course.excerpt }}</p>
         {% endif %}
+        {% if course.courseurl %}
         <div class="course-links">
-          <a href="{{ course_target }}" class="course-btn"{% if course.courseurl %} target="_blank" rel="noopener noreferrer"{% endif %}>View course materials</a>
+          <a href="{{ course.courseurl }}" class="course-btn" target="_blank" rel="noopener noreferrer">View course materials</a>
         </div>
+        {% endif %}
       </div>
     {% endfor %}
   </div>

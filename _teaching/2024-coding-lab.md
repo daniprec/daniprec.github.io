@@ -6,6 +6,7 @@ permalink: /teaching/coding-lab
 venue: "IE University, Bachelor of Applied Mathematics"
 date: 2024-09-01
 location: "Madrid, Spain"
+courseurl: https://github.com/daniprec/BAM-Coding-Lab
 excerpt: "Practical coding lab sessions that go with the programming courses in the Bachelor of Applied Mathematics."
 ---
 
