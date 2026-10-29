@@ -20,7 +20,7 @@ Communication and design run through most of what I do. I have presented researc
 
 ## Teaching
 
-Teaching is one of the parts of my job I am most invested in. At IE University I teach in the Bachelor of Applied Mathematics, where I adapt Python fundamentals for mathematicians and use applied-maths examples all the time (you can see them in the [course materials](https://danielprecioso.com/Python-Course/)). I also teach time series analysis and an applied maths lab.
+Teaching is one of the parts of my job I am most invested in. At IE University I teach in the Bachelor of Applied Mathematics, where I adapt Python fundamentals for mathematicians and use applied-maths examples all the time (you can see them in the [course materials](https://danielprecioso.com/Python-Course/)). I also teach time series analysis and an applied maths lab. In October 2026, ANECA, Spain's national accreditation agency, gave me a positive evaluation for the faculty figures of Profesor Contratado Doctor and Profesor de Universidad Privada.
 
 ## Current research
 
