@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-I'm Daniel Precioso, a data scientist, researcher, and teacher. I hold a PhD in machine learning and have <span id="yearsOfExperience">7</span>+ years of experience across academia and industry.
+I'm Daniel Precioso, a computational scientist, researcher, and teacher. My background combines physics, statistical and computational methods, and a PhD in Computer Engineering focused on machine learning and data science. I have <span id="yearsOfExperience">7</span>+ years of experience across academia and industry.
 
 ## Applied work
 
-I work on predictive models, optimization, and decision support systems. My projects span healthcare, logistics, energy, maritime transport, and climate risk. I like working across domains and tend to get up to speed quickly. The technical foundations transfer well, and learning the context of a new problem is usually the most interesting part.
+I develop predictive models, optimization methods, and decision-support systems. My projects span healthcare, logistics, energy, maritime transport, and climate risk. I like working across domains and tend to get up to speed quickly. The technical foundations transfer well, and learning the context of a new problem is usually the most interesting part.
 
 ## Communication and design
 
@@ -24,7 +24,7 @@ Teaching is one of the parts of my job I am most invested in. At IE University I
 
 ## Current research
 
-My research focuses on weather routing for ships and climate risk modeling for insurance. I co-founded [Canonical Green](https://canonicalgreen.com), a climate-tech startup developing maritime routing software, and work on a climate impact modeling project for the insurance sector at [IE University](https://www.ie.edu/ieresearchdatalab/), together with Vienna Insurance Group. I worked on Phase 1 (climate and mortality), I lead Phase 2, and I present results regularly to VIG.
+My research focuses on computational methods for climate-resilient decision-making, particularly weather routing for ships and climate-risk modeling for insurance. I co-founded [Canonical Green](https://canonicalgreen.com), a climate-tech startup developing maritime routing software, and work on a climate impact modeling project for the insurance sector at [IE University](https://www.ie.edu/ieresearchdatalab/), together with Vienna Insurance Group. I worked on Phase 1 (climate and mortality), I lead Phase 2, and I present results regularly to VIG.
 
 Browse my [projects](/portfolio/), [papers](/papers/), [posts](/posts/), and [creative work](/creative-work/), or get in touch if you would like to collaborate on an applied data or modeling problem.
 
