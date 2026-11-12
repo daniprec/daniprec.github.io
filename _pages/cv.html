@@ -53,7 +53,7 @@ redirect_from:
             flex-direction: column;
             justify-content: flex-end;
         }
-        /* Download PDF Button */
+        /* CV downloads */
         .download-pdf-container {
             text-align: center;
             margin: 20px auto;
@@ -62,7 +62,8 @@ redirect_from:
         .download-pdf-btn {
             display: inline-block;
             padding: 12px 30px;
-            background-color: #007bff;
+            margin: 5px;
+            background-color: #0056b3;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -70,8 +71,18 @@ redirect_from:
             font-weight: bold;
             transition: background-color 0.3s ease;
         }
-        .download-pdf-btn:hover {
-            background-color: #0056b3;
+        .download-pdf-btn:hover,
+        .download-pdf-btn:focus-visible {
+            background-color: #003d80;
+        }
+        .download-pdf-btn--secondary {
+            background-color: #fff;
+            color: #0056b3;
+            border: 1px solid #0056b3;
+        }
+        .download-pdf-btn--secondary:hover,
+        .download-pdf-btn--secondary:focus-visible {
+            color: #fff;
         }
         .download-pdf-btn:before {
             content: "📄 ";
@@ -191,7 +202,11 @@ redirect_from:
 </div>
 
 <div class="download-pdf-container">
-    <a href="{{ base_path }}/cv/cv_daniel_precioso.pdf" class="download-pdf-btn" download>Download PDF Version</a>
+    <h1>Curriculum vitae</h1>
+    <p>My academic CV covers publications, research funding, industry collaborations, teaching and student supervision.</p>
+    <a href="{{ base_path }}/cv/cv_academic.pdf" class="download-pdf-btn" download>Academic CV (PDF)</a>
+    <a href="{{ base_path }}/cv/cv_daniel_precioso.pdf" class="download-pdf-btn download-pdf-btn--secondary" download>Professional CV (PDF)</a>
+    <p class="meta">Academic CV updated 12 November 2026.</p>
 </div>
 
 <div class="skills-section">
