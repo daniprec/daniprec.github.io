@@ -1,0 +1,96 @@
+start: 2019
+end: 2027
+lanes:
+  - { id: applied, label: Energy and health, color: "#0b6270" }
+  - { id: fish, label: Fisheries, color: "#3f7d5a" }
+  - { id: route, label: Maritime routing, color: "#0b3a4f" }
+  - { id: startup, label: Startup, color: "#d4472a" }
+  - { id: climate, label: Insurance and climate, color: "#8a5a00" }
+rails:
+  - { row: 0, from: 2019.7, to: 2023.55, label: "PhD at UCA Datalab, University of Cádiz" }
+  - { row: 0, from: 2023.75, to: 2026.95, label: "Postdoc and adjunct professor, IE University" }
+  - { row: 1, from: 2022.67, to: 2023.3, label: "Komorebi" }
+  - { row: 1, from: 2023.35, to: 2026.95, label: "Canonical Green, co-founder" }
+milestones:
+  - id: energy
+    lane: applied
+    year: 2019.0
+    label: "2019"
+    title: Energy monitoring
+    summary: Appliance-level electricity use from one smart-meter signal.
+    problem: A smart meter records the total load of a home. Utilities and researchers want to know which appliances are running.
+    contribution: I built neural-network models for this at Foqum (January to June 2019). Later, with my supervisor David Gómez-Ullate, I preprocessed the data, built the models and designed the evaluation scores for two papers.
+    outcome: A multi-output CNN paper at IEEE PowerTech 2021. A study of thresholding methods in The Journal of Supercomputing, 2023.
+    link: /portfolio/nilm/
+    link_label: Energy monitoring project
+  - id: health
+    lane: applied
+    year: 2020.9
+    label: "2020 to 2021"
+    title: Healthcare
+    summary: Neonatal monitoring and COVID-19 restriction analysis.
+    problem: Doctors assess a premature baby's movement by eye. Health authorities needed evidence on which COVID-19 restrictions reduced transmission.
+    contribution: For NeoCam, I built part of the Python library. I proposed reading a baby's movement with two bounding boxes, one for the head and one for the body, because pose estimators made for adults are not accurate on babies. I assisted on breathing from the depth camera, an idea that was not mine. The team built the rest. For the restrictions study, I processed the data and wrote code.
+    outcome: NeoCam won second prize in the OpenCV AI Competition 2021 among more than 1,400 projects. A proof of concept ran in the neonatal unit of Hospital Puerta del Mar. Papers in IEEE JBHI and Frontiers in Public Health, 2023.
+    link: /portfolio/neocam/
+    link_label: NeoCam project
+  - id: routing
+    lane: route
+    year: 2020.8
+    label: "2020 to 2022"
+    title: Weather routing begins
+    summary: Ship routes that use ocean currents, wind and waves.
+    problem: Ships can save fuel by choosing routes that account for weather and currents. Doing it well needs good ocean data and good optimization.
+    contribution: My supervisor David Gómez-Ullate suggested using the ocean current data from our fisheries work to route vessels. We developed the idea together, and I worked on it from the start. I preprocessed ocean data and helped develop graph-search algorithms. During a visit to Dalhousie University in 2022, I adapted a variational method to Python and built the benchmarks for the hybrid search paper.
+    outcome: Third prize at Ocean Hackathon 2020 and second prize at the 2021 grand finale in Brest. Smart Shipping joined the IncubAzul incubator in 2022. Hybrid search paper in Computational and Applied Mathematics, 2024.
+    link: /portfolio/green-navigation/
+    link_label: Green Navigation case study
+  - id: fisheries
+    lane: fish
+    year: 2022.0
+    label: "2021 to 2023"
+    title: Tun-AI
+    summary: Tuna biomass from buoy echosounders and ocean data.
+    problem: Tuna fleets receive buoy signals every hour, but turning them into biomass estimates took expert time.
+    contribution: I worked with Komorebi AI from UCA, well before my employment there began in September 2022. I cleaned and preprocessed the Satlink data (all of it), built the dashboard Satlink used (all of it) and assisted with the machine learning models.
+    outcome: Paper in Fisheries Research, 2022, and a follow-up on how tuna gather around buoys in Marine Ecology Progress Series, 2023. This work and the routing work make up my thesis, defended in July 2023 with Cum Laude.
+    link: /portfolio/tun-ai/
+    link_label: Tun-AI case study
+  - id: startup
+    lane: startup
+    year: 2023.3
+    label: "2023"
+    title: Canonical Green
+    summary: A startup that turns the routing research into software for ships.
+    problem: Routing research needed a path to real vessels and operators.
+    contribution: I co-founded Canonical Green. I developed and ran the pilot algorithms, presented the results at Opentop Demo Day, and pitched to the European Parliament and the Missions València jury. I am a board member and CTO.
+    outcome: A simulated pilot for a Boluda Towage tug. Boluda confirmed the numbers matched their expectations. It was not tested on a real vessel. Missions València 2030 grant of €93,362.84. Selected at Prototypes for Humanity 2024.
+    link: /portfolio/green-navigation/
+    link_label: Green Navigation case study
+  - id: ie
+    lane: route
+    year: 2024.2
+    label: "2023 to 2026"
+    title: Routing methods at IE
+    summary: New algorithms and an open benchmark for weather routing.
+    problem: Each group tests routing algorithms on its own data, so methods are hard to compare.
+    contribution: I co-developed HADAD and co-created the open Weather Routing Benchmark with RISE. I presented the results and BERS at SWOPP3 in Gothenburg.
+    outcome: HADAD in Ocean Engineering, 2025. First benchmark edition with eight teams in 2026. BERS is under review.
+    link: /portfolio/weather-routing-benchmark/
+    link_label: Weather Routing Benchmark
+  - id: vig
+    lane: climate
+    year: 2025.6
+    label: "2025 to 2026"
+    title: Climate risk for insurance
+    summary: Climate and mortality models for Vienna Insurance Group.
+    problem: Life and health insurers need to turn climate projections into quantities they can test and discuss.
+    contribution: In the first phase I was a member of the research team. In the second phase I lead the temperature and air quality package, including code, dashboard, reports and presentations.
+    outcome: A 2026 working paper, a dashboard demo in Edinburgh, and a VIG board decision in May 2026 to extend the project by one year.
+    link: /portfolio/climate-risk-insurance/
+    link_label: Climate risk case study
+connections:
+  - { from: routing, to: startup, type: led, text: "The startup was built on the weather-routing research. Its product is Green Navigation." }
+  - { from: routing, to: ie, type: led, text: "The routing research continued after the PhD at IE University, in projects led by David Gómez-Ullate. Reproducible benchmarks started in my thesis, grew into the 1,560-route benchmark of HADAD, and became the open benchmark with RISE." }
+  - { from: fisheries, to: routing, type: shared, text: "Both lines use ocean data. It explained tuna presence in Tun-AI and it drives route choice. My supervisor proposed reusing it for routing, and we developed that idea together." }
+  - { from: ie, to: vig, type: shared, text: "Shared themes: forecasting, uncertainty and decision support. The methods differ." }

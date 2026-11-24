@@ -1,0 +1,81 @@
+overlap_note: "Several roles overlapped. I enrolled in the PhD at the University of Cádiz in 2019 and finished in July 2023. Komorebi AI employed me from September 2022 to April 2023 under an industrial doctorate agreement, while I stayed enrolled at Cádiz. Canonical Green was founded in 2023 as I finished the PhD. I joined IE University later that year. Client projects such as Vienna Insurance Group run inside my IE University appointment. VIG is the client, not my employer."
+education:
+  - { degree: "PhD in Computer Engineering, University of Cádiz", years: "2019 to 2023", note: "Cum Laude. Thesis on data science for sustainable fishing and weather routing." }
+  - { degree: "MSc in Statistical and Computational Information Processing, Universidad Politécnica de Madrid", years: "2018 to 2019" }
+  - { degree: "Degree in Physics, Complutense University of Madrid", years: "2014 to 2018" }
+entries:
+  - id: ie
+    role: Postdoctoral researcher and adjunct professor
+    org: IE University, School of Science and Technology
+    period: "2023 to present"
+    setting: University appointment. Research funded by Fundación BBVA and IE University. Industry work runs as research projects inside this appointment.
+    views: [applied, research]
+    items:
+      - views: [applied, research]
+        text: "Climate and mortality for Vienna Insurance Group (client), through the IE Insurance and Tech Lab. Phase 1 (2025/26): research team member. Phase 2 (2026/27): I lead the temperature and air quality package, including code, dashboard, reports and presentations."
+        link: { label: Case study, url: /portfolio/climate-risk-insurance/ }
+      - views: [applied, research]
+        text: "Weather routing methods with RISE (Research Institutes of Sweden): co-developed HADAD, co-created the open Weather Routing Benchmark and presented BERS at SWOPP3."
+        link: { label: Benchmark, url: /portfolio/weather-routing-benchmark/ }
+      - views: [research]
+        text: "KAN4Met, a research project on Kolmogorov-Arnold Networks for weather forecasting. Team member. Early stage, no results yet."
+        link: { label: Project, url: /portfolio/kan4met/ }
+      - views: [research]
+        text: "Teaching in the Bachelor of Applied Mathematics and related programmes: Computer Programming I, Coding Lab, Time Series Analysis and Applied Math Lab."
+        link: { label: Courses, url: /teaching/ }
+      - views: [applied, research]
+        text: "Presentations to the VIG steering committee and to the VIG board in Vienna (May 2026). Organising committee member of the Climate Change and Insurance Conference 2026."
+  - id: cg
+    role: Co-founder and CTO
+    org: Canonical Green
+    period: "2023 to present"
+    setting: Climate-tech startup built on the weather-routing research. Its product is Green Navigation. I am a board member. The 2023 announcements name me as COO.
+    views: [applied]
+    items:
+      - views: [applied]
+        text: "Developed and ran the routing algorithms in a simulated pilot for a Boluda Towage tug, with about 10% lower GHG emissions. Not tested on a real vessel."
+        link: { label: Case study, url: /portfolio/green-navigation/ }
+      - views: [applied]
+        text: "Pitched to the Missions València 2030 jury (first ranked, €93,362.84) and at the European Parliament through The Arch programme (2023)."
+      - views: [applied]
+        text: "Showcased at Prototypes for Humanity 2024 in Dubai, among 100 innovations selected from more than 2,000 submissions."
+  - id: komorebi
+    role: Data scientist, industrial doctorate
+    org: Komorebi AI
+    period: "September 2022 to April 2023"
+    setting: Employed by Komorebi AI under an industrial doctorate agreement with the University of Cádiz. I had already worked with Komorebi from UCA before this contract.
+    views: [applied]
+    items:
+      - views: [applied]
+        text: "Data analysis and processing, and the design, training and validation of machine learning models."
+      - views: [applied]
+        text: "Designed and developed a dashboard for data analysis and model deployment. Satlink used it."
+        link: { label: Tun-AI, url: /portfolio/tun-ai/ }
+  - id: uca
+    role: PhD researcher
+    org: UCA Datalab, University of Cádiz
+    period: "2019 to 2023"
+    setting: University research group. Much of the work was with industry or hospital partners, as shown below.
+    views: [applied, research]
+    items:
+      - views: [applied, research]
+        text: "Tun-AI with Komorebi AI and Satlink: tuna biomass from buoy echosounder and ocean data."
+        link: { label: Case study, url: /portfolio/tun-ai/ }
+      - views: [applied, research]
+        text: "NeoCam with Hospital Puerta del Mar: contactless monitoring of premature babies. Second prize in the OpenCV AI Competition 2021."
+        link: { label: Project, url: /portfolio/neocam/ }
+      - views: [applied, research]
+        text: "Smart Shipping: weather routing research that led to a startup. Ocean Hackathon prizes in 2020 and 2021, IncubAzul incubator in 2022."
+        link: { label: Case study, url: /portfolio/green-navigation/ }
+      - views: [research]
+        text: "Energy monitoring, COVID-19 restriction analysis, and visits to Dalhousie University (2022 to 2024, host Prof. Robert Milson)."
+        link: { label: Energy project, url: /portfolio/nilm/ }
+  - id: foqum
+    role: Junior data scientist
+    org: Foqum
+    period: "January to June 2019"
+    setting: Company role before the PhD.
+    views: [applied]
+    items:
+      - views: [applied]
+        text: "Built neural-network models for non-intrusive load monitoring, which estimates appliance use from a single power signal."

@@ -1,0 +1,23 @@
+<section class="s-section" id="work" aria-labelledby="work-h">
+  <div class="s-wrap">
+    <p class="s-eyebrow">Selected work</p>
+    <h2 id="work-h">Three projects in detail</h2>
+    <p class="s-lead">Each case study covers who needed the work, what I did, what was delivered, and the limits of the results.</p>
+    <div class="cases">
+      {% for c in site.data.home.cases %}
+      <article class="case">
+        <img src="{{ c.image }}" alt="{{ c.alt }}" loading="lazy" width="640" height="360">
+        <div class="case__body">
+          <h3>{{ c.title }}</h3>
+          <dl>
+            <div><dt>Problem</dt><dd>{{ c.problem }}</dd></div>
+            <div><dt>My contribution</dt><dd>{{ c.mine }}</dd></div>
+            <div><dt>Result</dt><dd>{{ c.result }}</dd></div>
+          </dl>
+          <a class="case__more" href="{{ c.url }}">Read the case study<span class="screen-reader-text"> on {{ c.title }}</span></a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

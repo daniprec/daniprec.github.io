@@ -1,0 +1,128 @@
+hero:
+  name: Daniel Precioso
+  role: Applied data scientist and co-founder.
+  intro: I develop models and decision tools with industry partners, drawing on experience across energy, healthcare, fisheries, maritime transport and insurance.
+  roles: Co-founder and CTO of Canonical Green, a maritime routing startup. Postdoctoral researcher and adjunct professor at IE University, Madrid. PhD in Computer Engineering, University of Cádiz.
+  photo: /images/profile_2026.jpg
+  photo_alt: Portrait of Daniel Precioso
+
+strengths:
+  - id: methods
+    title: Developing new methods
+    summary: Original algorithms and models, tested on open benchmarks.
+    proof_value: "Up to 27%"
+    proof: fuel savings against the shortest route in extreme weather, for the HADAD routing method (2025)
+    image: /images/2025-01-01-hadad.jpg
+    image_alt: Weather-optimised ship route drawn over an ocean current map
+    panel_title: Methods I helped develop
+    examples:
+      - title: HADAD, a weather routing algorithm
+        image: /images/2025-01-01-hadad.jpg
+        alt: Route computed by HADAD over ocean currents
+        text: A global search on a hexagonal grid, followed by a local refinement in continuous space. Tested on 1,560 routes over a full year. On average it saved an extra 4% fuel against a pure graph search.
+        mine: I co-developed it. Published in Ocean Engineering, 2025.
+        links:
+          - { label: Paper, url: "https://doi.org/10.1016/j.oceaneng.2024.120050" }
+          - { label: Case study, url: /portfolio/green-navigation/ }
+      - title: Weather Routing Benchmark and BERS
+        image: /images/2026-06-01-bers.png
+        alt: Candidate routes between Santander and New York
+        text: The first open benchmark for weather routing, with RISE. Eight teams took part in the first edition. BERS combines evolutionary search with a variational refinement and is under review.
+        mine: I co-created the benchmark and presented the results and BERS at SWOPP3 in Gothenburg.
+        links:
+          - { label: Benchmark, url: /portfolio/weather-routing-benchmark/ }
+          - { label: BERS preprint, url: "https://arxiv.org/abs/2605.31533" }
+      - title: Temperature-dependent life tables
+        image: /images/2026-03-01-climate-life-tables.png
+        alt: Chart of mortality multipliers by age for 2050, 2075 and 2099
+        text: A transparent way to adjust projected life tables for temperature-related mortality. Uncertainty carries through to annuities, life insurance and reserves. Illustrated with Bucharest.
+        mine: First author of the IE University working paper, 2026.
+        links:
+          - { label: Working paper, url: "https://doi.org/10.63537/144174297" }
+
+  - id: tools
+    title: Building tools for industry
+    summary: Models, pilots and prototypes built with companies.
+    proof_value: "About 10%"
+    proof: lower GHG emissions in simulated tugboat routes for Boluda Towage (2023 pilot)
+    image: /images/2024-11-22-dubai.jpg
+    image_alt: Daniel Precioso at the Green Navigation stand at Prototypes for Humanity in Dubai
+    panel_title: Tools built with industry partners
+    examples:
+      - title: Tun-AI with Satlink
+        image: /images/2023-07-27-tunai.png
+        alt: World map of estimated tuna biomass under drifting buoys
+        maturity: Published research model, with a dashboard in use by Satlink
+        text: Estimates tuna biomass under drifting buoys from echosounder and ocean data.
+        mine: I built the dashboard, cleaned the data and assisted with the models.
+        links:
+          - { label: Case study, url: /portfolio/tun-ai/ }
+      - title: Green Navigation pilot with Boluda Towage
+        image: /images/2023-09-29-opentop-demo.jpeg
+        alt: Pilot results presented at Opentop Demo Day
+        maturity: Simulated pilot. No real-world test yet.
+        text: Weather routing applied to tugboat routes. Boluda said the numbers matched their expectations.
+        mine: I co-founded Canonical Green, developed and ran the algorithms, and presented the results.
+        links:
+          - { label: Case study, url: /portfolio/green-navigation/ }
+      - title: Climate and mortality tools for Vienna Insurance Group
+        image: /images/2026-05-13-vig-tower.jpeg
+        alt: View of Vienna from the VIG tower
+        maturity: Ongoing client research project, with a dashboard demo
+        text: Models and a dashboard that translate climate scenarios into mortality and life table quantities.
+        mine: I lead the temperature and air quality package, including code, dashboard, reports and presentations.
+        links:
+          - { label: Case study, url: /portfolio/climate-risk-insurance/ }
+
+  - id: clarity
+    title: Making complex ideas clear
+    summary: Talks, teaching and plain-language writing for mixed audiences.
+    proof_value: "VIG board"
+    proof: presented climate and mortality results in Vienna, May 2026. The board approved a second year of the project.
+    image: /images/2025-09-10-edinburgh-talk.jpg
+    image_alt: Daniel Precioso presenting the VIG project in Edinburgh
+    panel_title: Communication, teaching and outreach
+    examples:
+      - title: Board presentation in Vienna
+        image: /images/2026-05-13-vig-tower.jpeg
+        alt: Vienna skyline from the VIG tower
+        text: I presented the method, the results and what they mean for reserving decisions to the Vienna Insurance Group board. The aim was full rigour with a message that non-specialists could follow.
+        links:
+          - { label: Read the post, url: /posts/2026/vig-vienna-board }
+      - title: The Conversation Weekly
+        image: /images/2025-03-27-the-conversation.jpg
+        alt: Container ship at sea
+        text: Invited to the podcast to explain low-emission shipping to a general audience. I also pitched Green Navigation at the European Parliament in 2023.
+        links:
+          - { label: Read the post, url: /posts/2025/the-conversation }
+          - { label: European Parliament, url: /posts/2023/european-parliament }
+      - title: Teaching at IE University
+        image: /images/2025-11-28-teaching-award.jpeg
+        alt: IE University Award for Teaching Excellence certificate
+        text: I teach Python and applied maths to mathematics students and publish the course materials. I received a Teaching Excellence Award for 2025/26.
+        links:
+          - { label: Courses, url: /teaching/ }
+          - { label: Award post, url: /posts/2025/teaching-excellence-award }
+
+cases:
+  - title: Tun-AI
+    url: /portfolio/tun-ai/
+    image: /images/2023-07-27-tunai.png
+    alt: Map of estimated tuna biomass
+    problem: Tuna fleets receive echosounder signals from drifting buoys, but reading them takes expert time.
+    mine: I cleaned the Satlink buoy data, built the dashboard Satlink used, and assisted with the models.
+    result: Published in Fisheries Research, 2022. The best classifier reached F1 0.925 on buoys holding more than 10 tonnes.
+  - title: Green Navigation
+    url: /portfolio/green-navigation/
+    image: /images/2025-01-01-hadad.jpg
+    alt: Weather-optimised route over ocean currents
+    problem: Ships burn fuel on routes that ignore wind, waves and currents.
+    mine: I co-developed the routing algorithms, ran the pilot simulations and co-founded Canonical Green.
+    result: About 10% lower GHG emissions in simulated tugboat routes. A €93,362.84 Missions València 2030 grant.
+  - title: Climate risk for Vienna Insurance Group
+    url: /portfolio/climate-risk-insurance/
+    image: /images/2026-03-01-climate-life-tables.png
+    alt: Mortality multiplier chart by age
+    problem: Life and health insurers need climate projections in actuarial terms they can test and discuss.
+    mine: I build the models, code and dashboard, and present results to the steering committee and the board. I lead the temperature and air quality package.
+    result: A 2026 working paper, a dashboard demo, and a board decision to extend the project by one year.

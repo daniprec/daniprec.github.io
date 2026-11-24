@@ -2,465 +2,114 @@
 layout: default
 title: "Experience"
 permalink: /cv/
-author_profile: true
+author_profile: false
 redirect_from:
-  - /resume
-  - /experience
+- /resume
+- /experience
 ---
-
 {% include base_path %}
+{% assign xp = site.data.experience %}
+<a class="skip-link" href="#main-content">Skip to content</a>
+<main id="main-content" class="s-wrap">
+  <header class="xp-head">
+    <p class="s-eyebrow">Experience and CV</p>
+    <h1>Experience</h1>
+    <p class="s-lead">I move between university research, client projects and a startup. Pick a view to see the part of my work that matters to you.</p>
+    <div class="xp-dl">
+      <a class="s-btn" href="/cv/cv_daniel_precioso.pdf" download>Download CV for industry roles (PDF)</a>
+      <a class="s-btn s-btn--ghost" href="/cv/cv_academic.pdf" download>Download academic CV (PDF)</a>
+    </div>
+    <p class="xp-meta">Both PDFs follow the content of this page. The academic CV was updated in November 2026.</p>
+  </header>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .timeline-container {
-            display: grid;
-            grid-template-columns: 45% 10% 45%; /* 3 columns with specified widths */
-            grid-template-rows: repeat(91, auto); /* Num rows */
-            gap: 10px; /* Gap between grid items */
-            margin: 0 auto;
-            width: 80%;
-            padding-top: 0px;
-        }
-        .timeline-item {
-            padding: 15px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            border-left: 3px solid #007bff;
-            box-sizing: border-box;
-        }
-        .timeline-item h3 {
-            margin-top: 0;
-            color: #007bff;
-        }
-        .timeline-year {
-            grid-column: 2/3; /* Center the year */
-            padding: 0px;
-            background-color: #007bff;
-            color: white;
-            border-radius: 5px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-        }
-        /* CV downloads */
-        .download-pdf-container {
-            text-align: center;
-            margin: 20px auto;
-            padding: 10px 0;
-        }
-        .download-pdf-btn {
-            display: inline-block;
-            padding: 12px 30px;
-            margin: 5px;
-            background-color: #0056b3;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1em;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .download-pdf-btn:hover,
-        .download-pdf-btn:focus-visible {
-            background-color: #003d80;
-        }
-        .download-pdf-btn--secondary {
-            background-color: #fff;
-            color: #0056b3;
-            border: 1px solid #0056b3;
-        }
-        .download-pdf-btn--secondary:hover,
-        .download-pdf-btn--secondary:focus-visible {
-            color: #fff;
-        }
-        .download-pdf-btn:before {
-            content: "📄 ";
-            margin-right: 5px;
-        }
-        /* Warning for small screens */
-        .mobile-warning {
-            display: none;
-            background-color: #ffcc00;
-            color: #000;
-            padding: 10px;
-            text-align: center;
-            font-size: 1em;
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-        }
-        @media (max-width: 700px) {
-            .mobile-warning {
-                display: block;
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-            }
-            .timeline-container {
-                grid-template-columns: 49% 2% 49%; /* 3 columns with specified widths */
-                width: 100%;
-            }
-            .timeline-year {
-                display: none;
-            }
-        }
-        /* Technical Skills Section */
-        .skills-section {
-            background-color: #f0f8ff;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 20px auto;
-            width: 80%;
-            border-left: 4px solid #007bff;
-        }
+  <div class="xp-views" role="group" aria-label="Choose a view" data-view-bar>
+    <button type="button" data-view="applied" aria-pressed="true">Industry &amp; applied work</button>
+    <button type="button" data-view="research" aria-pressed="false">Research &amp; teaching</button>
+    <button type="button" data-view="all" aria-pressed="false">All experience</button>
+  </div>
+  <p class="xp-meta" id="view-status" aria-live="polite"></p>
 
-        .skills-section h2 {
-            color: #007bff;
-            margin-top: 0;
-        }
+  <p class="xp-note">{{ xp.overlap_note }}</p>
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-top: 15px;
-        }
+  <section class="xp-edu" aria-labelledby="edu-h">
+    <h2 id="edu-h">Education</h2>
+    <ul>{% for e in xp.education %}<li><strong>{{ e.degree }}</strong>, {{ e.years }}.{% if e.note %} {{ e.note }}{% endif %}</li>{% endfor %}</ul>
+  </section>
 
-        .skills-grid div {
-            padding: 10px;
-            background-color: white;
-            border-radius: 3px;
-            border-left: 2px solid #007bff;
-        }
+  <ol class="xp-list">
+    {% for e in xp.entries %}
+    <li class="xp-entry" data-views="{{ e.views | join: ' ' }}">
+      <h3>{{ e.role }}</h3>
+      <p class="xp-org">{{ e.org }}</p>
+      <p class="xp-period">{{ e.period }}</p>
+      <p class="xp-setting">{{ e.setting }}</p>
+      <ul>
+        {% for i in e.items %}
+        <li data-views="{{ i.views | join: ' ' }}">{{ i.text }}{% if i.link %} <a href="{{ i.link.url }}">{{ i.link.label }}</a>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ol>
 
-        /* Bottom sections (Publications, Awards, Languages) */
-        .section {
-            margin: 30px auto;
-            width: 80%;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            border-left: 3px solid #007bff;
-        }
-
-        .section h2 {
-            color: #007bff;
-            margin-top: 0;
-        }
-
-        .section ul {
-            margin-top: 10px;
-        }
-
-        .section li {
-            margin-bottom: 8px;
-        }
-
-        /* Meta and highlight styles */
-        .meta {
-            color: #666;
-            font-style: italic;
-            margin: 5px 0;
-        }
-
-        .highlight {
-            background-color: #fff3cd;
-            padding: 2px 5px;
-            border-radius: 3px;
-        }
-
-        /* Mobile optimization for skills grid */
-        @media (max-width: 700px) {
-            .skills-section {
-                width: 95%;
-            }
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-            .section {
-                width: 95%;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<div class="mobile-warning">
-    For the best experience, please use a wider screen.
-</div>
-
-<div class="download-pdf-container">
-    <h1>Curriculum vitae</h1>
-    <p>My academic CV covers publications, research funding, industry collaborations, teaching and student supervision.</p>
-    <a href="{{ base_path }}/cv/cv_academic.pdf" class="download-pdf-btn" download>Academic CV (PDF)</a>
-    <a href="{{ base_path }}/cv/cv_daniel_precioso.pdf" class="download-pdf-btn download-pdf-btn--secondary" download>Professional CV (PDF)</a>
-    <p class="meta">Academic CV updated 12 November 2026.</p>
-</div>
-
-<div class="skills-section">
-    <h2 style="margin-top: 0;">Technical Skills</h2>
-    <div class="skills-grid">
-        <div>
-            <strong>Languages & Core:</strong> Python (expert), R, MATLAB, SQL
-        </div>
-        <div>
-            <strong>ML/DL Frameworks:</strong> scikit-learn, TensorFlow, Keras, PyTorch, JAX
-        </div>
-        <div>
-            <strong>GenAI & LLMs:</strong> OpenAI API, Claude, Gemini, Multi-agent systems, Prompt engineering
-        </div>
-        <div>
-            <strong>MLOps & DevOps:</strong> Git (CI/CD, pre-commit hooks), Docker (basics), Version control workflows
-        </div>
-        <div>
-            <strong>Deployment & Web:</strong> Flask, Streamlit, PythonAnywhere, REST APIs
-        </div>
-        <div>
-            <strong>Cloud & Data:</strong> AWS S3, IAM, Data pipelines (ETL), Pandas, NumPy
-        </div>
-        <div>
-            <strong>Visualization:</strong> Matplotlib, Seaborn, Interactive dashboards
-        </div>
-        <div>
-            <strong>Communication:</strong> Technical presentations, Scientific outreach, Visual storytelling
-        </div>
-    </div>
-</div>
-
-<div class="timeline-container">
-    <div class="section-title" style="grid-column: 1/2; grid-row: -116/-115;
-        font-size: 1.5em;
-        font-weight: bold;
-        padding: 10px 0;
-        color: #007bff;">
-        Professional Experience
-    </div>
-    <div class="section-title" style="grid-column: 3/4; grid-row: -116/-115;
-        font-size: 1.5em;
-        font-weight: bold;
-        padding: 10px 0;
-        color: #007bff;">
-        Academic Experience
-    </div>
-    <div class="timeline-year" style="grid-row: -7/-1;">
-        <h3>2017</h3>
-    </div>
-    <div class="timeline-year" style="grid-row: -19/-7;">
-        <h3>2018</h3>
-    </div>
-    <div class="timeline-year" style="grid-row: -31/-19;">
-        <h3>2019</h3>
-    </div>
-    <div class="timeline-year" style="grid-row: -43/-31;">
-        <h3>2020</h3>
-    </div>
-    <div class="timeline-year" style="grid-row: -55/-43;">
-        <h3>2021</h3>
-    </div>
-    <div class="timeline-year" style="grid-row: -67/-55;">
-        <h3>2022</h3>
-    </div>
-    <div class="timeline-year" style="grid-row: -79/-67;">
-        <h3>2023</h3>
-    </div>
-    <div class="timeline-year" style="grid-row: -91/-79;">
-        <h3>2024</h3>
-    </div>
-    <div class="timeline-year" style="grid-row: -103/-91;">
-        <h3>2025</h3>
-    </div>
-    <div class="timeline-year" style="grid-row: -115/-103;">
-        <h3>2026</h3>
-    </div>
-    <div class="timeline-item" style="grid-row: -115/-97;">
-        <h3>Senior Data Scientist @ IE University × Vienna Insurance Group</h3>
-        <p class="meta">June 2025 - Present | Madrid, Spain</p>
-        <p class="meta">Client: Vienna Insurance Group</p>
-        <p>I work on climate risk data science at IE Insurance and Tech Lab, drawing on methods from ML, statistics, and climate science to address real insurance problems.</p>
-        <ul>
-            <li><strong>Worked on Phase 1 (climate and mortality) for Vienna Insurance Group and lead Phase 2</strong>, with stakeholder presentations and coordination with insurance teams.</li>
-            <li><strong>Present research findings directly to VIG executive leadership</strong> and cross-functional teams, translating climate-mortality models into results that insurance teams can use.</li>
-            <li>Deployed <strong>interactive Flask web application</strong> (hosted on PythonAnywhere) for climate mortality risk visualization, enabling real-time exploration of SSP-RCP scenarios by insurance analysts and public stakeholders.</li>
-            <li>Built <strong>climate-mortality models using DLNMs and Relative Risk curves</strong>, combining climate projections, demographic data and mortality statistics.</li>
-            <li>Established <strong>CI/CD workflows and pre-commit hooks</strong> for data pipeline quality control, ensuring reproducible research outputs and streamlined client deliverables.</li>
-        </ul>
-            <p><span class="highlight"><strong>Highlight:</strong> Presented research at ICMS Climate Change and Insurance 2025 workshop in Edinburgh to actuaries, climate scientists, and industry representatives.</span></p>
-    </div>
-    <div class="timeline-item" style="grid-row: -97/-73;">
-        <h3>COO (Technical Contributor) @ Canonical Green</h3>
-        <p class="meta">April 2023 - Present | Madrid, Spain</p>
-        <ul>
-            <li>Built <strong>route optimization models</strong> for maritime clients. In pilot simulations with a tugboat operator, weather routing cut GHG emissions by about 10%.</li>
-            <li>Managed data workflows using <strong>AWS S3</strong>, configured permissions, and maintained cloud-to-on-prem data transfer for operational climate datasets.</li>
-            <li><strong>Prepared and delivered technical presentations</strong> to investors, institutional stakeholders, and public audiences, adapting technical content for each setting.</li>
-            <li>Showcased the project at <strong>Prototypes for Humanity 2024 in Dubai</strong>, selected among 100 innovations from over 2,000 global submissions.</li>
-            <li><strong>Presented Green Navigation at the European Parliament</strong> through The Arch programme.</li>
-            <li>Built website, news posts, and talk materials that increased visibility among potential clients and collaborators.</li>
-        </ul>
-    </div>
-    <div class="timeline-item" style="grid-column: 1/2; grid-row: -73/-37;">
-        <h3>Data Scientist @ Komorebi AI</h3>
-        <p class="meta">September 2022 - April 2023 | Madrid, Spain</p>
-        <ul>
-            <li>Built <strong>end-to-end data pipelines</strong> processing 500K+ sensor data points from raw inputs to production-ready ML models for industrial fish monitoring.</li>
-            <li>Built <strong>gradient-boosted and CNN models</strong> to estimate tuna biomass under echosounder buoys (Fisheries Research, 2022).</li>
-            <li>Developed <strong>interactive Streamlit dashboard</strong> used daily by operations team for decision-making.</li>
-            <li>Collaborated with <strong>Satlink (industrial client)</strong> to translate business requirements into technical ML solutions.</li>
-            <li>Implemented <strong>Git workflows with version control and code reviews</strong> for team collaboration on production codebase.</li>
-        </ul>
-    </div>
-    <div class="timeline-item" style="grid-column: 1/2; grid-row: -37/-25">
-        <h3>Predoctoral Research Staff @ University of Cádiz</h3>
-        <p>Sep 2019 - Aug 2022</p>
-        <i>Cádiz, Spain</i>
-        <p>I contributed to multiple research projects with industrial partners, building machine learning solutions for applied problems.</p>
-        <ul>
-            <li>Developed machine learning models for Industry 4.0 applications in energy monitoring and sustainable fishing, in collaboration with industrial partners.</li>
-            <li>Collaborated with Spain's Health Alerts Centre to develop COVID-19 ICU forecasting models.</li>
-            <li>Presented research at international conferences to technical and mixed audiences.</li>
-            <li>Published 5 peer-reviewed papers in Q1/Q2 journals on applied machine learning and data science.</li>
-        </ul>
-        <i><strong>Skills:</strong> Machine Learning, Computer Vision, Scientific Communication, Model Development, Cross-Sector Collaboration</i>
-    </div>
-    <div class="timeline-item" style="grid-column: 1/2; grid-row: -25/-19;">
-        <h3>Junior Data Scientist @ Foqum</h3>
-        <p class="meta">January 2019 - June 2019 | Madrid, Spain</p>
-        <ul>
-            <li>Built neural network models using <strong>Keras and TensorFlow for NILM (Non-Intrusive Load Monitoring)</strong> to estimate appliance usage from aggregate power data.</li>
-            <li>Contributed to energy disaggregation projects optimizing power consumption analysis for energy sector clients.</li>
-            <li>Adopted professional <strong>Git workflows and reproducibility practices</strong> for production ML systems.</li>
-        </ul>
-    </div>
-    <!-- Academia -->
-         <div class="timeline-item" style="grid-column: 3/4; grid-row: -115/-78;">
-        <h3>Postdoctoral Researcher & Adjunct Professor @ IE University</h3>
-        <p class="meta">September 2023 - Present | Madrid and Segovia, Spain</p>
-        <p>Lead applied research on machine learning and climate modeling, while teaching technical courses to diverse student audiences.</p>
-        <ul>
-            <li><strong>Implemented Kolmogorov-Arnold Networks (KANs) for weather forecasting</strong>, applying a novel neural architecture (published 2024) to meteorological time series.</li>
-            <li><strong>Developed optimization algorithms for weather-based maritime routing</strong>, integrating meteorological data with route planning to reduce GHG emissions in shipping industry.</li>
-            <li>Presented research at the <a href="https://danielprecioso.com/posts/2025/edinburgh">ICMS Climate Change and Insurance 2025 workshop</a> in Edinburgh to an international audience of actuaries, climate scientists, and industry practitioners.</li>
-            <li><strong>Delivered 4 technical courses to 100+ students</strong> (Computer Programming I, Coding Lab, Time Series Analysis, Applied Math Lab), translating complex programming and statistics concepts for undergraduate audiences.</li>
-            <li>Built and maintained <strong>IE Research Datalab's official website</strong>, improving research group visibility and communication of technical projects to broader audiences.</li>
-            <li><strong>Mentored undergraduate researchers</strong> on data science projects, developing curriculum materials and guiding student development in Python, ML frameworks, and research methodologies.</li>
-        </ul>
-    </div>
-    <div class="timeline-item" style="grid-column: 3/4; grid-row: -78/-25;">
-        <h3>PhD in Computer Engineering @ University of Cádiz</h3>
-        <p class="meta">September 2019 - July 2023 | Cádiz, Spain</p>
-        <p><strong>Thesis:</strong> "Applications of Machine Learning and Data Science to the Blue Economy" (Cum Laude)</p>
-        <ul>
-            <li>Collaborated with <strong>industrial clients in healthcare, energy, and maritime transport</strong> to build applied ML solutions.</li>
-            <li>Developed <strong>computer vision system (NeoCam)</strong> for neonatal monitoring that won 2nd prize in OpenCV AI Competition 2021 (1,400+ teams).</li>
-            <li>Built <strong>COVID-19 ICU forecasting models</strong> in collaboration with Spain's Health Alerts Centre.</li>
-            <li>Published <strong>5 papers in Q1/Q2 journals</strong> on applied machine learning and data science.</li>
-            <li>Developed <strong>automated data pipelines in Python/R</strong> from raw data ingestion to production-ready research outputs.</li>
-        </ul>
-    </div>
-    <div class="timeline-item" style="grid-column: 3/4; grid-row: -25/-13;">
-        <h3>MSc in Statistical and Computational Information Processing @ UPM</h3>
-        <p class="meta">September 2018 - July 2019 | Madrid, Spain</p>
-        <p>Specialization in data science, machine learning, and big data technologies.</p>
-    </div>
-    <div class="timeline-item" style="grid-column: 3/4; grid-row: -13/-1;">
-        <h3>Degree in Physics @ Complutense University of Madrid</h3>
-        <p class="meta">September 2014 - July 2018 | Madrid, Spain</p>
-        <p>Honors in Quantum Physics and Astrophysics. Foundation in rigorous analytical thinking.</p>
-    </div>
-</div>
-
-<div class="section">
-    <h2>Accreditations</h2>
+  <section class="xp-block" data-views="applied research" aria-labelledby="rec-h">
+    <h2 id="rec-h">Recognition</h2>
     <ul>
-        <li><strong>ANECA (Spain), positive evaluation, October 2026</strong> - Profesor Contratado Doctor (PCD) and Profesor de Universidad Privada (PUP), the national accreditations required to hold these faculty positions in Spain.</li>
+      <li>OpenCV AI Competition 2021: second prize among more than 1,400 projects (NeoCam).</li>
+      <li>Missions València 2030: first ranked by the jury, €93,362.84 awarded to Canonical Green (2023).</li>
+      <li>Prototypes for Humanity 2024: selected among 100 innovations from more than 2,000 submissions.</li>
+      <li>Ocean Hackathon: third prize in 2020 and second prize in the 2021 grand finale (Smart Shipping).</li>
+      <li>IE University Award for Teaching Excellence, 2025/26.</li>
     </ul>
-</div>
+  </section>
 
-<div class="section">
-    <h2>Research Funding</h2>
+  <section class="xp-block" data-views="research" aria-labelledby="pub-h">
+    <h2 id="pub-h">Publications</h2>
+    <p>Eight peer-reviewed papers in Q1 and Q2 journals, including Ocean Engineering, IEEE Journal of Biomedical and Health Informatics, Marine Ecology Progress Series, Frontiers in Public Health, Marine Structures and Computational and Applied Mathematics. A working paper on temperature-dependent life tables (IE University, 2026) is public. BERS is under review at Ocean Engineering. Google Scholar lists 141 citations and an h-index of 6. Utility model in Spain (2023) for NeoCam.</p>
+    <p><a href="/papers/">All publications</a></p>
+  </section>
+
+  <section class="xp-block" data-views="research" aria-labelledby="teach-h">
+    <h2 id="teach-h">Teaching and supervision</h2>
     <ul>
-        <li><strong>Climate Change Effects on Life and Health Insurance</strong> (IE Insurance and Tech Lab &times; Vienna Insurance Group, industry contract, 2025 &ndash; present). Phase 1 (2025/26): research team member. Phase 2 (2026/27): lead. Approved by the VIG board in May 2026.</li>
-        <li><strong>KAN4Met</strong> (Agencia Estatal de Investigaci&oacute;n, PID2024-155187OB-I00, Jul 2025 &ndash; present). Team member. PI: D. G&oacute;mez-Ullate.</li>
-        <li><strong>Green Navigation</strong> (Missions Val&egrave;ncia 2030, Dec 2023 &ndash; Mar 2026). &euro;93,362.84 awarded to Canonical Green and ranked first by the jury. I pitched the project as COO.</li>
-        <li><strong>Weather Navigation</strong> (Agencia Estatal de Investigaci&oacute;n, TED2021-129455B-I00, Dec 2022 &ndash; Nov 2024). &euro;101,200 direct costs. Team member. PI: D. G&oacute;mez-Ullate.</li>
-        <li><strong>Smart Shipping</strong> (BBVA Foundation, Research Projects in Mathematics 2021, Sep 2022 &ndash; Jun 2025). Team member. PI: D. G&oacute;mez-Ullate.</li>
+      <li>IE University: Computer Programming I, Coding Lab, Time Series Analysis, Applied Math Lab. Course materials are public.</li>
+      <li>Master's thesis co-director, University of Cádiz, defended 16 December 2024, grade Sobresaliente.</li>
+      <li>Capstone projects at IE University: two in progress (2026/27) and one co-supervised last year.</li>
+      <li>Visiting researcher at Dalhousie University, Halifax (host Prof. Robert Milson), in 2022, 2023 and 2024.</li>
     </ul>
-</div>
+    <p><a href="/teaching/">Courses and evaluations</a></p>
+  </section>
 
-<div class="section">
-    <h2>Supervision and Research Stays</h2>
+  <section class="xp-block" data-views="research" aria-labelledby="acc-h">
+    <h2 id="acc-h">Accreditations</h2>
+    <ul><li>ANECA, October 2026: positive evaluation for Profesor Contratado Doctor and Profesor de Universidad Privada. These are the national accreditations needed for these faculty positions in Spain.</li></ul>
+  </section>
+
+  <section class="xp-block" data-views="research" aria-labelledby="fund-h">
+    <h2 id="fund-h">Research funding</h2>
     <ul>
-        <li><strong>Capstone projects</strong>, IE University: 2 in progress (2026/27), 1 co-supervised last year.</li>
-        <li><strong>Master's thesis (co-director)</strong>, University of C&aacute;diz, Research Master in Systems and Computing Engineering, defended 16 December 2024, grade Sobresaliente.</li>
-        <li><strong>Visiting researcher</strong>, Dalhousie University, Halifax (host: Prof. Robert Milson): Jul&ndash;Oct 2022, Jul&ndash;Aug 2023 and Apr&ndash;May 2024.</li>
+      <li><strong>Climate Change Effects on Life and Health Insurance</strong>, IE Insurance and Tech Lab with Vienna Insurance Group, industry contract, 2025 to present. Extended for 2026/27 after the VIG board review in May 2026.</li>
+      <li><strong>KAN4Met</strong>, Agencia Estatal de Investigación (PID2024-155187OB-I00), from July 2025. Team member. PI: D. Gómez-Ullate.</li>
+      <li><strong>Green Navigation</strong>, Missions València 2030, December 2023 to March 2026. €93,362.84 awarded to Canonical Green.</li>
+      <li><strong>Weather Navigation</strong>, Agencia Estatal de Investigación (TED2021-129455B-I00), December 2022 to November 2024. Team member. PI: D. Gómez-Ullate.</li>
+      <li><strong>Smart Shipping</strong>, BBVA Foundation, September 2022 to June 2025. Team member. PI: D. Gómez-Ullate.</li>
     </ul>
-</div>
+  </section>
 
-<div class="section">
-    <h2>Service and Outreach</h2>
+  <section class="xp-block" data-views="research" aria-labelledby="svc-h">
+    <h2 id="svc-h">Service and outreach</h2>
     <ul>
-        <li>Organizing committee, <strong>Climate Change and Insurance Conference 2026 (CCI26)</strong>, IE University, Segovia and Madrid.</li>
-        <li>Created the <strong>Weather Routing Benchmark</strong> with RISE, the Research Institutes of Sweden (8 teams in its first edition, 2026) and presented BERS at the SWOPP3 workshop, Gothenburg, June 2026.</li>
-        <li>Counselor days (presenting the Bachelor of Applied Mathematics), data workshops, and mentoring in IE sustainability datathons.</li>
-        <li>Presentations to the VIG steering committee (2025&ndash;2026) and to the VIG board in Vienna (May 2026).</li>
-        <li>Lead editor of the IE Research Datalab website.</li>
+      <li>Organising committee, Climate Change and Insurance Conference 2026, IE University.</li>
+      <li>Weather Routing Benchmark with RISE, and BERS presented at SWOPP3, Gothenburg, June 2026.</li>
+      <li>Counsellor days for the Bachelor of Applied Mathematics, data workshops, and mentoring in IE sustainability datathons.</li>
+      <li>Editor of the IE Research Datalab website.</li>
     </ul>
-</div>
+  </section>
 
-<div class="section">
-    <h2>Selected Publications & Patents</h2>
-    <ul>
-        <li><strong>8 peer-reviewed papers in Q1/Q2 journals</strong>, including Ocean Engineering, IEEE Journal of Biomedical and Health Informatics, Marine Ecology Progress Series, Frontiers in Public Health, Marine Structures and Computational and Applied Mathematics. A working paper on temperature-dependent life tables (IE University, 2026) is public, and a further paper (BERS) is under review at Ocean Engineering.</li>
-        <li><strong>Utility model, Spain (2023)</strong>, for the NeoCam non-invasive neonatal monitoring technology</li>
-        <li>H-index: 6, 141 citations (Google Scholar)</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>Awards & Recognition</h2>
-    <ul>
-        <li><strong>European Parliament pitch (2023)</strong> - through The Arch programme</li>
-        <li><strong>OpenCV AI Competition 2021</strong> - 2nd prize among 1,400+ international teams</li>
-        <li><strong>Prototypes for Humanity 2024</strong> - Selected from 2,000+ global submissions</li>
-        <li><strong>Missions València 2030</strong> - €93K funding, ranked #1 by evaluation jury</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>Certifications & Training</h2>
-    <ul>
-        <li><strong>AWS Cloud Practitioner Essentials (Español de España)</strong> - AWS Training & Certification, completed August 2026. <a href="{{ base_path }}/files/certificates/aws-cloud-practitioner-essentials-2026-08.pdf">Certificate</a></li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>Languages</h2>
-    <p><strong>Spanish:</strong> Native | <strong>English:</strong> Fluent (C1) - Academic publications, international presentations</p>
-</div>
-
-</body>
-</html>
-
-<!-- Hide the footer and leave some space at the end -->
-<style>
-    footer {
-        display: none;
-    }
-    .footer-space {
-            height: 60px; /* Adjust height as needed */
-        }
-</style>
-
-<div class="footer-space"></div> <!-- Extra space for footer -->
+  <section class="xp-block" aria-labelledby="tools-h">
+    <h2 id="tools-h">Tools</h2>
+    <p>Python, R, MATLAB, SQL. scikit-learn, TensorFlow, Keras, PyTorch, JAX. Pandas, NumPy, Streamlit, Flask. Git with CI and pre-commit hooks. AWS S3. Docker at a basic level. LLM APIs from OpenAI, Anthropic and Google.</p>
+    <p>Languages: Spanish (native), English (C1).</p>
+  </section>
+  <div class="s-end"></div>
+</main>

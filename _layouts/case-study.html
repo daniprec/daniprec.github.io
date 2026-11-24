@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{% include base_path %}
+<a class="skip-link" href="#main-content">Skip to content</a>
+<main id="main-content" class="cs">
+  <p class="cs__back"><a href="/#work">&larr; Selected work</a></p>
+  <p class="s-eyebrow">Case study</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.period or page.origin or page.role %}
+  <dl class="cs__meta">
+    {% if page.period %}<div><dt>Period</dt><dd>{{ page.period }}</dd></div>{% endif %}
+    {% if page.origin %}<div><dt>How it started</dt><dd>{{ page.origin }}</dd></div>{% endif %}
+    {% if page.role %}<div><dt>My role</dt><dd>{{ page.role }}</dd></div>{% endif %}
+  </dl>
+  {% endif %}
+  <dl class="cs__sum">
+    <div><dt>Problem</dt><dd>{{ page.problem }}</dd></div>
+    <div><dt>My contribution</dt><dd>{{ page.contribution }}</dd></div>
+    <div><dt>Result or deliverable</dt><dd>{{ page.result }}</dd></div>
+  </dl>
+  {% if page.partners %}
+  <section class="cs__partners" aria-labelledby="partners-h">
+    <h2 id="partners-h" class="cs__partners-h">Project and partners</h2>
+    <ul>
+      {% for p in page.partners %}
+      <li>
+        {% if p.logo %}<span class="cs__logo"><img src="{{ p.logo }}" alt="" loading="lazy"></span>{% endif %}
+        <span class="cs__pname">{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</span>
+        <span class="cs__prole">{{ p.role }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+  {{ content }}
+</main>

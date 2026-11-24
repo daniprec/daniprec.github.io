@@ -34,7 +34,8 @@ layout: compress
       var startYear = 2019;
       var currentYear = new Date().getFullYear();
       var yearsOfExperience = currentYear - startYear;
-      document.getElementById('yearsOfExperience').innerText = yearsOfExperience;
+      var el = document.getElementById('yearsOfExperience');
+      if (el) { el.innerText = yearsOfExperience; }
     };
     </script>
   
