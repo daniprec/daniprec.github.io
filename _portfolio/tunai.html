@@ -1,19 +1,102 @@
 ---
-title: "Tun-AI: Machine Learning for Tuna Biomass Estimation"
+title: "Tun-AI: estimating tuna biomass from buoy data"
+layout: case-study
 collection: portfolio
 permalink: /portfolio/tun-ai/
 date: 2019-07-01
-excerpt: "ML system that estimates tuna biomass from echosounder buoy and oceanographic data, developed with Satlink."
+excerpt: "Machine learning pipeline that estimates tuna biomass under drifting buoys from echosounder and ocean data. Built with Komorebi AI and Satlink."
 category: Maritime
 tags: [machine learning, fisheries, echosounder, oceanography, time series]
 paperurl: "https://doi.org/10.1016/j.fishres.2022.106263"
-featured_image: "https://ars.els-cdn.com/content/image/1-s2.0-S0165783622000406-gr3.jpg"
+featured_image: "/images/2023-07-27-tunai.png"
+problem: "Tuna fleets receive echosounder signals from drifting buoys, but turning them into a biomass estimate took expert time."
+contribution: "I cleaned and preprocessed the Satlink buoy data, built the dashboard that Satlink used, and assisted with the machine learning models. I am first author of the paper."
+period: "March 2020 to April 2021 for the industrial contract. Papers in 2022 and 2023."
+origin: "Satlink asked for a way to read the signals from its echosounder buoys at scale."
+role: "Data cleaning, the dashboard and support on the machine learning models, inside my industrial PhD."
+partners:
+  - name: Satlink
+    logo: /images/logos/satlink.png
+    url: https://satlink.es/
+    role: Client and buoy manufacturer. Provided the buoy data.
+  - name: Komorebi AI
+    logo: /images/logos/komorebi.png
+    url: https://www.komorebi.ai/
+    role: Data science company that built and deployed the model with the team.
+  - name: UCA Datalab
+    role: University of Cádiz group where I worked on the project.
+  - name: Fleet association
+    role: Provided the logbook records of catches.
+result: "Published in Fisheries Research in 2022. The best classifier reached an F1 score of 0.925 on whether a buoy held more than 10 tonnes."
 ---
 
-<p>Smart buoys attached to drifting Fish Aggregating Devices (dFADs) are deployed across tropical oceans by tuna purse-seine fleets. Each buoy carries an echosounder that measures acoustic backscatter in the water column and transmits data hourly by satellite. The raw signal is rich in information about fish presence, but interpreting it at scale required automation and a model that combined acoustic and environmental data.</p>
+<h2>Who needed the work and why</h2>
+<p>Tuna purse-seine fleets release floating objects with echosounder buoys attached. Each buoy sends acoustic readings by satellite every hour. The signal shows that something is under the buoy. It does not say how much tuna it is. Satlink, which makes the buoys, wanted a way to read the signal at scale. Fleet managers and researchers also use buoy data to study how tuna gather around floating objects.</p>
+<figure class="cs__fig--small">
+  <img src="/images/projects/tun-ai/satlink-smart-buoy.webp" alt="A Satlink echosounder buoy floating on the sea" loading="lazy">
+  <figcaption>A Satlink echosounder buoy. Photo from <a href="https://researchfeatures.com/tun-ai-echosounder-buoy-technology-study-tuna-behaviour-sea/">Research Features, issue 149</a>, <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</figcaption>
+</figure>
 
-<p>Tun-AI uses three-day windows of echosounder data alongside satellite-derived oceanographic variables (sea surface temperature, currents, chlorophyll) to estimate tuna biomass under the buoy. As training signal, the model draws on more than 5000 documented capture events with confirmed tuna catch tonnage, provided by OPAGAC. The system aims to automate a task that was previously done by expert biologists.</p>
+<h2>My role and the collaboration</h2>
+<p>Tun-AI was a joint project between UCA Datalab at the University of Cádiz, Komorebi AI and Satlink, within my industrial doctorate. I worked with Komorebi from the university for a long time before Komorebi employed me in September 2022. Satlink provided the buoy data. The fleet association AGAC provided the logbook records of catches.</p>
 
-<p>I developed Tun-AI (a tuna detection software) at Komorebi AI, in collaboration with Satlink, the buoy manufacturer. The work was published in Fisheries Research (Q2) and attracted coverage in Research Features magazine.</p>
+<h2>What I contributed</h2>
+<table class="cs__facts">
+  <tr><th>Dashboard</th><td>I built it, from start to finish. Satlink used it.</td></tr>
+  <tr><th>Data cleaning</th><td>I did all of it, from raw buoy records to model-ready tables.</td></tr>
+  <tr><th>Machine learning models</th><td>I assisted. My own estimate of my share is about 20%. Colleagues at Komorebi and Cádiz did most of the modelling.</td></tr>
+  <tr><th>Paper</th><td>First author of the Fisheries Research paper. A follow-up study on how tuna gather around buoys (Marine Ecology Progress Series, 2023) used Tun-AI. I am the second author there.</td></tr>
+</table>
+<figure>
+  <img src="/images/projects/tun-ai/satlink-dashboard.png" alt="Satlink dashboard with a map of ocean temperature, buoy positions and echosounder readings by depth over three days" loading="lazy">
+  <figcaption>The dashboard that Satlink used. It shows the buoy positions on an ocean map and the echosounder readings by depth over time.</figcaption>
+</figure>
 
-<p><a href="{{ page.paperurl }}">Read the paper</a></p>
+<h2>Challenge and approach</h2>
+<p>The data came from about 70 million records from 16,419 buoys across the Atlantic, Indian and Pacific Oceans. Catch records were typed by hand and contained errors, so we cross-checked them against the buoy data. Fleets only set their nets when they expect a large school, so small catches are rare in the logbooks. To balance that, we added the deployment of new buoys, which we treated as zero tuna.</p>
+<p>The model reads a 72-hour window of echosounder data. It adds the buoy position and satellite ocean variables such as temperature, currents and chlorophyll. Gradient boosting performed best across three tasks: a yes or no answer for more than 10 tonnes, a three-class answer, and an estimate in tonnes.</p>
+<figure class="cs__fig--small">
+  <img src="/images/projects/tun-ai/echosounder-depth-layers.png" alt="Diagram of an echosounder buoy sampling ten depth layers under the surface, with example tuna biomass in tonnes at layers five to seven" loading="lazy">
+  <figcaption>How a buoy samples the water column below it: ten depth layers, with a biomass reading for each. Diagram from the project presentation.</figcaption>
+</figure>
+<figure>
+  <img src="/images/projects/tun-ai/echosounder-training-window.png" alt="Echogram with a highlighted window of acoustic readings in the days before a recorded fishing event" loading="lazy">
+  <figcaption>The model reads a window of echosounder data before each recorded event. Catch records give the reference to train and test against.</figcaption>
+</figure>
+<figure>
+  <img src="/images/projects/tun-ai/oceanography-and-acoustic-data.png" alt="Map of ocean conditions and buoy positions, next to examples of acoustic readings over time" loading="lazy">
+  <figcaption>Ocean variables and acoustic readings are joined to build the model inputs. Image from the project presentation.</figcaption>
+</figure>
+<figure>
+  <img src="/images/2023-07-27-tunai.png" alt="World map of estimated tuna biomass under drifting buoys, in the Atlantic, Indian and Pacific Oceans" loading="lazy">
+  <figcaption>Map of tuna biomass estimates under drifting buoys, from the Tun-AI work.</figcaption>
+</figure>
+
+<h2>What was delivered</h2>
+<ul>
+  <li>The Tun-AI pipeline, which turns raw buoy and ocean data into biomass estimates.</li>
+  <li>A dashboard for data analysis and model deployment, used by Satlink.</li>
+  <li>A peer-reviewed paper, and a follow-up analysis of how long tuna take to find and leave a buoy. In that study the median time to first colonise a buoy ranged from 25 to 43 days, depending on the ocean.</li>
+</ul>
+
+<h2>Results and limits</h2>
+<ul>
+  <li>The best classifier reached an F1 score of 0.925 for more than 10 tonnes, with 6.03% of test cases wrong.</li>
+  <li>The best regression model had a mean absolute error of 8.54 tonnes across test events. The same task with plain regression gave 10.03 tonnes.</li>
+  <li>Errors differ by event type. On fishing sets, the error was about 18 tonnes. On buoy deployments, it was about 1 tonne.</li>
+  <li>The model tends to underestimate very large schools, above 100 tonnes. Accuracy was lower in the Atlantic than in the other oceans.</li>
+  <li>The catch recorded in the logbook is treated as the true amount under the buoy. By-catch is not included.</li>
+  <li>These figures come from my thesis chapter based on the paper. This is a published research model. It is not a fleet-wide operational system.</li>
+</ul>
+
+<h2>Talks and coverage</h2>
+<ul>
+  <li>The team presented aggregation times of tuna schools around floating objects to the IOTC-FAO Working Party on Tropical Tunas in October 2021, and the pipeline at the ICES Annual Science Conference in September 2022.</li>
+  <li>Research Features published a feature on the project in September 2023 (issue 149).</li>
+</ul>
+
+<h2>Evidence and links</h2>
+<div class="cs__links">
+  <a class="s-btn s-btn--ghost" href="{{ page.paperurl }}">Fisheries Research paper</a>
+  <a class="s-btn s-btn--ghost" href="https://doi.org/10.3354/meps14338">Marine Ecology Progress Series paper</a>
+</div>
