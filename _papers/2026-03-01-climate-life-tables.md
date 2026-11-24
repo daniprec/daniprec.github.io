@@ -5,8 +5,8 @@ collection: publications
 permalink: /publications/2026/climate-life-tables
 excerpt: "A transparent, scenario-based method to adjust projected life tables for temperature-related mortality, with uncertainty carried through to annuities, life insurance and reserves."
 date: 2026-03-01
-venue: "IE University working paper (v1.0, open access), doi:10.63537/14417429"
-paperurl: "https://doi.org/10.63537/14417429"
+venue: "IE University working paper (v1.0, open access), doi:10.63537/144174297"
+paperurl: "https://doi.org/10.63537/144174297"
 featured_image: "https://danielprecioso.com/images/2026-03-01-climate-life-tables.png"
 
 ---
