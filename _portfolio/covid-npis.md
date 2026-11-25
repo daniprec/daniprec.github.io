@@ -5,7 +5,7 @@ sort_order: 6
 permalink: /portfolio/covid-npis/
 date: 2020-09-01
 excerpt: "Statistical analysis quantifying how nine categories of non-pharmaceutical interventions affected SARS-CoV-2 transmission during the second wave in Spain."
-category: Epidemiology
+category: "Energy & Health"
 tags: [statistical modeling, epidemiology, public health, COVID-19, time series]
 paperurl: "https://doi.org/10.3389/fpubh.2023.1061331"
 featured_image: "https://aecr.org/wp-content/uploads/2020/04/espana4.png"

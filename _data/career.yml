@@ -1,12 +1,16 @@
 start: 2019
 end: 2027
+categories:
+  - { label: "Energy & Health", color: "var(--topic-energy-health)" }
+  - { label: Maritime, color: "var(--topic-maritime)" }
+  - { label: Startup, color: "var(--topic-startup)" }
+  - { label: "Insurance & Climate", color: "var(--topic-insurance)" }
 lanes:
-  - { id: applied, label: Energy, color: "var(--topic-energy)" }
-  - { id: health, label: Health, color: "var(--topic-health)" }
-  - { id: fish, label: Fisheries, color: "var(--topic-fisheries)" }
-  - { id: route, label: Maritime routing, color: "var(--topic-maritime)" }
+  - { id: applied, label: "Energy & Health", color: "var(--topic-energy-health)" }
+  - { id: fish, label: "Maritime · Tun-AI", color: "var(--topic-maritime)" }
+  - { id: route, label: "Maritime · Green Navigation", color: "var(--topic-maritime)" }
   - { id: startup, label: Startup, color: "var(--topic-startup)" }
-  - { id: climate, label: Insurance and climate, color: "var(--topic-insurance)" }
+  - { id: climate, label: "Insurance & Climate", color: "var(--topic-insurance)" }
 rails:
   - { row: 0, from: 2019.7, to: 2023.55, label: "PhD at UCA Datalab, University of Cádiz" }
   - { row: 0, from: 2023.75, to: 2026.95, label: "Postdoc and adjunct professor, IE University" }
@@ -25,7 +29,7 @@ milestones:
     link: /portfolio/nilm/
     link_label: Energy monitoring project
   - id: health
-    lane: health
+    lane: applied
     year: 2020.9
     label: "2020 to 2021"
     title: Healthcare

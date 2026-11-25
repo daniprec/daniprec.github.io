@@ -6,7 +6,7 @@ sort_order: 4
 permalink: /portfolio/neocam/
 date: 2021-01-01
 excerpt: "Edge-cloud platform for contactless monitoring of premature infants in neonatal intensive care. Second global prize in the OpenCV AI Competition 2021."
-category: Health
+category: "Energy & Health"
 tags: [computer vision, edge computing, deep learning, healthcare, OpenCV]
 paperurl: "https://doi.org/10.1109/JBHI.2023.3240245"
 featured_image: "/images/projects/neocam/neocam-device.png"

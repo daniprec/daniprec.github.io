@@ -70,8 +70,14 @@
         r.style.left = x1 + "px"; r.style.width = (x2 - x1) + "px"; r.style.top = (parseInt(r.dataset.row, 10) * 28) + "px";
       });
       laneEls.forEach(function (l, i) { l.style.top = (RAILS_H + 24 + i * PITCH) + "px"; });
+      var laneEnds = {};
       items.forEach(function (it) {
         var x = tx(parseFloat(it.dataset.year), w) - CARD / 2;
+        // Keep milestones readable when two subjects share a history row.
+        if (laneEnds[it.dataset.lane] !== undefined) {
+          x = Math.max(x, laneEnds[it.dataset.lane] + 16);
+        }
+        laneEnds[it.dataset.lane] = x + CARD;
         var y = RAILS_H + 24 + laneIds.indexOf(it.dataset.lane) * PITCH + 6;
         it.style.setProperty("--x", x + "px");
         it.style.setProperty("--y", y + "px");

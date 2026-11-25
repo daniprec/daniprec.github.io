@@ -5,7 +5,7 @@
     <h2 id="map-h">How the work connects</h2>
     <p class="s-lead">Projects overlapped, and not every one led to the next. Solid arrows mark work that grew out of earlier work. Dashed lines mark a shared ingredient.</p>
     <ul class="cm__legend" aria-label="Legend">
-      {% for l in cd.lanes %}<li><i style="--c: {{ l.color }}"></i>{{ l.label }}</li>{% endfor %}
+      {% for l in cd.categories %}<li><i style="--c: {{ l.color }}"></i>{{ l.label }}</li>{% endfor %}
     </ul>
     <div class="cm" data-career data-start="{{ cd.start }}" data-end="{{ cd.end }}">
       <div class="cm__stage">
