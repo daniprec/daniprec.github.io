@@ -42,7 +42,7 @@ text-align: center; /* Center align the text */
 
 /* Define the layout for each post item */
 .archive__item {
-min-height: 300px; /* Set a minimum height for each post */
+min-height: 0;
 margin-top: 10px; /* Adjust the top margin as needed */
 margin-bottom: 10px; /* Adjust the bottom margin as needed */
 display: flex; /* Use flexbox for alignment */
@@ -58,7 +58,7 @@ overflow: hidden; /* Hide any content or image overflow */
   margin-bottom: 10px; /* Adjust the bottom margin as needed */
   object-fit: cover;  /* Scale the image to cover its container without distorting its aspect ratio */
   object-position: center; /* Position the center of the image in the center of the container. Adjust if necessary. */
-  border-radius: 5%; /* Add rounded corners to the featured image */
+  border-radius: 12px;
   display: block;
   align-items: center; /* Center items vertically within each post */
   overflow: hidden;

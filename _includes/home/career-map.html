@@ -13,7 +13,7 @@
           {% for r in cd.rails %}<div data-row="{{ r.row }}" data-from="{{ r.from }}" data-to="{{ r.to }}">{{ r.label }}</div>{% endfor %}
         </div>
         <div class="cm__lanes" aria-hidden="true">
-          {% for l in cd.lanes %}<div data-lane="{{ l.id }}"><span>{{ l.label }}</span></div>{% endfor %}
+          {% for l in cd.lanes %}<div data-lane="{{ l.id }}" style="--lane-color: {{ l.color }}"><span>{{ l.label }}</span></div>{% endfor %}
         </div>
         <svg class="cm__svg" aria-hidden="true" focusable="false">
           <defs><marker id="cm-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" style="fill:var(--ink-soft)"/></marker></defs>

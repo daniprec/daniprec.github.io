@@ -7,6 +7,7 @@ permalink: /portfolio/green-navigation/
 date: 2022-09-01
 excerpt: "Weather routing algorithms, Canonical Green, the startup I co-founded, and an open benchmark built with RISE."
 category: Maritime
+topics: [Maritime, Startup]
 tags: [optimization, weather routing, maritime, A-star, variational methods, decarbonization]
 paperurl: "https://doi.org/10.1016/j.oceaneng.2024.120050"
 featured_image: "/images/2025-01-01-hadad.jpg"

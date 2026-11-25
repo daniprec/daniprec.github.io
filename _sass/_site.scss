@@ -200,8 +200,8 @@ thead { background: var(--paper-2); border-color: var(--line); }
   .cm--wide .cm-item { position: absolute; width: 200px; left: var(--x); top: var(--y); z-index: 2; }
   .cm--wide .cm-detail { display: none; }
   .cm--wide .cm__svg { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; overflow: visible; }
-  .cm--wide .cm__lanes div { position: absolute; left: 0; right: 0; height: 1px; background: var(--line); }
-  .cm--wide .cm__lanes span { position: absolute; right: 0; background: var(--paper); padding-left: .4rem; font: 700 .68rem/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); transform: translateY(-1.4em); }
+  .cm--wide .cm__lanes div { position: absolute; left: 0; right: 0; height: 1px; background: var(--lane-color, var(--line)); }
+  .cm--wide .cm__lanes span { position: absolute; right: 0; background: var(--paper); padding-left: .4rem; font: 700 .68rem/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--lane-color, var(--ink-soft)); transform: translateY(-1.4em); }
   .cm--wide .cm__rails div { position: absolute; height: 22px; border-radius: 11px; font: 600 .72rem/22px var(--sans); padding: 0 .7rem; white-space: nowrap; overflow: hidden; background: var(--paper-2); border: 1px solid var(--line); color: var(--ink-soft); }
   .cm--wide .cm__panel .cm-node__year { font: 700 .75rem/1 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 .3rem; }
   .cm--wide .cm__panel { display: block; background: var(--surface); border: 1px solid var(--line); border-top: 5px solid var(--accent); border-radius: var(--radius); padding: 1.25rem 1.5rem; min-height: 15rem; }
@@ -314,3 +314,13 @@ thead { background: var(--paper-2); border-color: var(--line); }
 .page__content { line-height: 1.75; }
 .page__content h2 { margin-top: 2rem; }
 .page__content p, .page__content li { max-width: 72ch; }
+
+/* Archive typography follows the same hierarchy as project summaries. */
+.archive__subtitle { color: var(--ink-soft); border-color: var(--line); }
+.archive__item { padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+.archive__item-title { font-family: var(--serif); font-weight: 600; line-height: 1.35; }
+.archive__item-title a { color: var(--ink); text-decoration: none; }
+.archive__item-title a:hover { color: var(--sea); text-decoration: underline; }
+.archive__item-excerpt { font-size: .95rem; line-height: 1.7; }
+.page__date { font-size: .82rem; }
+.author__avatar img { border-color: var(--line); }

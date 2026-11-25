@@ -1,5 +1,3 @@
-{% include head.html %}
-
 {% include base_path %}
 
 {% if post.header.teaser %}
@@ -25,6 +23,7 @@
     <div class="two-column-layout">
     
       <!-- Column for the featured image (40% width) -->
+      {% if post.featured_image %}
       <div class="column-40">
         <!-- Add code to display the featured image -->
         {% if post.featured_image %}
@@ -36,6 +35,7 @@
         {% endif %}
       </div>
       
+      {% endif %}
       <!-- Column for the content (60% width) -->
       <div class="column-60">
         {% if include.type == "grid" and teaser %}
@@ -71,9 +71,9 @@
         {% endif %}
     
         {% if post.excerpt and site.read_more != 'enabled' %}
-          <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+          <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
         {% elsif post.excerpt and site.read_more == 'enabled' %}
-          <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ post_link }}"{% if post.collection != 'teaching' or post.courseurl == nil %} rel="permalink"{% endif %}{% if post.collection == 'teaching' and post.courseurl %} target="_blank" rel="noopener noreferrer"{% endif %}> Read more</a></strong></p></p>
+          <div class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ post_link }}"{% if post.collection != 'teaching' or post.courseurl == nil %} rel="permalink"{% endif %}{% if post.collection == 'teaching' and post.courseurl %} target="_blank" rel="noopener noreferrer"{% endif %}> Read more</a></strong></p></div>
         {% endif %}
         
         {% if post.citation and post.paperurl %}

@@ -14,7 +14,8 @@ author_profile: true
   <div class="project-list">
     {% assign sorted_portfolio = site.portfolio | sort: 'sort_order' %}
     {% for project in sorted_portfolio %}
-      {% assign topic = project.category | default: "Research" %}
+      {% assign topics = project.category | default: "Research" | split: "|" %}
+      {% if project.topics %}{% assign topics = project.topics %}{% endif %}
       <article class="project-row">
         <a href="{{ project.url | relative_url }}" class="project-media" aria-label="Explore {{ project.title | escape }}">
           {% if project.featured_image %}
@@ -26,7 +27,7 @@ author_profile: true
         <div class="project-content">
           <div class="project-header">
             <h2 class="project-row-title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
-            <span class="project-category-tag category-{{ topic | slugify }}">{{ topic }}</span>
+            {% for topic in topics %}<span class="project-category-tag category-{{ topic | slugify }}">{{ topic }}</span>{% endfor %}
           </div>
           <p class="project-meta">{{ project.date | date: "%Y" }}</p>
           {% if project.excerpt %}

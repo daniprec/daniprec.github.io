@@ -1,0 +1,27 @@
+/* One topic palette for project tags, history rails and milestone markers. */
+:root {
+  --topic-energy: #805300; --topic-energy-bg: #fff1d6;
+  --topic-fisheries: #186468; --topic-fisheries-bg: #e0f0f0;
+  --topic-maritime: #285786; --topic-maritime-bg: #e3edf9;
+  --topic-health: #266347; --topic-health-bg: #e1efe7;
+  --topic-insurance: #624183; --topic-insurance-bg: #ece6f6;
+  --topic-startup: #8b4b2a; --topic-startup-bg: #f6e9e2;
+  --topic-scientific-ml: #574b85; --topic-scientific-ml-bg: #eae7f7;
+}
+@mixin dark-topic-tokens {
+  --topic-energy: #f2cc80; --topic-energy-bg: #3b2e13;
+  --topic-fisheries: #9ed3d4; --topic-fisheries-bg: #163235;
+  --topic-maritime: #a6c6ec; --topic-maritime-bg: #182e44;
+  --topic-health: #a4d2b8; --topic-health-bg: #172f28;
+  --topic-insurance: #c7aedf; --topic-insurance-bg: #2e233e;
+  --topic-startup: #e5b298; --topic-startup-bg: #39271f;
+  --topic-scientific-ml: #bcb3e6; --topic-scientific-ml-bg: #29253e;
+}
+:root[data-theme="dark"] { @include dark-topic-tokens; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include dark-topic-tokens; }
+}
+@each $topic in energy, fisheries, maritime, health, insurance, startup, scientific-ml {
+  .category-#{$topic} { --topic: var(--topic-#{$topic}); --topic-bg: var(--topic-#{$topic}-bg); }
+}
+.category-epidemiology { --topic: var(--topic-health); --topic-bg: var(--topic-health-bg); }
