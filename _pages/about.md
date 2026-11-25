@@ -1,8 +1,8 @@
 ---
 
 permalink: /
-title: "Daniel Precioso, applied data scientist and co-founder"
-excerpt: "Applied data scientist and co-founder. Models and decision tools with industry partners in energy, healthcare, fisheries, maritime transport and insurance."
+title: "Daniel Precioso, applied data scientist"
+excerpt: "Applied data scientist at IE University and co-founder of Canonical Green. Climate risk models, maritime routing and teaching."
 layout: home
 author_profile: false
 redirect_from: 
