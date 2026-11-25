@@ -35,7 +35,7 @@ On September 6th, NeoCam project was announced to be one of the 19 Regional Priz
 
 Finally, check out this awesome winner certificate for our NeoCam project:
 
-<p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
+<p align="center">{% include responsive-image.html src=page.featured_image alt="NeoCam recognition at the OpenCV AI Competition 2021" style="width: 80%; height: auto" %}</p>
 
 Thank you for reading about our NeoCam project and our journey through the OpenCV AI Competition!
 

@@ -8,9 +8,9 @@
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}">
+    {% include responsive-image.html src=author.avatar alt=author.name sizes="175px" %}
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+    {% assign avatar_path = author.avatar | prepend: "/images/" %}{% include responsive-image.html src=avatar_path alt=author.name class="author__avatar" sizes="175px" %}
     {% endif %}
   </div>
 

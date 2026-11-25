@@ -16,7 +16,7 @@ We're excited to share that **Smart Shipping** has been officially selected to j
 
 Our project was one of six startups chosen in this first intake, alongside initiatives working on sustainable tourism, architectural design, and circular economy solutions. Following a competitive evaluation process, we're proud to see our proposal, focused on maritime route optimization and fuel reduction, recognized as a valuable contribution to the sustainable transformation of the maritime sector.
 
-<img src="{{ page.featured_image }}" alt="Smart Shipping joins Incubazul" width="100%"/>
+{% include responsive-image.html src=page.featured_image alt="Smart Shipping joins Incubazul" %}
 
 Our work at [**UCA Datalab**](https://datalab.uca.es) aims to support cleaner, more efficient navigation using environmental data and algorithmic optimization. IncubAzul will give us access to personalized mentoring through **Telefónica Open Innovation**, along with legal, financial, and business development support to help us grow beyond the research phase and into real-world impact.
 

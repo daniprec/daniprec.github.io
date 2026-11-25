@@ -16,7 +16,7 @@ I'm still buzzing from my incredible experience presenting at the European Parli
 
 During my pitch, I introduced [Green Navigation](https://greenavigation.com/), our innovative solution designed to revolutionize the shipping industry by significantly reducing its carbon footprint.
 
-<p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
+<p align="center">{% include responsive-image.html src=page.featured_image alt="Green Navigation presentation at the European Parliament" style="width: 80%; height: auto" %}</p>
 
 I started by highlighting a staggering fact: the shipping industry releases 30 tons of CO2 every second. This alarming statistic underscores the urgent need for effective solutions.
 
@@ -28,7 +28,7 @@ A huge thank you to my amazing team: David Gómez-Ullate Oteiza and Javier Jimé
 
 Watch my pitch [here](https://youtu.be/T2VRDSczxVM) or click the image below!
 
-<p align="center"><a href="https://youtu.be/T2VRDSczxVM"><img src="https://img.youtube.com/vi/T2VRDSczxVM/0.jpg" width="80%"/></a></p>
+<p align="center"><a href="https://youtu.be/T2VRDSczxVM">{% include responsive-image.html src="https://img.youtube.com/vi/T2VRDSczxVM/0.jpg" alt="Video thumbnail: Making Waves in Brussels: How I Took the Stage at the European Parliament" %}</a></p>
 
 Let’s revolutionize the shipping industry with [Green Navigation](https://greenavigation.com/) and work towards a greener, more sustainable future!
 

@@ -16,7 +16,7 @@ Hello dear readers,
 
 I received my first Teaching Excellence Award at IE University!
 
-<p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
+<p align="center">{% include responsive-image.html src=page.featured_image alt="IE University Teaching Excellence Award certificate" style="width: 80%; height: auto" %}</p>
 
 I am genuinely grateful to my students for this recognition. Teaching data science and programming is a lot like debugging: sometimes chaotic, often humbling, but always worth it when something finally "clicks".
 

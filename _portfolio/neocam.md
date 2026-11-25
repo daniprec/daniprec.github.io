@@ -14,7 +14,7 @@ period: "2021 prototype and competition. Utility model in 2023. Paper in 2023."
 origin: "The OpenCV AI Competition 2021, sponsored by Intel and Microsoft Azure, built around the Luxonis OAK-D camera."
 role: "Part of the AI team at UCA Datalab. I built part of the Python library and proposed how to read a baby's movement."
 problem: "Doctors watch premature babies closely, but sensors on the skin are a burden and many signs, such as movement, are noted by eye or not at all."
-contribution: "I built part of the Python library the device runs. I proposed reading the baby's movement with two bounding boxes, one on the head and one on the body, because pose models made for adults work badly on babies. I helped with breathing from the depth camera. That idea was not mine. The team built the rest."
+contribution: "I developed part of the device’s Python library, proposed the head-and-body bounding-box method for movement monitoring, and contributed to depth-based breathing estimation."
 result: "Second global prize and first prize in Europe, Russia and Australasia among more than 1,400 projects. A proof of concept ran in the neonatal unit of Hospital Puerta del Mar. Paper in IEEE JBHI, 2023."
 partners:
   - name: Caleta Team, University of Cádiz
@@ -24,12 +24,14 @@ partners:
     role: The AI and image analysis group where I worked.
   - name: Hospital Universitario Puerta del Mar
     role: Neonatal specialists who guided the design and hosted the tests.
+preview_image: /images/projects/neocam/neocam-device.png
+preview_alt: NeoCam prototype on an articulated arm
+preview_caption: The NeoCam prototype, built by Caleta Team at the University of Cádiz.
+outcomes:
+- Second global prize, OpenCV AI Competition 2021
+- Proof of concept at Hospital Puerta del Mar
+- Team paper in IEEE JBHI, 2023
 ---
-
-<figure>
-  <img src="/images/projects/neocam/neocam-device.png" alt="The NeoCam device on an articulated arm, a white box with an OAK-D camera on top. The text reads: NeoCam by Caleta Team, non-contact tele monitorization of neonates" loading="lazy">
-  <figcaption>The NeoCam prototype. Frame from the Caleta Team presentation video.</figcaption>
-</figure>
 
 <h2>Who needed the work and why</h2>
 <p>Premature babies in intensive care need constant observation. Conventional monitors use sensors attached to the body. Movement and behaviour also carry information, but they are hard to follow all day and are often recorded by eye. The question was whether a camera could measure some of this without touching the baby.</p>
@@ -48,11 +50,11 @@ partners:
 <h2>Challenge and approach</h2>
 <p>The analysis runs on the camera itself, an OAK-D that does colour imaging, stereo depth and neural network inference on the device. This keeps latency low and lets the images be anonymised before anything leaves the incubator. The published platform runs several tasks in parallel at 20 to 30 frames per second: breathing rate, movement and an experimental stress indicator. A Raspberry Pi 4 collects the outputs and sends them to a cloud platform and a mobile app.</p>
 <figure>
-  <img src="/images/projects/neocam/prototype-views.png" alt="Four views of the NeoCam prototype: the OAK-D camera, a 5G antenna, a power plug, the camera turned 90 degrees and a seven inch touchscreen" loading="lazy">
+  {% include responsive-image.html src="/images/projects/neocam/prototype-views.png" alt="Four views of the NeoCam prototype: the OAK-D camera, a 5G antenna, a power plug, the camera turned 90 degrees and a seven inch touchscreen" %}
   <figcaption>The prototype: a compact housing with an adjustable OAK-D camera, an antenna and a seven inch touchscreen. Images from the project presentation.</figcaption>
 </figure>
 <figure>
-  <img src="/images/projects/neocam/edge-cloud-architecture.png" alt="NeoCam system diagram linking the camera unit to cloud services and a mobile app" loading="lazy">
+  {% include responsive-image.html src="/images/projects/neocam/edge-cloud-architecture.png" alt="NeoCam system diagram linking the camera unit to cloud services and a mobile app" %}
   <figcaption>The edge-cloud architecture. Diagram from the project presentation.</figcaption>
 </figure>
 
@@ -64,7 +66,7 @@ partners:
   <li>A paper in the IEEE Journal of Biomedical and Health Informatics (2023).</li>
 </ul>
 <figure class="cs__fig--small">
-  <img src="/images/projects/neocam/hospital-installation.png" alt="Two stages of hospital testing: a camera connected to a laptop, then the integrated NeoCam unit mounted above an incubator" loading="lazy">
+  {% include responsive-image.html src="/images/projects/neocam/hospital-installation.png" alt="Two stages of hospital testing: a camera connected to a laptop, then the integrated NeoCam unit mounted above an incubator" %}
   <figcaption>Testing at Hospital Puerta del Mar. The first camera-and-laptop setup, then the integrated unit. Images from the project presentation.</figcaption>
 </figure>
 

@@ -32,6 +32,13 @@ partners:
     url: https://www.valencia.es/
     role: Funded company development through Missions València 2030.
 result: "In a simulated pilot with Boluda Towage, GHG emissions fell by about 10% on the tested tugboat routes. HADAD saved up to 27% fuel in extreme weather. The project won a €93,362.84 grant."
+preview_image: /images/projects/green-navigation/route-comparison.jpg
+preview_alt: Two routes across the Atlantic over a map of wave heights
+preview_caption: Weather routing compares alternative paths through changing ocean conditions.
+outcomes:
+- Co-founded Canonical Green
+- About 10% lower GHG emissions in a simulated tugboat pilot
+- Co-created an open benchmark; eight teams in its first edition
 ---
 
 <p class="s-lead">One project, from routing research to a startup and a shared benchmark. I work on choosing ship routes that account for wind, waves and currents to reduce fuel use and emissions.</p>
@@ -44,7 +51,7 @@ result: "In a simulated pilot with Boluda Towage, GHG emissions fell by about 10
 <p>I co-developed HADAD and worked on the routing algorithms from the early Smart Shipping project. During a research stay at Dalhousie University, I adapted a variational method to Python and built the benchmarks for our hybrid search paper.</p>
 <p>A route has to be found among millions of possible paths, with wind, waves and currents that change over time. HADAD works in two steps. It first searches a hexagonal grid with an A-star algorithm, which gives the ship more directions to choose from than a square grid. It then smooths the route in continuous space with a variational method. BERS, the newer method, searches with an evolutionary algorithm and refines the result with the same kind of variational step. It handles fixed arrival times.</p>
 <figure>
-  <img src="/images/2025-01-01-hadad.jpg" alt="Route computed by HADAD over a map of ocean currents, with the A-star nodes marked" loading="lazy">
+  {% include responsive-image.html src="/images/2025-01-01-hadad.jpg" alt="Route computed by HADAD over a map of ocean currents, with the A-star nodes marked" %}
   <figcaption>A route from HADAD over ocean currents. The yellow nodes come from the graph search. The smooth line is the refined route.</figcaption>
 </figure>
 
@@ -67,13 +74,13 @@ result: "In a simulated pilot with Boluda Towage, GHG emissions fell by about 10
 </ul>
 
 <figure>
-  <img src="/images/projects/green-navigation/benchmark-routes.png" alt="World map with yellow lines joining ports across the Atlantic, the Mediterranean and the Pacific" loading="lazy">
+  {% include responsive-image.html src="/images/projects/green-navigation/benchmark-routes.png" alt="World map with yellow lines joining ports across the Atlantic, the Mediterranean and the Pacific" %}
   <figcaption>Routes of the kind used in the benchmark. Image from the project presentation.</figcaption>
 </figure>
 
 <h2>Evidence and links</h2>
 <figure>
-  <img src="/images/2024-11-22-dubai.jpg" alt="Daniel Precioso at the Green Navigation stand at Prototypes for Humanity in Dubai" loading="lazy">
+  {% include responsive-image.html src="/images/2024-11-22-dubai.jpg" alt="Daniel Precioso at the Green Navigation stand at Prototypes for Humanity in Dubai" %}
   <figcaption>Green Navigation at Prototypes for Humanity, Dubai, 2024. It was selected among 100 innovations from more than 2,000 submissions.</figcaption>
 </figure>
 <div class="cs__links">

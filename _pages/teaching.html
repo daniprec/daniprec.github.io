@@ -1,4 +1,5 @@
 ---
+description: "Python, time series and applied mathematics courses taught by Daniel Precioso at IE University, with open materials and supervision."
 layout: default
 title: "Courses"
 permalink: /teaching/
@@ -20,7 +21,7 @@ author_profile: true
         {% assign course_target = base_path | append: course.url %}
       {% endif %}
       <div class="course-card">
-        <h3 class="course-title">{% if course.courseurl %}<a href="{{ course_target }}" class="course-title-link">{{ course.title }}</a>{% else %}{{ course.title }}{% endif %}</h3>
+        <h2 class="course-title">{% if course.courseurl %}<a href="{{ course_target }}" class="course-title-link">{{ course.title }}</a>{% else %}{{ course.title }}{% endif %}</h2>
         <p class="course-meta"><strong>{{ course.type }}</strong></p>
         <p class="course-meta">{{ course.venue }}</p>
         <p class="course-meta">{{ course.location }} &middot; {{ course.date | date: "%Y" }}</p>
@@ -103,6 +104,7 @@ author_profile: true
     text-decoration: none;
   }
   @media (max-width: 768px) {
+    .courses-grid { grid-template-columns: minmax(0, 1fr); }
     .courses-page-content {
       padding: 2rem 1rem 4rem;
     }

@@ -17,7 +17,7 @@ Hello dear readers,
 
 Yesterday was one for the books! The whole team made our way to *Opentop's Demo Day* in Valencia, where we presented [**Green Navigation**](https://greenavigation.com), our weather routing solution in front of industry leaders, investors, port authorities, and fellow entrepreneurs. It was the grand finale of Opentop's acceleration program, and what a ride it has been.
 
-<p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
+<p align="center">{% include responsive-image.html src=page.featured_image alt="Green Navigation results presented at Opentop Demo Day" style="width: 80%; height: auto" %}</p>
 
 Standing on stage with my teammates (Javier Jiménez and David Gómez-Ullate) and joined by Carlos Redón and Mercedes from *Boluda Towage*, we had the pleasure to share the results of our very first pilot. Over the past few months, we've been working hand-in-hand with Boluda to simulate and optimize real tugboat routes using validated consumption models. The results are in: **we can cut GHG emissions by 10%** through intelligent weather routing.
 

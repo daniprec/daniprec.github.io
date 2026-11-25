@@ -1,4 +1,5 @@
 ---
+description: "Applied data science projects in climate risk, maritime routing, healthcare and energy, with case studies and research outputs."
 layout: default
 title: "Projects"
 permalink: /portfolio/
@@ -19,7 +20,7 @@ author_profile: true
       <article class="project-row">
         <a href="{{ project.url | relative_url }}" class="project-media" aria-label="Explore {{ project.title | escape }}">
           {% if project.featured_image %}
-            <img src="{{ project.featured_image }}" alt="{{ project.title | escape }}" loading="lazy" decoding="async" width="840" height="560" />
+            {% include responsive-image.html src=project.featured_image alt=project.title sizes="(min-width: 900px) 400px, 100vw" %}
           {% else %}
             <span class="project-placeholder">{{ project.title | split: ':' | first }}</span>
           {% endif %}

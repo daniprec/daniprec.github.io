@@ -1,12 +1,21 @@
 ---
 layout: default
 ---
-{% include base_path %}
-<a class="skip-link" href="#main-content">Skip to content</a>
 <main id="main-content" class="cs">
-  <p class="cs__back"><a href="/#work">&larr; Selected work</a></p>
+  <p class="cs__back"><a href="/portfolio/">&larr; All projects</a></p>
   <p class="s-eyebrow">Case study</p>
   <h1>{{ page.title }}</h1>
+  <p class="s-lead">{{ page.excerpt }}</p>
+  <ul class="cs__outcomes" aria-label="Selected results">
+    {% for outcome in page.outcomes %}<li>{{ outcome }}</li>{% endfor %}
+  </ul>
+  <figure class="cs__preview">
+    {% include responsive-image.html src=page.preview_image alt=page.preview_alt loading="eager" priority=true %}
+    <figcaption>{{ page.preview_caption }}{% if page.preview_url %} <a href="{{ page.preview_url }}">Open the live dashboard &rarr;</a>{% endif %}</figcaption>
+  </figure>
+  <p class="cs__contribution"><strong>My contribution.</strong> {{ page.contribution }}</p>
+  <details class="cs__context">
+    <summary>Project context and partners</summary>
   {% if page.period or page.origin or page.role %}
   <dl class="cs__meta">
     {% if page.period %}<div><dt>Period</dt><dd>{{ page.period }}</dd></div>{% endif %}
@@ -14,11 +23,6 @@ layout: default
     {% if page.role %}<div><dt>My role</dt><dd>{{ page.role }}</dd></div>{% endif %}
   </dl>
   {% endif %}
-  <dl class="cs__sum">
-    <div><dt>Problem</dt><dd>{{ page.problem }}</dd></div>
-    <div><dt>My contribution</dt><dd>{{ page.contribution }}</dd></div>
-    <div><dt>Result or deliverable</dt><dd>{{ page.result }}</dd></div>
-  </dl>
   {% if page.partners %}
   <section class="cs__partners" aria-labelledby="partners-h">
     <h2 id="partners-h" class="cs__partners-h">Project and partners</h2>
@@ -33,5 +37,7 @@ layout: default
     </ul>
   </section>
   {% endif %}
-  {{ content }}
+  </details>
+  <div class="cs__narrative">{{ content }}</div>
+  <p class="cs__contact"><a href="mailto:daniel.precioso@ie.edu">Discuss a related project &rarr;</a></p>
 </main>

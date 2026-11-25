@@ -11,8 +11,8 @@ strengths:
   summary: Turning climate projections into models for life and health insurance.
   proof_value: Applied research
   proof: Models, dashboards and board presentations
-  image: /images/2026-05-13-vig-tower.jpeg
-  image_alt: Vienna skyline from the VIG tower
+  image: /images/projects/vig/dashboard-poster.png
+  image_alt: Climate and mortality dashboard for Vienna Insurance Group
   panel_title: Climate risk for Vienna Insurance Group
   examples:
   - title: From climate scenarios to insurance decisions
@@ -26,13 +26,14 @@ strengths:
       url: /portfolio/climate-risk-insurance/
     - label: Working paper
       url: https://doi.org/10.63537/144174297
+  url: /portfolio/climate-risk-insurance/
 - id: navigation
   title: Green Navigation
   summary: Weather routing research, a startup and an open benchmark.
   proof_value: Research to software
   proof: Co-founder of Canonical Green
-  image: /images/2025-01-01-hadad.jpg
-  image_alt: Weather-optimised ship route over ocean currents
+  image: /images/projects/green-navigation/route-comparison.jpg
+  image_alt: Comparison of maritime routes across the Atlantic
   panel_title: Green Navigation
   examples:
   - title: From routing algorithms to a maritime startup
@@ -46,6 +47,7 @@ strengths:
       url: /portfolio/green-navigation/
     - label: Open benchmark
       url: https://weatherrouting.org
+  url: /portfolio/green-navigation/
 - id: teaching
   title: Teaching at IE
   summary: Python and applied mathematics, taught through practical problems.
@@ -66,3 +68,5 @@ strengths:
       url: /teaching/
     - label: Teaching award
       url: /posts/2025/teaching-excellence-award
+  url: /teaching/
+  preview_type: lesson

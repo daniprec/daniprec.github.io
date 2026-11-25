@@ -62,7 +62,7 @@ facebook:
   username:
   app_id:
   publisher:
-og_image: # Open Graph/Twitter default site image
+og_image: /images/profile_2026.jpg # Default social-sharing image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -72,7 +72,7 @@ social:
 
 # Analytics
 analytics:
-  provider: "google-universal" # false (default), "google", "google-universal", "custom"
+  provider: false # Set a provider only when a tracking ID is configured.
   google:
     tracking_id:
 
@@ -120,6 +120,17 @@ include:
   - _pages
   - files
 exclude:
+  - REDESIGN_NOTES.md
+  - markdown_generator
+  - scripts
+  - tests
+  - _pages/archive-layout-with-content.md
+  - _pages/collection-archive.html
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/talkmap.html
+  - talkmap
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -245,8 +256,8 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
+paginate: 10
+paginate_path: /posts/page:num/
 timezone: Europe/Madrid # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins

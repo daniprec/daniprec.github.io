@@ -18,13 +18,13 @@ Today I participated in the Science and Technology (Sci-Tech) team building even
 
 We also held a photo contest with the theme "What Does SciTech Mean to You?". To me, science is rigorous and fascinating, but also fun. The motto of our school is "Where minds collide, impact happens" and I wanted to recreate that in a photo. Two research colleagues helped me create this result:
 
-<p align="center"><img src="https://danielprecioso.com/images/2026-06-30-minds-collide.png" alt="Where minds collide..." width="80%"/></p>
+<p align="center">{% include responsive-image.html src="https://danielprecioso.com/images/2026-06-30-minds-collide.png" alt="Where minds collide..." %}</p>
 
 Two minds, about to collide in the most literal sense. The image captures the movement and feels like a particle accelerating in a collider. Nobody was hurt. I filmed them running in opposite directions individually and then merged the two shots. The final image is a composite that captures the energy and excitement of our Sci-Tech community.
 
 The image won first place. The award was vote-based, and I am happy our colleagues appreciated the creativity. It was a memorable experience, and I am grateful to my teammates for their support. The 150 euro award is going back to the office to purchase a new coffee machine for our lab. "Mathematicians are machines that turn coffee into theorems", as Paul Erdős said, and we want to keep that tradition alive.
 
-<p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
+<p align="center">{% include responsive-image.html src=page.featured_image alt="IE Sci-Tech team-building photo contest" style="width: 80%; height: auto" %}</p>
 
 Stay sharp, stay curious, and keep colliding minds (metaphorically speaking)!
 

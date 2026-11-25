@@ -23,7 +23,7 @@ The challenge was clear: defend the technical side of the project with full rigo
 
 Our project this year studied how climate change, especially temperature, affects mortality risk and, in turn, life insurance reserves. I presented the methodology, the main results, and the practical implications for risk and reserving decisions, with a strong focus on clarity for non-technical stakeholders.
 
-<p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
+<p align="center">{% include responsive-image.html src=page.featured_image alt="View of Vienna from the Vienna Insurance Group tower" style="width: 80%; height: auto" %}</p>
 
 I am happy to share that the session went very well. The board was highly engaged, the discussion was constructive, and yes, there were even a few laughs during the presentation.
 

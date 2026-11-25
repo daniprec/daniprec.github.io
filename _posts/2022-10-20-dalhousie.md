@@ -15,7 +15,7 @@ During my PhD at Cadiz University, I had the fantastic opportunity to intern at 
 
 My internship from July to October 2022 was a mix of intensive research and cultural exploration. A highlight was attending the ["Symmetry, Invariants, and their Applications"](https://www.math.mun.ca/~movingframes2022/) conference, where I interacted with leading experts and explored cutting-edge mathematical research.
 
-<p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
+<p align="center">{% include responsive-image.html src=page.featured_image alt="SIA conference during the Dalhousie research stay" style="width: 80%; height: auto" %}</p>
 
 Beyond work, I enjoyed Nova Scotia’s natural beauty, including a memorable hike in Herring Cove near Halifax with conference participants.
 

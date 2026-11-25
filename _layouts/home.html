@@ -3,7 +3,6 @@ layout: default
 ---
 {% include base_path %}
 {% assign h = site.data.home.hero %}
-<a class="skip-link" href="#main-content">Skip to content</a>
 <main id="main-content">
   <header class="hero">
     <div class="s-wrap hero__grid">
@@ -17,7 +16,7 @@ layout: default
           <a class="s-btn s-btn--ghost" href="/cv/">CV and experience</a>
         </div>
       </div>
-      <figure class="hero__photo"><img src="{{ h.photo }}" alt="{{ h.photo_alt }}" width="340" height="425"></figure>
+      <figure class="hero__photo">{% include responsive-image.html src=h.photo alt=h.photo_alt sizes="(max-width: 600px) 120px, 280px" loading="eager" priority=true %}</figure>
     </div>
   </header>
 
@@ -30,7 +29,7 @@ layout: default
       <h2 id="news-h">News</h2>
       <div class="news">
         {% for post in site.posts limit:3 %}
-        <a href="{{ post.url }}">{% if post.featured_image %}<img src="{{ post.featured_image }}" alt="" loading="lazy">{% endif %}<h3>{{ post.title }}</h3></a>
+        <a href="{{ post.url }}">{% if post.featured_image %}{% include responsive-image.html src=post.featured_image alt="" sizes="(min-width: 960px) 360px, 100vw" %}{% endif %}<h3>{{ post.title }}</h3></a>
         {% endfor %}
       </div>
     </div>

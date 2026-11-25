@@ -3,7 +3,10 @@
   <div class="s-wrap">
     <p class="s-eyebrow">Career map</p>
     <h2 id="map-h">How the work connects</h2>
-    <p class="s-lead">Projects overlapped, and not every one led to the next. Solid arrows mark work that grew out of earlier work. Dashed lines mark a shared ingredient.</p>
+    <p class="s-lead">From energy and healthcare to maritime routing, a startup and climate risk.</p>
+    <details class="career-disclosure">
+      <summary>Explore the career map</summary>
+      <p class="cm__hint">Solid arrows show work that grew out of earlier projects. Dashed lines show a shared ingredient.</p>
     <ul class="cm__legend" aria-label="Legend">
       {% for l in cd.categories %}<li><i style="--c: {{ l.color }}"></i>{{ l.label }}</li>{% endfor %}
     </ul>
@@ -54,6 +57,7 @@
       </div>
       <div class="cm__panel" id="cm-panel" tabindex="-1" aria-live="polite"><p class="cm__hint">Select a milestone to see the problem, what I did and the outcome.</p></div>
     </div>
+    </details>
   </div>
 <script>window.CAREER_CONNECTIONS = {{ cd.connections | jsonify }};</script>
 </section>

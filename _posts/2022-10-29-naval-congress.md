@@ -17,7 +17,7 @@ I recently attended the [61st Congress of Naval Engineering and Maritime Industr
 
 Networking with industry professionals and fellow students was inspiring. The congress highlighted the potential of modern sail technologies like WINGSAIL and eSAIL, which promise to boost ship speeds using wind power—a major leap towards sustainability.
 
-<p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
+<p align="center">{% include responsive-image.html src=page.featured_image alt="Discovering the Latest Advancements in Sail Technologies at the 61st Congress of Naval Engineering" style="width: 80%; height: auto" %}</p>
 
 Discussions on "slow steaming" and other methods to reduce emissions while maintaining delivery schedules were particularly engaging. 
 
