@@ -1,6 +1,7 @@
 ---
 title: "Non-Intrusive Load Monitoring"
 collection: portfolio
+sort_order: 7
 permalink: /portfolio/nilm/
 date: 2019-04-01
 excerpt: "Data-driven methods for appliance-level electricity monitoring from smart-meter signals, developed during PhD research at UCA Datalab."

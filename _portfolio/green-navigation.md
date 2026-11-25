@@ -2,6 +2,7 @@
 title: "Green Navigation"
 layout: case-study
 collection: portfolio
+sort_order: 2
 permalink: /portfolio/green-navigation/
 date: 2022-09-01
 excerpt: "Weather routing algorithms, Canonical Green, the startup I co-founded, and an open benchmark built with RISE."
@@ -10,7 +11,7 @@ tags: [optimization, weather routing, maritime, A-star, variational methods, dec
 paperurl: "https://doi.org/10.1016/j.oceaneng.2024.120050"
 featured_image: "/images/2025-01-01-hadad.jpg"
 problem: "Ships burn fuel on routes that ignore wind, waves and ocean currents. Better routes can cut fuel and emissions without changing the ship or its fuel."
-contribution: "I co-developed the HADAD algorithm, developed and ran the pilot simulations, and co-founded Canonical Green, where I am a board member and CTO."
+contribution: "I co-developed routing algorithms, ran pilot simulations, co-founded Canonical Green and co-created the open Weather Routing Benchmark."
 period: "2022 to the present"
 origin: "A research idea from our fisheries work: use the same ocean current data to route ships."
 role: "Routing algorithms, pilot simulations, startup co-founder and open benchmark co-creator."

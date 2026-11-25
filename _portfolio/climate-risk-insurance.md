@@ -2,6 +2,7 @@
 title: "Climate risk for Vienna Insurance Group"
 layout: case-study
 collection: portfolio
+sort_order: 1
 permalink: /portfolio/climate-risk-insurance/
 date: 2025-06-01
 excerpt: "Climate-adjusted mortality models and a dashboard for life and health insurance, built at IE University with Vienna Insurance Group."

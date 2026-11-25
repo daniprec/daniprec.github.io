@@ -1,6 +1,7 @@
 ---
 title: "KAN4Met: Interpretable Networks for Weather Forecasting"
 collection: portfolio
+sort_order: 5
 permalink: /portfolio/kan4met/
 date: 2025-07-01
 excerpt: "Testing Kolmogorov–Arnold Networks, neural networks whose learned functions you can read, for weather forecasting and maritime routing."

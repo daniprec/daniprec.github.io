@@ -2,6 +2,7 @@
 title: "NeoCam: contactless monitoring of premature babies"
 layout: case-study
 collection: portfolio
+sort_order: 4
 permalink: /portfolio/neocam/
 date: 2021-01-01
 excerpt: "Edge-cloud platform for contactless monitoring of premature infants in neonatal intensive care. Second global prize in the OpenCV AI Competition 2021."

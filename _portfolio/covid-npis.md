@@ -1,6 +1,7 @@
 ---
 title: "Modeling the Effectiveness of COVID-19 Restrictions"
 collection: portfolio
+sort_order: 6
 permalink: /portfolio/covid-npis/
 date: 2020-09-01
 excerpt: "Statistical analysis quantifying how nine categories of non-pharmaceutical interventions affected SARS-CoV-2 transmission during the second wave in Spain."
