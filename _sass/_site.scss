@@ -81,6 +81,17 @@ a:hover { color: var(--sea); }
 .page__footer-follow ul li a { color: var(--ink); }
 .sidebar .author__bio, .author__urls { color: var(--ink-soft); }
 
+/* Shared surfaces and text on the archive and course pages. */
+.page__meta, .archive__item-excerpt, .page__date { color: var(--ink-soft); }
+table, th, td { border-color: var(--line); }
+thead { background: var(--paper-2); border-color: var(--line); }
+.author__urls { background: var(--surface); border-color: var(--line); }
+.author__urls:before { border-color: var(--line) transparent; }
+.author__urls:after { border-color: var(--surface) transparent; }
+@include breakpoint($large) { .author__urls { background: transparent; } }
+.teaching__cta.btn { background: var(--sea); color: var(--on-sea) !important; }
+.teaching__cta.btn:hover { background: var(--ink); color: var(--on-ink) !important; }
+
 /* Shared layout */
 .s-wrap { max-width: 1120px; margin: 0 auto; padding: 0 1.25rem; }
 .s-section { padding: var(--space) 0 0; }

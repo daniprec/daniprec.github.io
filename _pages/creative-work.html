@@ -100,8 +100,8 @@ author_profile: true
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background: #f9f9f9;
-    border-left: 3px solid #007bff;
+    background: var(--surface);
+    border-left: 3px solid var(--sea);
     border-radius: 5px;
   }
   .film-image {
@@ -147,14 +147,14 @@ author_profile: true
     font-size: 1.05em;
   }
   .film-body h3 a {
-    color: #007bff;
+    color: var(--sea);
     text-decoration: none;
   }
   .film-body h3 a:hover {
     text-decoration: underline;
   }
   .creative-date {
-    color: #777;
+    color: var(--ink-soft);
     font-size: 0.82em;
     font-weight: normal;
     white-space: nowrap;
@@ -165,14 +165,14 @@ author_profile: true
   .film-role {
     margin-top: auto;
     margin-bottom: 0;
-    color: #555;
+    color: var(--ink-soft);
   }
   .film-language {
     margin-bottom: 8px;
-    color: #555;
+    color: var(--ink-soft);
   }
   .content-note {
-    color: #555;
+    color: var(--ink-soft);
   }
   .more-films {
     margin-top: 24px;
@@ -182,8 +182,8 @@ author_profile: true
     grid-template-columns: minmax(220px, 0.8fr) minmax(300px, 1.6fr);
     overflow: hidden;
     margin-top: 20px;
-    background: #f9f9f9;
-    border-left: 3px solid #007bff;
+    background: var(--surface);
+    border-left: 3px solid var(--sea);
     border-radius: 5px;
   }
   .experiment-image {
@@ -227,8 +227,8 @@ author_profile: true
     bottom: 22px;
     padding: 7px 14px;
     border-radius: 4px;
-    color: #fff;
-    background: #e58d13;
+    color: var(--on-ink);
+    background: var(--ink);
     font-size: 0.85em;
     font-weight: bold;
   }
@@ -239,7 +239,7 @@ author_profile: true
     margin-top: 0;
   }
   .experiment-body h3 a {
-    color: #007bff;
+    color: var(--sea);
     text-decoration: none;
   }
   .experiment-body h3 a:hover {
@@ -250,11 +250,11 @@ author_profile: true
   }
   .experiment-meta {
     margin-bottom: 8px;
-    color: #555;
+    color: var(--ink-soft);
   }
   .experiment-role {
     margin-bottom: 0;
-    color: #555;
+    color: var(--ink-soft);
   }
   @media (max-width: 768px) {
     .creative-work-page {
