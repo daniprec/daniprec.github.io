@@ -52,7 +52,7 @@ strengths:
       - title: Tun-AI with Satlink
         image: /images/2023-07-27-tunai.png
         alt: World map of estimated tuna biomass under drifting buoys
-        maturity: In Satlink's commercial service (about 1,500 vessels). My part: data, dashboard, model support
+        maturity: "In Satlink's commercial service (about 1,500 vessels). My part: data, dashboard, model support"
         text: Estimates tuna biomass under drifting buoys from echosounder and ocean data.
         mine: I built the dashboard, cleaned the data and assisted with the models.
         links:
