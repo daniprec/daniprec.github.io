@@ -21,15 +21,8 @@
 .project-category-tag {
   display: inline-block; padding: .33rem .72rem; border-radius: 9999px;
   font-size: .72rem; font-weight: 600; text-transform: uppercase;
-  letter-spacing: .045em; line-height: 1.4; background: var(--paper-2); color: var(--ink);
+  letter-spacing: .045em; line-height: 1.4; background: var(--paper-2); color: var(--sea); border: 1px solid var(--line);
 }
-/* Dark saturated badges keep white text readable in either theme. */
-.category-energy { background: #92400e; color: #fff; }
-.category-maritime { background: #1d4ed8; color: #fff; }
-.category-health, .category-epidemiology { background: #047857; color: #fff; }
-.category-insurance { background: #0369a1; color: #fff; }
-.category-startup { background: #6d28d9; color: #fff; }
-.category-scientific-ml { background: #0e7490; color: #fff; }
 .project-meta { margin: .65rem 0; color: var(--ink-soft); font-size: .85rem; }
 .project-description { color: var(--ink-soft); line-height: 1.6; font-size: .95rem; }
 .project-description p { margin: 0; }

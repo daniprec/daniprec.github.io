@@ -5,7 +5,8 @@ permalink: /creative-work/
 author_profile: true
 ---
 
-<div class="creative-work-page">
+<main class="creative-work-page" id="main-content">
+  <h1>{{ page.title }}</h1>
   <p>Outside my research and teaching, I have been making short films for several years. These projects have given me a different way to explore storytelling, visual communication, and collaborative work.</p>
 
   <h2>Short Films</h2>
@@ -82,13 +83,13 @@ author_profile: true
       <p class="experiment-role"><strong>Role:</strong> Concept, design, and development</p>
     </div>
   </article>
-</div>
+</main>
 
 <style>
   .creative-work-page {
-    max-width: 1200px;
+    max-width: 1120px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 2rem 1.25rem 4rem;
   }
   .films-grid {
     display: grid;
@@ -258,7 +259,7 @@ author_profile: true
   }
   @media (max-width: 768px) {
     .creative-work-page {
-      padding: 0 16px;
+      padding: 2rem 1rem 4rem;
     }
     .experiment-card {
       grid-template-columns: 1fr;

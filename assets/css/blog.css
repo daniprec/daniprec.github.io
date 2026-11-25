@@ -30,7 +30,7 @@ transform: scale(1.05); /* Slight zoom effect on hover */
 position: absolute;
 bottom: 0; /* Position the title at the bottom of the image */
 width: 100%; /* Use the full width of the parent */
-background-color: rgba(0, 0, 255, 0.6); /* Blue background with 60% opacity for readability */
+background-color: rgba(12, 39, 51, 0.9); /* Stable contrast over photographs. */
 color: white; /* Text color set to white for visibility against the blue */
 padding: 10px 0; /* Padding at top and bottom */
 margin: 0; /* Remove any default margins */
@@ -84,4 +84,9 @@ flex: 40%; /* Adjust the width as needed (e.g., 40% for image) */
 /* Define the width for the column containing the content */
 .column-60 {
 flex: 60%; /* Adjust the width as needed (e.g., 60% for content) */
+}
+
+@media (max-width: 600px) {
+  .two-column-layout { flex-direction: column; }
+  .archive__item { min-height: 0; margin-bottom: 2rem; }
 }

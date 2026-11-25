@@ -1,19 +1,17 @@
-<section class="s-section" id="strengths" aria-labelledby="strengths-h">
+<section class="s-section" id="work" aria-labelledby="strengths-h">
   <div class="s-wrap">
-    <p class="s-eyebrow">What I contribute</p>
-    <h2 id="strengths-h">Three strengths, each with evidence</h2>
-    <p class="s-lead">Select a circle to see examples, what I did on each, and links.</p>
+    <h2 id="strengths-h">Research, industry and teaching</h2>
+    <p class="s-lead">Three ways I put data science to work.</p>
     <div class="strengths" data-strengths>
       {% for s in site.data.home.strengths %}
       <div class="strength">
         <button type="button" class="strength__btn" aria-expanded="false" aria-controls="sp-{{ s.id }}">
           <img class="strength__img" src="{{ s.image }}" alt="" loading="lazy" width="400" height="400">
-          <span class="strength__veil" aria-hidden="true"></span>
           <span class="strength__text">
             <span class="strength__title">{{ s.title }}</span>
             <span class="strength__sum">{{ s.summary }}</span>
             <span class="strength__proof"><strong>{{ s.proof_value }}</strong>{{ s.proof }}</span>
-            <span class="strength__more">See examples</span>
+            <span class="strength__more">Explore the work <span aria-hidden="true">&rarr;</span></span>
           </span>
         </button>
         <div class="strength__panel" id="sp-{{ s.id }}" role="region" aria-label="{{ s.panel_title }}">
@@ -22,11 +20,13 @@
             {% for e in s.examples %}
             <article class="ex">
               <img src="{{ e.image }}" alt="{{ e.alt }}" loading="lazy" width="480" height="300">
+              <div class="ex__body">
               <h4>{{ e.title }}</h4>
               {% if e.maturity %}<p><span class="s-chip">{{ e.maturity }}</span></p>{% endif %}
               <p>{{ e.text }}</p>
               {% if e.mine %}<p class="ex__mine"><strong>My part:</strong> {{ e.mine }}</p>{% endif %}
               <p class="ex__links">{% for l in e.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</p>
+              </div>
             </article>
             {% endfor %}
           </div>
@@ -34,5 +34,6 @@
       </div>
       {% endfor %}
     </div>
+    <p class="work-more"><a href="/portfolio/">All projects &rarr;</a><a href="/papers/">Research papers &rarr;</a></p>
   </div>
 </section>

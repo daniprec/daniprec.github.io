@@ -16,7 +16,7 @@ entries:
         link: { label: Case study, url: /portfolio/climate-risk-insurance/ }
       - views: [applied, research]
         text: "Weather routing methods with RISE (Research Institutes of Sweden): co-developed HADAD, co-created the open Weather Routing Benchmark and presented BERS at SWOPP3."
-        link: { label: Benchmark, url: /portfolio/weather-routing-benchmark/ }
+        link: { label: Benchmark, url: /portfolio/green-navigation/#benchmark }
       - views: [research]
         text: "KAN4Met, a research project on Kolmogorov-Arnold Networks for weather forecasting. Team member. Early stage, no results yet."
         link: { label: Project, url: /portfolio/kan4met/ }

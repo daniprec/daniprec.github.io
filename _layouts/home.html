@@ -13,9 +13,8 @@ layout: default
         <p class="hero__intro">{{ h.intro }}</p>
         <p class="hero__roles">{{ h.roles }}</p>
         <div class="hero__cta">
-          <a class="s-btn" href="#work">Selected work</a>
+          <a class="s-btn" href="#work">Explore my work</a>
           <a class="s-btn s-btn--ghost" href="/cv/">CV and experience</a>
-          <a class="s-btn s-btn--ghost" href="#contact">Contact</a>
         </div>
       </div>
       <figure class="hero__photo"><img src="{{ h.photo }}" alt="{{ h.photo_alt }}" width="340" height="425"></figure>
@@ -23,7 +22,6 @@ layout: default
   </header>
 
   {% include home/strengths.html %}
-  {% include home/cases.html %}
   {% include home/career-map.html %}
 
   <section class="s-section" id="news" aria-labelledby="news-h">
