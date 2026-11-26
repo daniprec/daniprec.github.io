@@ -10,7 +10,7 @@ category: Maritime
 topics: [Maritime, Startup]
 tags: [optimization, weather routing, maritime, A-star, variational methods, decarbonization]
 paperurl: "https://doi.org/10.1016/j.oceaneng.2024.120050"
-featured_image: "/images/2025-01-01-hadad.jpg"
+featured_image: "/images/projects/green-navigation/route-comparison.jpg"
 problem: "Ships burn fuel on routes that ignore wind, waves and ocean currents. Better routes can cut fuel and emissions without changing the ship or its fuel."
 contribution: "I co-developed routing algorithms, ran pilot simulations, co-founded Canonical Green and co-created the open Weather Routing Benchmark."
 period: "2022 to the present"
