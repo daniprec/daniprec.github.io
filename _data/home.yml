@@ -29,11 +29,11 @@ strengths:
   url: /portfolio/climate-risk-insurance/
 - id: navigation
   title: Green Navigation
-  summary: Weather routing research, a startup and an open benchmark.
-  proof_value: Research to software
+  summary: Optimizing maritime routes to reduce fuel consumption and emissions.
+  proof_value: Entrepreneurship
   proof: Co-founder of Canonical Green
-  image: /images/projects/green-navigation/route-comparison.jpg
-  image_alt: Comparison of maritime routes across the Atlantic
+  image: /images/projects/green-navigation/demo.png
+  image_alt: Demo of the web application for Green Navigation
   panel_title: Green Navigation
   examples:
   - title: From routing algorithms to a maritime startup
@@ -53,7 +53,7 @@ strengths:
   summary: Python and applied mathematics, taught through practical problems.
   proof_value: Communication
   proof: Teaching Excellence Award, 2025/26
-  image: /images/2025-11-28-teaching-award.jpeg
+  image: /images/2023-07-10-wimobo.JPEG
   image_alt: IE University Teaching Excellence Award certificate
   panel_title: Teaching and communication
   examples:
