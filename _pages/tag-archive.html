@@ -1,17 +1,18 @@
 ---
 layout: archive
 permalink: /tags/
-title: "Posts by Tags"
-author_profile: true
+title: "Topics"
+author_profile: false
 ---
 
 {% include base_path %}
-{% include group-by-array collection=site.posts field="tags" %}
+{% assign archive_documents = site.posts | concat: site.portfolio | concat: site.papers | concat: site.teaching | concat: site.talks %}
+{% include group-by-array collection=archive_documents field="tags" %}
 
 {% for tag in group_names %}
   {% assign posts = group_items[forloop.index0] %}
   <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
   {% for post in posts %}
-    {% include archive-single.html %}
+    <p><a href="{{ post.url | relative_url }}">{{ post.title }}</a></p>
   {% endfor %}
 {% endfor %}

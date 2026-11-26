@@ -18,7 +18,7 @@ With less than 48 hours to work, we rolled up our sleeves and built an end-to-en
 
 Our efforts were rewarded with **third place**, just two points behind the runner-up. Not bad for a weekend sprint!
 
-<img src="{{ page.featured_image }}" alt="Ocean Hackathon 2020" width="100%"/>
+{% include responsive-image.html src=page.featured_image alt="Ocean Hackathon 2020" %}
 
 It wasn't our first experience pushing through sleepless nights. Some of you might remember our [ICU forecasting model](https://danielprecioso.com/news/2020/covid) from earlier this year during the first COVID-19 wave. But this time, the challenge was maritime, the setting was the port of Cádiz, and the energy was pure collaboration.
 

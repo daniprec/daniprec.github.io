@@ -1,0 +1,380 @@
+{
+  "/images/2020-04-16-covid.jpg": {
+    "src": "/images/optimized/2020-04-16-covid-jpg-960.webp",
+    "width": 960,
+    "height": 554,
+    "srcset": "/images/optimized/2020-04-16-covid-jpg-480.webp 480w, /images/optimized/2020-04-16-covid-jpg-960.webp 960w, /images/optimized/2020-04-16-covid-jpg-1600.webp 1600w"
+  },
+  "/images/2020-06-01-covid.jpg": {
+    "src": "/images/optimized/2020-06-01-covid-jpg-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcset": "/images/optimized/2020-06-01-covid-jpg-480.webp 480w, /images/optimized/2020-06-01-covid-jpg-960.webp 960w, /images/optimized/2020-06-01-covid-jpg-1600.webp 1600w"
+  },
+  "/images/2020-10-13-ocean-hackathon.jpeg": {
+    "src": "/images/optimized/2020-10-13-ocean-hackathon-jpeg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2020-10-13-ocean-hackathon-jpeg-480.webp 480w, /images/optimized/2020-10-13-ocean-hackathon-jpeg-960.webp 960w, /images/optimized/2020-10-13-ocean-hackathon-jpeg-1280.webp 1280w"
+  },
+  "/images/2021-06-14-jipii.jpg": {
+    "src": "/images/optimized/2021-06-14-jipii-jpg-960.webp",
+    "width": 960,
+    "height": 533,
+    "srcset": "/images/optimized/2021-06-14-jipii-jpg-480.webp 480w, /images/optimized/2021-06-14-jipii-jpg-960.webp 960w, /images/optimized/2021-06-14-jipii-jpg-1080.webp 1080w"
+  },
+  "/images/2021-06-30-powertech.jpg": {
+    "src": "/images/optimized/2021-06-30-powertech-jpg-616.webp",
+    "width": 616,
+    "height": 440,
+    "srcset": "/images/optimized/2021-06-30-powertech-jpg-480.webp 480w, /images/optimized/2021-06-30-powertech-jpg-616.webp 616w"
+  },
+  "/images/2021-09-09-neocam-prize.png": {
+    "src": "/images/optimized/2021-09-09-neocam-prize-png-960.webp",
+    "width": 960,
+    "height": 731,
+    "srcset": "/images/optimized/2021-09-09-neocam-prize-png-480.webp 480w, /images/optimized/2021-09-09-neocam-prize-png-960.webp 960w, /images/optimized/2021-09-09-neocam-prize-png-1600.webp 1600w"
+  },
+  "/images/2021-11-09-imuva.jpg": {
+    "src": "/images/optimized/2021-11-09-imuva-jpg-960.webp",
+    "width": 960,
+    "height": 1280,
+    "srcset": "/images/optimized/2021-11-09-imuva-jpg-480.webp 480w, /images/optimized/2021-11-09-imuva-jpg-960.webp 960w, /images/optimized/2021-11-09-imuva-jpg-1600.webp 1600w"
+  },
+  "/images/2021-12-15-ocean-hackathon.jpg": {
+    "src": "/images/optimized/2021-12-15-ocean-hackathon-jpg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2021-12-15-ocean-hackathon-jpg-480.webp 480w, /images/optimized/2021-12-15-ocean-hackathon-jpg-960.webp 960w, /images/optimized/2021-12-15-ocean-hackathon-jpg-1024.webp 1024w"
+  },
+  "/images/2022-04-21-orthogonal.jpg": {
+    "src": "/images/optimized/2022-04-21-orthogonal-jpg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2022-04-21-orthogonal-jpg-480.webp 480w, /images/optimized/2022-04-21-orthogonal-jpg-960.webp 960w, /images/optimized/2022-04-21-orthogonal-jpg-1600.webp 1600w"
+  },
+  "/images/2022-06-06-incubazul.jpg": {
+    "src": "/images/optimized/2022-06-06-incubazul-jpg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2022-06-06-incubazul-jpg-480.webp 480w, /images/optimized/2022-06-06-incubazul-jpg-960.webp 960w, /images/optimized/2022-06-06-incubazul-jpg-1600.webp 1600w"
+  },
+  "/images/2022-06-09-seio.jpg": {
+    "src": "/images/optimized/2022-06-09-seio-jpg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2022-06-09-seio-jpg-480.webp 480w, /images/optimized/2022-06-09-seio-jpg-960.webp 960w, /images/optimized/2022-06-09-seio-jpg-1600.webp 1600w"
+  },
+  "/images/2022-06-16-des.jpg": {
+    "src": "/images/optimized/2022-06-16-des-jpg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2022-06-16-des-jpg-480.webp 480w, /images/optimized/2022-06-16-des-jpg-960.webp 960w, /images/optimized/2022-06-16-des-jpg-1600.webp 1600w"
+  },
+  "/images/2022-08-05-sia-conference.jpg": {
+    "src": "/images/optimized/2022-08-05-sia-conference-jpg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2022-08-05-sia-conference-jpg-480.webp 480w, /images/optimized/2022-08-05-sia-conference-jpg-960.webp 960w, /images/optimized/2022-08-05-sia-conference-jpg-1600.webp 1600w"
+  },
+  "/images/2023-06-07-pitch.png": {
+    "src": "/images/optimized/2023-06-07-pitch-png-960.webp",
+    "width": 960,
+    "height": 540,
+    "srcset": "/images/optimized/2023-06-07-pitch-png-480.webp 480w, /images/optimized/2023-06-07-pitch-png-960.webp 960w, /images/optimized/2023-06-07-pitch-png-1600.webp 1600w"
+  },
+  "/images/2023-07-10-wimobo.JPEG": {
+    "src": "/images/optimized/2023-07-10-wimobo-jpeg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2023-07-10-wimobo-jpeg-480.webp 480w, /images/optimized/2023-07-10-wimobo-jpeg-960.webp 960w, /images/optimized/2023-07-10-wimobo-jpeg-1536.webp 1536w"
+  },
+  "/images/2023-07-18-thesis.jpg": {
+    "src": "/images/optimized/2023-07-18-thesis-jpg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2023-07-18-thesis-jpg-480.webp 480w, /images/optimized/2023-07-18-thesis-jpg-960.webp 960w, /images/optimized/2023-07-18-thesis-jpg-1600.webp 1600w"
+  },
+  "/images/2023-07-27-tunai.png": {
+    "src": "/images/optimized/2023-07-27-tunai-png-960.webp",
+    "width": 960,
+    "height": 482,
+    "srcset": "/images/optimized/2023-07-27-tunai-png-480.webp 480w, /images/optimized/2023-07-27-tunai-png-960.webp 960w, /images/optimized/2023-07-27-tunai-png-1600.webp 1600w"
+  },
+  "/images/2023-09-29-opentop-demo.jpeg": {
+    "src": "/images/optimized/2023-09-29-opentop-demo-jpeg-960.webp",
+    "width": 960,
+    "height": 540,
+    "srcset": "/images/optimized/2023-09-29-opentop-demo-jpeg-480.webp 480w, /images/optimized/2023-09-29-opentop-demo-jpeg-960.webp 960w, /images/optimized/2023-09-29-opentop-demo-jpeg-1024.webp 1024w"
+  },
+  "/images/2023-10-02-postdoc.jpg": {
+    "src": "/images/optimized/2023-10-02-postdoc-jpg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2023-10-02-postdoc-jpg-480.webp 480w, /images/optimized/2023-10-02-postdoc-jpg-960.webp 960w, /images/optimized/2023-10-02-postdoc-jpg-1600.webp 1600w"
+  },
+  "/images/2023-11-27-valencia-grant.jpg": {
+    "src": "/images/optimized/2023-11-27-valencia-grant-jpg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2023-11-27-valencia-grant-jpg-480.webp 480w, /images/optimized/2023-11-27-valencia-grant-jpg-960.webp 960w, /images/optimized/2023-11-27-valencia-grant-jpg-1600.webp 1600w"
+  },
+  "/images/2024-01-01-newyear.jpeg": {
+    "src": "/images/optimized/2024-01-01-newyear-jpeg-960.webp",
+    "width": 960,
+    "height": 540,
+    "srcset": "/images/optimized/2024-01-01-newyear-jpeg-480.webp 480w, /images/optimized/2024-01-01-newyear-jpeg-960.webp 960w, /images/optimized/2024-01-01-newyear-jpeg-1600.webp 1600w"
+  },
+  "/images/2024-04-25-pinsight.jpeg": {
+    "src": "/images/optimized/2024-04-25-pinsight-jpeg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2024-04-25-pinsight-jpeg-480.webp 480w, /images/optimized/2024-04-25-pinsight-jpeg-960.webp 960w, /images/optimized/2024-04-25-pinsight-jpeg-1536.webp 1536w"
+  },
+  "/images/2024-05-21-navalia.jpg": {
+    "src": "/images/optimized/2024-05-21-navalia-jpg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2024-05-21-navalia-jpg-480.webp 480w, /images/optimized/2024-05-21-navalia-jpg-960.webp 960w, /images/optimized/2024-05-21-navalia-jpg-1536.webp 1536w"
+  },
+  "/images/2024-11-22-dubai.jpg": {
+    "src": "/images/optimized/2024-11-22-dubai-jpg-960.webp",
+    "width": 960,
+    "height": 640,
+    "srcset": "/images/optimized/2024-11-22-dubai-jpg-480.webp 480w, /images/optimized/2024-11-22-dubai-jpg-960.webp 960w, /images/optimized/2024-11-22-dubai-jpg-1600.webp 1600w"
+  },
+  "/images/2025-01-01-hadad.jpg": {
+    "src": "/images/optimized/2025-01-01-hadad-jpg-960.webp",
+    "width": 960,
+    "height": 1292,
+    "srcset": "/images/optimized/2025-01-01-hadad-jpg-480.webp 480w, /images/optimized/2025-01-01-hadad-jpg-960.webp 960w, /images/optimized/2025-01-01-hadad-jpg-1190.webp 1190w"
+  },
+  "/images/2025-03-27-the-conversation.jpg": {
+    "src": "/images/optimized/2025-03-27-the-conversation-jpg-960.webp",
+    "width": 960,
+    "height": 473,
+    "srcset": "/images/optimized/2025-03-27-the-conversation-jpg-480.webp 480w, /images/optimized/2025-03-27-the-conversation-jpg-960.webp 960w, /images/optimized/2025-03-27-the-conversation-jpg-1356.webp 1356w"
+  },
+  "/images/2025-07-10-vig-sign.jpg": {
+    "src": "/images/optimized/2025-07-10-vig-sign-jpg-960.webp",
+    "width": 960,
+    "height": 640,
+    "srcset": "/images/optimized/2025-07-10-vig-sign-jpg-480.webp 480w, /images/optimized/2025-07-10-vig-sign-jpg-960.webp 960w, /images/optimized/2025-07-10-vig-sign-jpg-1280.webp 1280w"
+  },
+  "/images/2025-07-10-vig-table.png": {
+    "src": "/images/optimized/2025-07-10-vig-table-png-740.webp",
+    "width": 740,
+    "height": 480,
+    "srcset": "/images/optimized/2025-07-10-vig-table-png-480.webp 480w, /images/optimized/2025-07-10-vig-table-png-740.webp 740w"
+  },
+  "/images/2025-07-10-vig-team.jpg": {
+    "src": "/images/optimized/2025-07-10-vig-team-jpg-960.webp",
+    "width": 960,
+    "height": 537,
+    "srcset": "/images/optimized/2025-07-10-vig-team-jpg-480.webp 480w, /images/optimized/2025-07-10-vig-team-jpg-960.webp 960w, /images/optimized/2025-07-10-vig-team-jpg-1280.webp 1280w"
+  },
+  "/images/2025-09-10-edinburgh-talk.jpg": {
+    "src": "/images/optimized/2025-09-10-edinburgh-talk-jpg-960.webp",
+    "width": 960,
+    "height": 576,
+    "srcset": "/images/optimized/2025-09-10-edinburgh-talk-jpg-480.webp 480w, /images/optimized/2025-09-10-edinburgh-talk-jpg-960.webp 960w, /images/optimized/2025-09-10-edinburgh-talk-jpg-1600.webp 1600w"
+  },
+  "/images/2025-09-10-edinburgh-team.jpg": {
+    "src": "/images/optimized/2025-09-10-edinburgh-team-jpg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2025-09-10-edinburgh-team-jpg-480.webp 480w, /images/optimized/2025-09-10-edinburgh-team-jpg-960.webp 960w, /images/optimized/2025-09-10-edinburgh-team-jpg-1600.webp 1600w"
+  },
+  "/images/2025-10-15-marine-structures.jpg": {
+    "src": "/images/optimized/2025-10-15-marine-structures-jpg-563.webp",
+    "width": 563,
+    "height": 768,
+    "srcset": "/images/optimized/2025-10-15-marine-structures-jpg-480.webp 480w, /images/optimized/2025-10-15-marine-structures-jpg-563.webp 563w"
+  },
+  "/images/2025-11-15-100-citations.jpg": {
+    "src": "/images/optimized/2025-11-15-100-citations-jpg-960.webp",
+    "width": 960,
+    "height": 540,
+    "srcset": "/images/optimized/2025-11-15-100-citations-jpg-480.webp 480w, /images/optimized/2025-11-15-100-citations-jpg-960.webp 960w"
+  },
+  "/images/2025-11-28-teaching-award.jpeg": {
+    "src": "/images/optimized/2025-11-28-teaching-award-jpeg-960.webp",
+    "width": 960,
+    "height": 540,
+    "srcset": "/images/optimized/2025-11-28-teaching-award-jpeg-480.webp 480w, /images/optimized/2025-11-28-teaching-award-jpeg-960.webp 960w, /images/optimized/2025-11-28-teaching-award-jpeg-1600.webp 1600w"
+  },
+  "/images/2026-01-28-steering-committee.jpg": {
+    "src": "/images/optimized/2026-01-28-steering-committee-jpg-960.webp",
+    "width": 960,
+    "height": 375,
+    "srcset": "/images/optimized/2026-01-28-steering-committee-jpg-480.webp 480w, /images/optimized/2026-01-28-steering-committee-jpg-960.webp 960w, /images/optimized/2026-01-28-steering-committee-jpg-1600.webp 1600w"
+  },
+  "/images/2026-01-28-technical-meet.jpeg": {
+    "src": "/images/optimized/2026-01-28-technical-meet-jpeg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2026-01-28-technical-meet-jpeg-480.webp 480w, /images/optimized/2026-01-28-technical-meet-jpeg-960.webp 960w, /images/optimized/2026-01-28-technical-meet-jpeg-1600.webp 1600w"
+  },
+  "/images/2026-02-04-vertical-race.jpg": {
+    "src": "/images/optimized/2026-02-04-vertical-race-jpg-960.webp",
+    "width": 960,
+    "height": 647,
+    "srcset": "/images/optimized/2026-02-04-vertical-race-jpg-480.webp 480w, /images/optimized/2026-02-04-vertical-race-jpg-960.webp 960w, /images/optimized/2026-02-04-vertical-race-jpg-1600.webp 1600w"
+  },
+  "/images/2026-03-01-climate-life-tables.png": {
+    "src": "/images/optimized/2026-03-01-climate-life-tables-png-960.webp",
+    "width": 960,
+    "height": 424,
+    "srcset": "/images/optimized/2026-03-01-climate-life-tables-png-480.webp 480w, /images/optimized/2026-03-01-climate-life-tables-png-960.webp 960w, /images/optimized/2026-03-01-climate-life-tables-png-1344.webp 1344w"
+  },
+  "/images/2026-05-13-vig-tower.jpeg": {
+    "src": "/images/optimized/2026-05-13-vig-tower-jpeg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2026-05-13-vig-tower-jpeg-480.webp 480w, /images/optimized/2026-05-13-vig-tower-jpeg-960.webp 960w, /images/optimized/2026-05-13-vig-tower-jpeg-1600.webp 1600w"
+  },
+  "/images/2026-05-21-ie-rsme.jpg": {
+    "src": "/images/optimized/2026-05-21-ie-rsme-jpg-960.webp",
+    "width": 960,
+    "height": 641,
+    "srcset": "/images/optimized/2026-05-21-ie-rsme-jpg-480.webp 480w, /images/optimized/2026-05-21-ie-rsme-jpg-960.webp 960w, /images/optimized/2026-05-21-ie-rsme-jpg-1280.webp 1280w"
+  },
+  "/images/2026-06-01-bers.png": {
+    "src": "/images/optimized/2026-06-01-bers-png-960.webp",
+    "width": 960,
+    "height": 448,
+    "srcset": "/images/optimized/2026-06-01-bers-png-480.webp 480w, /images/optimized/2026-06-01-bers-png-960.webp 960w, /images/optimized/2026-06-01-bers-png-1241.webp 1241w"
+  },
+  "/images/2026-06-02-goteborg.jpeg": {
+    "src": "/images/optimized/2026-06-02-goteborg-jpeg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2026-06-02-goteborg-jpeg-480.webp 480w, /images/optimized/2026-06-02-goteborg-jpeg-960.webp 960w, /images/optimized/2026-06-02-goteborg-jpeg-1600.webp 1600w"
+  },
+  "/images/2026-06-30-minds-collide.png": {
+    "src": "/images/optimized/2026-06-30-minds-collide-png-960.webp",
+    "width": 960,
+    "height": 540,
+    "srcset": "/images/optimized/2026-06-30-minds-collide-png-480.webp 480w, /images/optimized/2026-06-30-minds-collide-png-960.webp 960w, /images/optimized/2026-06-30-minds-collide-png-1024.webp 1024w"
+  },
+  "/images/2026-06-30-scitech-teambuilding.jpg": {
+    "src": "/images/optimized/2026-06-30-scitech-teambuilding-jpg-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcset": "/images/optimized/2026-06-30-scitech-teambuilding-jpg-480.webp 480w, /images/optimized/2026-06-30-scitech-teambuilding-jpg-960.webp 960w, /images/optimized/2026-06-30-scitech-teambuilding-jpg-1600.webp 1600w"
+  },
+  "/images/2026-09-07-cci26-collider.jpg": {
+    "src": "/images/optimized/2026-09-07-cci26-collider-jpg-960.webp",
+    "width": 960,
+    "height": 640,
+    "srcset": "/images/optimized/2026-09-07-cci26-collider-jpg-480.webp 480w, /images/optimized/2026-09-07-cci26-collider-jpg-960.webp 960w, /images/optimized/2026-09-07-cci26-collider-jpg-1600.webp 1600w"
+  },
+  "/images/2026-09-07-cci26-participants.jpg": {
+    "src": "/images/optimized/2026-09-07-cci26-participants-jpg-960.webp",
+    "width": 960,
+    "height": 640,
+    "srcset": "/images/optimized/2026-09-07-cci26-participants-jpg-480.webp 480w, /images/optimized/2026-09-07-cci26-participants-jpg-960.webp 960w, /images/optimized/2026-09-07-cci26-participants-jpg-1600.webp 1600w"
+  },
+  "/images/2026-09-07-cci26-team.jpg": {
+    "src": "/images/optimized/2026-09-07-cci26-team-jpg-960.webp",
+    "width": 960,
+    "height": 640,
+    "srcset": "/images/optimized/2026-09-07-cci26-team-jpg-480.webp 480w, /images/optimized/2026-09-07-cci26-team-jpg-960.webp 960w, /images/optimized/2026-09-07-cci26-team-jpg-1600.webp 1600w"
+  },
+  "/images/2026-10-29-aneca.jpg": {
+    "src": "/images/optimized/2026-10-29-aneca-jpg-960.webp",
+    "width": 960,
+    "height": 502,
+    "srcset": "/images/optimized/2026-10-29-aneca-jpg-480.webp 480w, /images/optimized/2026-10-29-aneca-jpg-960.webp 960w, /images/optimized/2026-10-29-aneca-jpg-1200.webp 1200w"
+  },
+  "/images/frontiers_in_public_health.jpg": {
+    "src": "/images/optimized/frontiers_in_public_health-jpg-960.webp",
+    "width": 960,
+    "height": 600,
+    "srcset": "/images/optimized/frontiers_in_public_health-jpg-480.webp 480w, /images/optimized/frontiers_in_public_health-jpg-960.webp 960w, /images/optimized/frontiers_in_public_health-jpg-1600.webp 1600w"
+  },
+  "/images/profile_2023.jpeg": {
+    "src": "/images/optimized/profile_2023-jpeg-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcset": "/images/optimized/profile_2023-jpeg-480.webp 480w, /images/optimized/profile_2023-jpeg-960.webp 960w, /images/optimized/profile_2023-jpeg-1076.webp 1076w"
+  },
+  "/images/profile_2026.jpg": {
+    "src": "/images/optimized/profile_2026-jpg-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcset": "/images/optimized/profile_2026-jpg-480.webp 480w, /images/optimized/profile_2026-jpg-960.webp 960w, /images/optimized/profile_2026-jpg-1182.webp 1182w"
+  },
+  "/images/projects/green-navigation/benchmark-routes.png": {
+    "src": "/images/optimized/projects/green-navigation/benchmark-routes-png-883.webp",
+    "width": 883,
+    "height": 497,
+    "srcset": "/images/optimized/projects/green-navigation/benchmark-routes-png-480.webp 480w, /images/optimized/projects/green-navigation/benchmark-routes-png-883.webp 883w"
+  },
+  "/images/projects/green-navigation/route-comparison.jpg": {
+    "src": "/images/optimized/projects/green-navigation/route-comparison-jpg-960.webp",
+    "width": 960,
+    "height": 429,
+    "srcset": "/images/optimized/projects/green-navigation/route-comparison-jpg-480.webp 480w, /images/optimized/projects/green-navigation/route-comparison-jpg-960.webp 960w, /images/optimized/projects/green-navigation/route-comparison-jpg-1554.webp 1554w"
+  },
+  "/images/projects/neocam/edge-cloud-architecture.png": {
+    "src": "/images/optimized/projects/neocam/edge-cloud-architecture-png-960.webp",
+    "width": 960,
+    "height": 481,
+    "srcset": "/images/optimized/projects/neocam/edge-cloud-architecture-png-480.webp 480w, /images/optimized/projects/neocam/edge-cloud-architecture-png-960.webp 960w, /images/optimized/projects/neocam/edge-cloud-architecture-png-1600.webp 1600w"
+  },
+  "/images/projects/neocam/hospital-installation.png": {
+    "src": "/images/optimized/projects/neocam/hospital-installation-png-664.webp",
+    "width": 664,
+    "height": 322,
+    "srcset": "/images/optimized/projects/neocam/hospital-installation-png-480.webp 480w, /images/optimized/projects/neocam/hospital-installation-png-664.webp 664w"
+  },
+  "/images/projects/neocam/neocam-device.png": {
+    "src": "/images/optimized/projects/neocam/neocam-device-png-960.webp",
+    "width": 960,
+    "height": 447,
+    "srcset": "/images/optimized/projects/neocam/neocam-device-png-480.webp 480w, /images/optimized/projects/neocam/neocam-device-png-960.webp 960w, /images/optimized/projects/neocam/neocam-device-png-1024.webp 1024w"
+  },
+  "/images/projects/neocam/prototype-views.png": {
+    "src": "/images/optimized/projects/neocam/prototype-views-png-776.webp",
+    "width": 776,
+    "height": 586,
+    "srcset": "/images/optimized/projects/neocam/prototype-views-png-480.webp 480w, /images/optimized/projects/neocam/prototype-views-png-776.webp 776w"
+  },
+  "/images/projects/tun-ai/echosounder-depth-layers.png": {
+    "src": "/images/optimized/projects/tun-ai/echosounder-depth-layers-png-504.webp",
+    "width": 504,
+    "height": 530,
+    "srcset": "/images/optimized/projects/tun-ai/echosounder-depth-layers-png-480.webp 480w, /images/optimized/projects/tun-ai/echosounder-depth-layers-png-504.webp 504w"
+  },
+  "/images/projects/tun-ai/echosounder-training-window.png": {
+    "src": "/images/optimized/projects/tun-ai/echosounder-training-window-png-960.webp",
+    "width": 960,
+    "height": 137,
+    "srcset": "/images/optimized/projects/tun-ai/echosounder-training-window-png-480.webp 480w, /images/optimized/projects/tun-ai/echosounder-training-window-png-960.webp 960w, /images/optimized/projects/tun-ai/echosounder-training-window-png-1600.webp 1600w"
+  },
+  "/images/projects/tun-ai/oceanography-and-acoustic-data.png": {
+    "src": "/images/optimized/projects/tun-ai/oceanography-and-acoustic-data-png-908.webp",
+    "width": 908,
+    "height": 510,
+    "srcset": "/images/optimized/projects/tun-ai/oceanography-and-acoustic-data-png-480.webp 480w, /images/optimized/projects/tun-ai/oceanography-and-acoustic-data-png-908.webp 908w"
+  },
+  "/images/projects/tun-ai/satlink-dashboard.png": {
+    "src": "/images/optimized/projects/tun-ai/satlink-dashboard-png-550.webp",
+    "width": 550,
+    "height": 303,
+    "srcset": "/images/optimized/projects/tun-ai/satlink-dashboard-png-480.webp 480w, /images/optimized/projects/tun-ai/satlink-dashboard-png-550.webp 550w"
+  },
+  "/images/projects/vig/climate-insurance-framework.png": {
+    "src": "/images/optimized/projects/vig/climate-insurance-framework-png-960.webp",
+    "width": 960,
+    "height": 540,
+    "srcset": "/images/optimized/projects/vig/climate-insurance-framework-png-480.webp 480w, /images/optimized/projects/vig/climate-insurance-framework-png-960.webp 960w, /images/optimized/projects/vig/climate-insurance-framework-png-1600.webp 1600w"
+  },
+  "/images/projects/vig/dashboard-poster.png": {
+    "src": "/images/optimized/projects/vig/dashboard-poster-png-960.webp",
+    "width": 960,
+    "height": 768,
+    "srcset": "/images/optimized/projects/vig/dashboard-poster-png-480.webp 480w, /images/optimized/projects/vig/dashboard-poster-png-960.webp 960w, /images/optimized/projects/vig/dashboard-poster-png-1000.webp 1000w"
+  }
+}

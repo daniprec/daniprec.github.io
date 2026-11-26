@@ -14,7 +14,7 @@ Hello dear readers,
 
 I’m excited to announce that our Smart Shipping project won second prize at the Ocean Hackathon 2021 in Brest, France!
 
-<p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
+<p align="center">{% include responsive-image.html src=page.featured_image alt="Smart Shipping at the Ocean Hackathon grand finale in Brest" style="width: 80%; height: auto" %}</p>
 
 Our project, developed at [UCA Datalab](https://datalab.uca.es), aims to optimize marine shipping routes using real-time data on ocean currents, wind, and waves—known as "weather routing." This innovation promises to save fuel, reduce emissions, and support the ecological transition in marine transport.
 
@@ -22,7 +22,7 @@ The Ocean Hackathon featured over a hundred teams from 15 cities. Our regional f
 
 Check out our presentation from the event in the video below:
 
-<p align="center"><a href="https://youtu.be/nzPbj88IV0c&t=5300"><img src="https://img.youtube.com/vi/nzPbj88IV0c/0.jpg" width="80%"/></a></p>
+<p align="center"><a href="https://youtu.be/nzPbj88IV0c&t=5300">{% include responsive-image.html src="https://img.youtube.com/vi/nzPbj88IV0c/0.jpg" alt="Video thumbnail: Smart Shipping Project Wins Second Prize at Ocean Hackathon 2021" %}</a></p>
 
 This achievement reflects our team's commitment to advancing sustainable solutions for shipping. We’re eager to continue our work and contribute to a greener future for marine transport.
 

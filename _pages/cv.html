@@ -1,4 +1,5 @@
 ---
+description: "Professional experience, research, teaching and downloadable industry and academic CVs for Daniel Precioso."
 layout: default
 title: "Experience"
 permalink: /cv/
@@ -9,7 +10,6 @@ redirect_from:
 ---
 {% include base_path %}
 {% assign xp = site.data.experience %}
-<a class="skip-link" href="#main-content">Skip to content</a>
 <main id="main-content" class="s-wrap">
   <header class="xp-head">
     <p class="s-eyebrow">Experience and CV</p>
@@ -29,13 +29,9 @@ redirect_from:
   </div>
   <p class="xp-meta" id="view-status" aria-live="polite"></p>
 
-  <p class="xp-note">{{ xp.overlap_note }}</p>
+  <details class="xp-overlap"><summary>How overlapping roles fit together</summary><p>{{ xp.overlap_note }}</p></details>
 
-  <section class="xp-edu" aria-labelledby="edu-h">
-    <h2 id="edu-h">Education</h2>
-    <ul>{% for e in xp.education %}<li><strong>{{ e.degree }}</strong>, {{ e.years }}.{% if e.note %} {{ e.note }}{% endif %}</li>{% endfor %}</ul>
-  </section>
-
+  <h2>Professional experience</h2>
   <ol class="xp-list">
     {% for e in xp.entries %}
     <li class="xp-entry" data-views="{{ e.views | join: ' ' }}">
@@ -51,6 +47,12 @@ redirect_from:
     </li>
     {% endfor %}
   </ol>
+
+  <section class="xp-edu" aria-labelledby="edu-h">
+    <h2 id="edu-h">Education</h2>
+    <ul>{% for e in xp.education %}<li><strong>{{ e.degree }}</strong>, {{ e.years }}.{% if e.note %} {{ e.note }}{% endif %}</li>{% endfor %}</ul>
+  </section>
+
 
   <section class="xp-block" data-views="applied research" aria-labelledby="rec-h">
     <h2 id="rec-h">Recognition</h2>

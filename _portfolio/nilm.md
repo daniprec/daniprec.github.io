@@ -1,10 +1,11 @@
 ---
 title: "Non-Intrusive Load Monitoring"
 collection: portfolio
+sort_order: 7
 permalink: /portfolio/nilm/
 date: 2019-04-01
 excerpt: "Data-driven methods for appliance-level electricity monitoring from smart-meter signals, developed during PhD research at UCA Datalab."
-category: Energy
+category: "Energy & Health"
 tags: [deep learning, energy, time series, smart meters]
 paperurl: "https://doi.org/10.1007/s11227-023-05149-8"
 featured_image: "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs11227-023-05149-8/MediaObjects/11227_2023_5149_Fig3_HTML.png"

@@ -1,38 +1,32 @@
-<section class="s-section" id="strengths" aria-labelledby="strengths-h">
+<section class="s-section" id="work" aria-labelledby="strengths-h">
   <div class="s-wrap">
-    <p class="s-eyebrow">What I contribute</p>
-    <h2 id="strengths-h">Three strengths, each with evidence</h2>
-    <p class="s-lead">Select a circle to see examples, what I did on each, and links.</p>
-    <div class="strengths" data-strengths>
+    <h2 id="strengths-h">Research, industry and teaching</h2>
+    <p class="s-lead">Three ways I put data science to work.</p>
+    <div class="work-grid">
       {% for s in site.data.home.strengths %}
-      <div class="strength">
-        <button type="button" class="strength__btn" aria-expanded="false" aria-controls="sp-{{ s.id }}">
-          <img class="strength__img" src="{{ s.image }}" alt="" loading="lazy" width="400" height="400">
-          <span class="strength__veil" aria-hidden="true"></span>
-          <span class="strength__text">
-            <span class="strength__title">{{ s.title }}</span>
-            <span class="strength__sum">{{ s.summary }}</span>
-            <span class="strength__proof"><strong>{{ s.proof_value }}</strong>{{ s.proof }}</span>
-            <span class="strength__more">See examples</span>
-          </span>
-        </button>
-        <div class="strength__panel" id="sp-{{ s.id }}" role="region" aria-label="{{ s.panel_title }}">
-          <h3>{{ s.panel_title }}</h3>
-          <div class="ex-grid">
-            {% for e in s.examples %}
-            <article class="ex">
-              <img src="{{ e.image }}" alt="{{ e.alt }}" loading="lazy" width="480" height="300">
-              <h4>{{ e.title }}</h4>
-              {% if e.maturity %}<p><span class="s-chip">{{ e.maturity }}</span></p>{% endif %}
-              <p>{{ e.text }}</p>
-              {% if e.mine %}<p class="ex__mine"><strong>My part:</strong> {{ e.mine }}</p>{% endif %}
-              <p class="ex__links">{% for l in e.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</p>
-            </article>
-            {% endfor %}
+      <article class="work-card">
+        <a class="work-card__preview" href="{{ s.url }}" aria-label="Explore {{ s.title }}">
+          {% if s.preview_type == 'lesson' %}
+          <div class="lesson-preview" aria-hidden="true">
+            <span>PYTHON &amp; APPLIED MATHS</span>
+            <code>data &rarr; model &rarr; insight</code>
+            <svg viewBox="0 0 320 90" focusable="false"><path d="M8 80H312M8 8V80" class="lesson-preview__axes"/><path d="M12 70L44 61L76 66L108 39L140 45L172 27L204 35L236 12L268 21L308 6" class="lesson-preview__line"/></svg>
+            <span>Python · Time series · Mathematics</span>
           </div>
+          {% else %}
+            {% include responsive-image.html src=s.image alt=s.image_alt sizes="(min-width: 960px) 360px, 100vw" %}
+          {% endif %}
+        </a>
+        <div class="work-card__body">
+          <p class="work-card__kicker">{{ s.proof_value }}</p>
+          <h3><a href="{{ s.url }}">{{ s.title }}</a></h3>
+          <p>{{ s.summary }}</p>
+          <p class="work-card__proof">{{ s.proof }}</p>
+          <a class="work-card__link" href="{{ s.url }}">{% if s.id == 'teaching' %}Courses and materials{% else %}Read the case study{% endif %} &rarr;</a>
         </div>
-      </div>
+      </article>
       {% endfor %}
     </div>
+    <p class="work-more"><a href="/portfolio/">All projects &rarr;</a><a href="/papers/">Research papers &rarr;</a></p>
   </div>
 </section>

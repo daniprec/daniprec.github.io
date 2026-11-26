@@ -18,7 +18,7 @@ I hope your spring is starting smoothly and you're finding time to both relax an
 
 In this episode, I was interviewed about my work on [Green Navigation](https://greenavigation.com), a weather routing platform that helps reduce maritime emissions by optimizing ship routes using wind, waves, and currents data. As I mentioned in the conversation, "We live in a world of information. The biggest challenge is knowing how to use it". That's precisely what we aim to do with Green Navigation: turn data into meaningful action.
 
-<p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
+<p align="center">{% include responsive-image.html src=page.featured_image alt="Maritime decarbonization featured in The Conversation Weekly" style="width: 80%; height: auto" %}</p>
 
 The podcast explores the broader landscape of maritime decarbonization, from sail technologies to alternative fuels. Alongside me was Professor Alice Larkin from the University of Manchester, who offered valuable insights into the economic and environmental challenges of shifting the shipping industry away from fossil fuels.
 

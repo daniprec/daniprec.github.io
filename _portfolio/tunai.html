@@ -2,6 +2,7 @@
 title: "Tun-AI: estimating tuna biomass from buoy data"
 layout: case-study
 collection: portfolio
+sort_order: 3
 permalink: /portfolio/tun-ai/
 date: 2019-07-01
 excerpt: "Machine learning pipeline that estimates tuna biomass under drifting buoys from echosounder and ocean data. Built with Komorebi AI and Satlink."
@@ -28,12 +29,19 @@ partners:
   - name: Fleet association
     role: Provided the logbook records of catches.
 result: "Published in Fisheries Research in 2022. The best classifier reached an F1 score of 0.925 on whether a buoy held more than 10 tonnes."
+preview_image: /images/projects/tun-ai/satlink-dashboard.png
+preview_alt: Satlink dashboard for analysing buoy and tuna biomass data
+preview_caption: The dashboard I built for Satlink to explore buoy data and model outputs.
+outcomes:
+- Built the dashboard used by Satlink
+- Prepared the buoy data and contributed to the models
+- First-author paper in Fisheries Research, 2022
 ---
 
 <h2>Who needed the work and why</h2>
 <p>Tuna purse-seine fleets release floating objects with echosounder buoys attached. Each buoy sends acoustic readings by satellite every hour. The signal shows that something is under the buoy. It does not say how much tuna it is. Satlink, which makes the buoys, wanted a way to read the signal at scale. Fleet managers and researchers also use buoy data to study how tuna gather around floating objects.</p>
 <figure class="cs__fig--small">
-  <img src="/images/projects/tun-ai/satlink-smart-buoy.webp" alt="A Satlink echosounder buoy floating on the sea" loading="lazy">
+  {% include responsive-image.html src="/images/projects/tun-ai/satlink-smart-buoy.webp" alt="A Satlink echosounder buoy floating on the sea" %}
   <figcaption>A Satlink echosounder buoy. Photo from <a href="https://researchfeatures.com/tun-ai-echosounder-buoy-technology-study-tuna-behaviour-sea/">Research Features, issue 149</a>, <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</figcaption>
 </figure>
 
@@ -48,7 +56,7 @@ result: "Published in Fisheries Research in 2022. The best classifier reached an
   <tr><th>Paper</th><td>First author of the Fisheries Research paper. A follow-up study on how tuna gather around buoys (Marine Ecology Progress Series, 2023) used Tun-AI. I am the second author there.</td></tr>
 </table>
 <figure>
-  <img src="/images/projects/tun-ai/satlink-dashboard.png" alt="Satlink dashboard with a map of ocean temperature, buoy positions and echosounder readings by depth over three days" loading="lazy">
+  {% include responsive-image.html src="/images/projects/tun-ai/satlink-dashboard.png" alt="Satlink dashboard with a map of ocean temperature, buoy positions and echosounder readings by depth over three days" %}
   <figcaption>The dashboard that Satlink used. It shows the buoy positions on an ocean map and the echosounder readings by depth over time.</figcaption>
 </figure>
 
@@ -56,19 +64,19 @@ result: "Published in Fisheries Research in 2022. The best classifier reached an
 <p>The data came from about 70 million records from 16,419 buoys across the Atlantic, Indian and Pacific Oceans. Catch records were typed by hand and contained errors, so we cross-checked them against the buoy data. Fleets only set their nets when they expect a large school, so small catches are rare in the logbooks. To balance that, we added the deployment of new buoys, which we treated as zero tuna.</p>
 <p>The model reads a 72-hour window of echosounder data. It adds the buoy position and satellite ocean variables such as temperature, currents and chlorophyll. Gradient boosting performed best across three tasks: a yes or no answer for more than 10 tonnes, a three-class answer, and an estimate in tonnes.</p>
 <figure class="cs__fig--small">
-  <img src="/images/projects/tun-ai/echosounder-depth-layers.png" alt="Diagram of an echosounder buoy sampling ten depth layers under the surface, with example tuna biomass in tonnes at layers five to seven" loading="lazy">
+  {% include responsive-image.html src="/images/projects/tun-ai/echosounder-depth-layers.png" alt="Diagram of an echosounder buoy sampling ten depth layers under the surface, with example tuna biomass in tonnes at layers five to seven" %}
   <figcaption>How a buoy samples the water column below it: ten depth layers, with a biomass reading for each. Diagram from the project presentation.</figcaption>
 </figure>
 <figure>
-  <img src="/images/projects/tun-ai/echosounder-training-window.png" alt="Echogram with a highlighted window of acoustic readings in the days before a recorded fishing event" loading="lazy">
+  {% include responsive-image.html src="/images/projects/tun-ai/echosounder-training-window.png" alt="Echogram with a highlighted window of acoustic readings in the days before a recorded fishing event" %}
   <figcaption>The model reads a window of echosounder data before each recorded event. Catch records give the reference to train and test against.</figcaption>
 </figure>
 <figure>
-  <img src="/images/projects/tun-ai/oceanography-and-acoustic-data.png" alt="Map of ocean conditions and buoy positions, next to examples of acoustic readings over time" loading="lazy">
+  {% include responsive-image.html src="/images/projects/tun-ai/oceanography-and-acoustic-data.png" alt="Map of ocean conditions and buoy positions, next to examples of acoustic readings over time" %}
   <figcaption>Ocean variables and acoustic readings are joined to build the model inputs. Image from the project presentation.</figcaption>
 </figure>
 <figure>
-  <img src="/images/2023-07-27-tunai.png" alt="World map of estimated tuna biomass under drifting buoys, in the Atlantic, Indian and Pacific Oceans" loading="lazy">
+  {% include responsive-image.html src="/images/2023-07-27-tunai.png" alt="World map of estimated tuna biomass under drifting buoys, in the Atlantic, Indian and Pacific Oceans" %}
   <figcaption>Map of tuna biomass estimates under drifting buoys, from the Tun-AI work.</figcaption>
 </figure>
 

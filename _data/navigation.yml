@@ -1,25 +1,8 @@
-# main links links
 main:
-  - title: "Blog"
-    url: /posts/ #/year-archive/
-
-  - title: "Papers"
-    url: /papers/
-
-  # - title: "Talks"
-  #   url: /talks/
-
-  - title: "Projects"
-    url: /portfolio/
-
-  - title: "Creative Work"
-    url: /creative-work/
-
-  - title: "Courses"
-    url: /teaching/
-
-  - title: "CV"
-    url: /cv/
-
-  # - title: "Guide"
-  #   url: /markdown/
+  - { title: Projects, url: /portfolio/ }
+  - { title: Experience, url: /cv/ }
+  - { title: Papers, url: /papers/ }
+  - { title: Courses, url: /teaching/ }
+  - { title: Blog, url: /posts/ }
+  - { title: Creative Work, url: /creative-work/ }
+  - { title: Contact, url: /#contact }

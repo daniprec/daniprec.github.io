@@ -19,7 +19,7 @@ Today I joined the **Vertical Challenge** at IE University. It is a stair race u
 
 It was my first time participating, so I took it easy. I walked with my friends from the IE School of Science and Technology team. I finished in a little more than 10 minutes, and I am genuinely happy about it. The month of preparation paid off. I have been doing stair runs every morning when getting to work. Eight floors a day. And I will keep doing it. It is a great way to start the day and get some exercise!
 
-<p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
+<p align="center">{% include responsive-image.html src=page.featured_image alt="IE Tower Vertical Challenge" style="width: 80%; height: auto" %}</p>
 
 Also, I got a finisher medal. Not Olympic gold, but it shines enough for me. Most important, I shared this experience with my IE community.
 

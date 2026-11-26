@@ -20,7 +20,7 @@ As COO of Canonical Green, I took Green Navigation to the call and **pitched it 
 
 Green Navigation helps cargo ships reduce fuel use and emissions by optimizing routes based on real-time weather and oceanographic data.
 
-<p align="center"><img src="{{ page.featured_image }}" width="80%"/></p>
+<p align="center">{% include responsive-image.html src=page.featured_image alt="Missions València 2030 grant recognition for Canonical Green" style="width: 80%; height: auto" %}</p>
 
 The grant will let us keep developing the system. It also reflects the support we've received from the **Opentop acceleration program** at the Port of València.
 

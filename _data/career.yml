@@ -1,11 +1,16 @@
 start: 2019
 end: 2027
+categories:
+  - { label: "Energy & Health", color: "var(--topic-energy-health)" }
+  - { label: Maritime, color: "var(--topic-maritime)" }
+  - { label: Startup, color: "var(--topic-startup)" }
+  - { label: "Insurance & Climate", color: "var(--topic-insurance)" }
 lanes:
-  - { id: applied, label: Energy and health, color: "#0b6270" }
-  - { id: fish, label: Fisheries, color: "#3f7d5a" }
-  - { id: route, label: Maritime routing, color: "#0b3a4f" }
-  - { id: startup, label: Startup, color: "#d4472a" }
-  - { id: climate, label: Insurance and climate, color: "#8a5a00" }
+  - { id: applied, label: "Energy & Health", color: "var(--topic-energy-health)" }
+  - { id: fish, label: "Maritime · Tun-AI", color: "var(--topic-maritime)" }
+  - { id: route, label: "Maritime · Green Navigation", color: "var(--topic-maritime)" }
+  - { id: startup, label: Startup, color: "var(--topic-startup)" }
+  - { id: climate, label: "Insurance & Climate", color: "var(--topic-insurance)" }
 rails:
   - { row: 0, from: 2019.7, to: 2023.55, label: "PhD at UCA Datalab, University of Cádiz" }
   - { row: 0, from: 2023.75, to: 2026.95, label: "Postdoc and adjunct professor, IE University" }
@@ -76,7 +81,7 @@ milestones:
     problem: Each group tests routing algorithms on its own data, so methods are hard to compare.
     contribution: I co-developed HADAD and co-created the open Weather Routing Benchmark with RISE. I presented the results and BERS at SWOPP3 in Gothenburg.
     outcome: HADAD in Ocean Engineering, 2025. First benchmark edition with eight teams in 2026. BERS is under review.
-    link: /portfolio/weather-routing-benchmark/
+    link: /portfolio/green-navigation/#benchmark
     link_label: Weather Routing Benchmark
   - id: vig
     lane: climate

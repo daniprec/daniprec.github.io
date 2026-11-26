@@ -16,7 +16,7 @@ This week, I had the pleasure of presenting our recent research at [**PowerTech 
 
 The paper I presented, titled [*"Non-Intrusive Load Monitoring using Multi-Output CNNs"*](https://doi.org/10.1109/PowerTech46648.2021.9494943), focuses on a classic challenge in the smart energy domain: how to estimate the power usage of individual household appliances when all you have is the total electricity consumption of the home. This approach, known as **Non-Intrusive Load Monitoring (NILM)**, could play a key role in improving energy efficiency, personalized feedback, and load forecasting at scale.
 
-<img src="{{ page.featured_image }}" alt="PowerTech 2021 Conference" width="100%"/>
+{% include responsive-image.html src=page.featured_image alt="PowerTech 2021 Conference" %}
 
 Our model uses a **multi-output convolutional neural network** that can infer the on/off status and consumption levels of multiple devices simultaneously, making it both scalable and highly interpretable. The architecture was trained and evaluated on open benchmark datasets and performs well even in noisy, real-world settings.
 

@@ -1,4 +1,5 @@
 ---
+description: "Python, time series and applied mathematics courses taught by Daniel Precioso at IE University, with open materials and supervision."
 layout: default
 title: "Courses"
 permalink: /teaching/
@@ -7,7 +8,8 @@ author_profile: true
 
 {% include base_path %}
 
-<div class="courses-page-content">
+<main class="courses-page-content" id="main-content">
+  <h1>{{ page.title }}</h1>
   <p>I teach programming, data analysis, and applied mathematics at IE University. Some courses include publicly available materials.</p>
 
   <div class="courses-grid">
@@ -19,7 +21,7 @@ author_profile: true
         {% assign course_target = base_path | append: course.url %}
       {% endif %}
       <div class="course-card">
-        <h3 class="course-title">{% if course.courseurl %}<a href="{{ course_target }}" class="course-title-link">{{ course.title }}</a>{% else %}{{ course.title }}{% endif %}</h3>
+        <h2 class="course-title">{% if course.courseurl %}<a href="{{ course_target }}" class="course-title-link">{{ course.title }}</a>{% else %}{{ course.title }}{% endif %}</h2>
         <p class="course-meta"><strong>{{ course.type }}</strong></p>
         <p class="course-meta">{{ course.venue }}</p>
         <p class="course-meta">{{ course.location }} &middot; {{ course.date | date: "%Y" }}</p>
@@ -40,13 +42,13 @@ author_profile: true
 
   <h2>Supervision</h2>
   <p>I supervise two Capstone projects this year and co-supervised one last year. In December 2024 I co-directed a master's thesis at the University of Cádiz, on machine-learning interpolation of magnetic fields for space-based gravitational-wave observatories (<a href="/posts/2024/master-thesis-cadiz">read more</a>). I also mentor students in the IE sustainability datathons.</p>
-</div>
+</main>
 
 <style>
   .courses-page-content {
-    max-width: 1200px;
+    max-width: 1120px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 2rem 1.25rem 4rem;
   }
   .courses-grid {
     display: grid;
@@ -56,9 +58,9 @@ author_profile: true
   }
   .course-card {
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: var(--surface);
     border-radius: 5px;
-    border-left: 3px solid #007bff;
+    border-left: 3px solid var(--sea);
     box-sizing: border-box;
   }
   .course-title {
@@ -66,17 +68,17 @@ author_profile: true
     font-size: 1.1em;
   }
   .course-title-link {
-    color: #007bff;
+    color: var(--sea);
     text-decoration: none;
   }
   .course-title-link:hover {
-    color: #0056b3;
+    color: var(--ink);
     text-decoration: underline;
   }
   .course-meta {
     margin: 3px 0;
     font-size: 0.88em;
-    color: #555;
+    color: var(--ink-soft);
   }
   .course-excerpt {
     margin-top: 10px;
@@ -88,8 +90,8 @@ author_profile: true
   .course-btn {
     display: inline-block;
     padding: 7px 16px;
-    background-color: #007bff;
-    color: white;
+    background-color: var(--sea);
+    color: var(--on-sea);
     text-decoration: none;
     border-radius: 4px;
     font-size: 0.88em;
@@ -97,13 +99,14 @@ author_profile: true
     transition: background-color 0.2s ease;
   }
   .course-btn:hover {
-    background-color: #0056b3;
-    color: white;
+    background-color: var(--ink);
+    color: var(--on-ink);
     text-decoration: none;
   }
   @media (max-width: 768px) {
+    .courses-grid { grid-template-columns: minmax(0, 1fr); }
     .courses-page-content {
-      padding: 0 16px;
+      padding: 2rem 1rem 4rem;
     }
   }
 </style>

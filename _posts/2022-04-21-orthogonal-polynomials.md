@@ -14,7 +14,7 @@ tags:
 
 This week, I had the privilege of helping organize the **International Conference on Orthogonal Polynomials**, held at the Universidad de Cádiz from April 21–23, 2022. The event was co-hosted by [**UCA Datalab**](https://datalab.uca.es) and **Universidad Carlos III de Madrid**, and brought together over fifty researchers from Europe, the Americas, and beyond.
 
-<img src="{{ page.featured_image }}" alt="Orthogonal Polynomials Conference" width="100%"/>
+{% include responsive-image.html src=page.featured_image alt="Orthogonal Polynomials Conference" %}
 
 This year's edition was especially meaningful: it celebrated the **70th birthday of Francisco Marcellán**, a leading figure in the field and a cornerstone of the mathematical community in Spain. The program included talks on approximation theory, orthogonal polynomials, integrable systems, and operator theory—many of the topics shaped by Marcellán's career and mentorship.
 

@@ -1,13 +1,12 @@
 ---
+description: "Research papers by Daniel Precioso on maritime routing, climate risk, machine learning and healthcare."
 layout: archive
 title: "Papers"
 permalink: /papers/
 author_profile: true
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
+<p><a href="{{ site.author.googlescholar }}">Google Scholar profile &rarr;</a></p>
 
 {% include base_path %}
 

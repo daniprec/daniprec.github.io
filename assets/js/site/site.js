@@ -4,32 +4,6 @@
   "use strict";
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ---------- Strengths ---------- */
-  function initStrengths() {
-    var root = document.querySelector("[data-strengths]");
-    if (!root) return;
-    var items = Array.prototype.slice.call(root.querySelectorAll(".strength"));
-    items.forEach(function (it) { it.querySelector(".strength__panel").hidden = true; });
-    items.forEach(function (it) {
-      var btn = it.querySelector(".strength__btn");
-      var panel = it.querySelector(".strength__panel");
-      btn.addEventListener("click", function () {
-        var open = btn.getAttribute("aria-expanded") === "true";
-        items.forEach(function (o) {
-          o.querySelector(".strength__btn").setAttribute("aria-expanded", "false");
-          o.querySelector(".strength__panel").hidden = true;
-        });
-        if (!open) {
-          btn.setAttribute("aria-expanded", "true");
-          panel.hidden = false;
-        }
-      });
-      panel.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") { btn.setAttribute("aria-expanded", "false"); panel.hidden = true; btn.focus(); }
-      });
-    });
-  }
-
   /* ---------- Career map ---------- */
   function initCareer() {
     var root = document.querySelector("[data-career]");
@@ -46,6 +20,10 @@
     var mq = window.matchMedia("(min-width: 960px)");
     var CARD = 200, RAILS_H = 66, PITCH = 148, TOP = 84;
     var selected = null;
+    var disclosure = root.closest("details");
+    if (disclosure) disclosure.addEventListener("toggle", function () {
+      if (disclosure.open) requestAnimationFrame(layout);
+    });
 
     function wide() { return mq.matches; }
 
@@ -70,8 +48,14 @@
         r.style.left = x1 + "px"; r.style.width = (x2 - x1) + "px"; r.style.top = (parseInt(r.dataset.row, 10) * 28) + "px";
       });
       laneEls.forEach(function (l, i) { l.style.top = (RAILS_H + 24 + i * PITCH) + "px"; });
+      var laneEnds = {};
       items.forEach(function (it) {
         var x = tx(parseFloat(it.dataset.year), w) - CARD / 2;
+        // Keep milestones readable when two subjects share a history row.
+        if (laneEnds[it.dataset.lane] !== undefined) {
+          x = Math.max(x, laneEnds[it.dataset.lane] + 16);
+        }
+        laneEnds[it.dataset.lane] = x + CARD;
         var y = RAILS_H + 24 + laneIds.indexOf(it.dataset.lane) * PITCH + 6;
         it.style.setProperty("--x", x + "px");
         it.style.setProperty("--y", y + "px");
@@ -193,7 +177,7 @@
       btn.textContent = d ? "Light mode" : "Dark mode";
       btn.setAttribute("aria-pressed", d ? "true" : "false");
       var meta = document.querySelector('meta[name="theme-color"]');
-      if (meta) meta.setAttribute("content", d ? "#0c1820" : "#f6f2ea");
+      if (meta) meta.setAttribute("content", d ? "#0c1820" : "#f5f7f8");
     }
     btn.hidden = false;
     btn.addEventListener("click", function () {
@@ -205,6 +189,6 @@
     paint();
   }
 
-  function init() { initTheme(); initStrengths(); initCareer(); initViews(); initGifs(); }
+  function init() { initTheme(); initCareer(); initViews(); initGifs(); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
 })();
