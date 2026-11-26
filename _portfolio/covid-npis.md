@@ -8,7 +8,7 @@ excerpt: "Statistical analysis quantifying how nine categories of non-pharmaceut
 category: "Energy & Health"
 tags: [statistical modeling, epidemiology, public health, COVID-19, time series]
 paperurl: "https://doi.org/10.3389/fpubh.2023.1061331"
-featured_image: "https://aecr.org/wp-content/uploads/2020/04/espana4.png"
+featured_image: "/images/2020-04-16-covid.jpg"
 ---
 
 During the second wave of COVID-19 in Spain (September 2020 to May 2021), health authorities faced repeated decisions about which activity restrictions to tighten and which to relax. These choices required a quantitative understanding of how different types of measures affected transmission, under conditions of substantial collinearity and rapidly changing data.
