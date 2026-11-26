@@ -74,10 +74,6 @@ outcomes:
   <figcaption>The model reads a window of echosounder data before each recorded event. Catch records give the reference to train and test against.</figcaption>
 </figure>
 <figure>
-  {% include responsive-image.html src="/images/projects/tun-ai/oceanography-and-acoustic-data.png" alt="Map of ocean conditions and buoy positions, next to examples of acoustic readings over time" %}
-  <figcaption>Ocean variables and acoustic readings are joined to build the model inputs. Image from the project presentation.</figcaption>
-</figure>
-<figure>
   {% include responsive-image.html src="/images/2023-07-27-tunai.png" alt="World map of estimated tuna biomass under drifting buoys, in the Atlantic, Indian and Pacific Oceans" %}
   <figcaption>Map of tuna biomass estimates under drifting buoys, from the Tun-AI work.</figcaption>
 </figure>
