@@ -20,7 +20,7 @@ partners:
   - name: Caleta Team, University of Cádiz
     logo: /images/logos/caleta-team.png
     url: https://github.com/Caleta-Team-UCA
-    role: Interdisciplinary team led by Lionel Cervera Gontard (IMEYMAT). It built the device and the platform.
+    role: Interdisciplinary team led jointly by David Gómez-Ullate (UCA Datalab), Ángel Ruiz Zafra (GOAL) and Lionel Cervera Gontard (IMEYMAT). It built the device and the platform.
   - name: UCA Datalab
     logo: /images/logos/uca-datalab.png
     url: https://datalab.uca.es/

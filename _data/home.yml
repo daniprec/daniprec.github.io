@@ -60,8 +60,8 @@ strengths:
   summary: Python and applied mathematics, taught through practical problems.
   proof_value: Communication
   proof: Teaching Excellence Award, 2025/26
-  image: /images/2023-07-10-wimobo.JPEG
-  image_alt: Me explaining an optimization algorithm during a conference
+  image: /images/2023-06-07-pitch.png
+  image_alt: Daniel Precioso presenting Green Navigation at the European Parliament
   panel_title: Teaching and communication
   examples:
   - title: Making technical ideas easier to use
@@ -76,5 +76,4 @@ strengths:
     - label: Teaching award
       url: /posts/2025/teaching-excellence-award
   url: /teaching/
-  preview_type: lesson
 summary: I build models, data products and optimisation tools for complex real-world problems. My work combines a PhD in computer engineering with hands-on experience in climate risk, maritime transport, healthcare and industrial data.
