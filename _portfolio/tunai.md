@@ -48,7 +48,8 @@ outcomes:
 </figure>
 
 <h2>My role and the collaboration</h2>
-<p>Tun-AI was a joint project between UCA Datalab at the University of Cádiz, Komorebi AI and Satlink, within my industrial doctorate. I worked with Komorebi from the university for a long time before Komorebi employed me in September 2022. Satlink provided the buoy data. The fleet association AGAC provided the logbook records of catches.</p>
+<p>Tun-AI was a joint project between UCA Datalab at the University of Cádiz, Komorebi AI and Satlink, within my industrial doctorate. I worked with Komorebi from the university for a long time before Komorebi employed me in September 2022. Satlink provided the buoy data. The fleet association AGAC provided the logbook records of catches. <a href="https://www.ie.edu/university/about/faculty/alberto-torres-barran">Alberto Torres Barrán</a>, co-founder and CTO of Komorebi AI, led the technical side and supervised my work. I did the data cleaning under his supervision, built the dashboard myself, and contributed to the machine learning models. I am first author of the paper in Fisheries Research (2022).
+</p>
 
 <h2>What I contributed</h2>
 <table class="cs__facts">

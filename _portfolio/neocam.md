@@ -40,7 +40,7 @@ outcomes:
 <p>Premature babies in intensive care need constant observation. Conventional monitors use sensors attached to the body. Movement and behaviour also carry information, but they are hard to follow all day and are often recorded by eye. The question was whether a camera could measure some of this without touching the baby.</p>
 
 <h2>My role and the collaboration</h2>
-<p>NeoCam was built by Caleta Team, a group at the University of Cádiz led by Lionel Cervera Gontard. It combined engineers, computer scientists and the neonatal team at Hospital Puerta del Mar. I worked in the AI part, at UCA Datalab, as one of several people. I am second author of the paper.</p>
+<p>NeoCam was built by Caleta Team, a group at the University of Cádiz. It combined engineers, computer scientists and the neonatal team at Hospital Puerta del Mar. I worked in the AI part, at UCA Datalab, as one of several people. I am second author of the paper. The idea of using head and body bounding boxes to detect the baby's movement was mine. The team was led jointly by <a href="https://www.ie.edu/university/about/faculty/david-gomez-ullate/">David Gómez-Ullate</a> (UCA Datalab), <a href="https://www.ugr.es/en/staff/angel-ruiz-zafra">Ángel Ruiz Zafra</a> (GOAL research group) and <a href="https://datalab.uca.es/team/lionel/">Lionel Cervera Gontard</a> (IMEYMAT).</p>
 
 <h2>What I contributed</h2>
 <table class="cs__facts">

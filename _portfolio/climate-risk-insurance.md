@@ -39,8 +39,8 @@ outcomes:
 <p>Vienna Insurance Group (VIG) is a large insurance group in Central and Eastern Europe. Warmer weather affects mortality and health, which changes the assumptions behind life and health products and reserves. VIG and IE University set up the IE Insurance and Tech Lab in July 2025. Its first project is called "Climate Change Effects on Life and Health Insurance".</p>
 
 <h2>My role and the collaboration</h2>
-<p>This is an industry contract run as a research project inside my appointment at IE University. VIG is the client. David Gómez-Ullate, Vice Dean at IE University, works with me on the project. Phase 1 ran in 2025/26 and I was a member of the research team. Phase 2 runs in 2026/27, after the VIG board approved it in May 2026.</p>
-<p>In phase 2, I lead the package on mortality related to temperature and air quality. I develop the models, code, dashboard, reports and presentations as an individual contributor.</p>
+<p>This is an industry contract run as a research project inside my appointment at IE University. VIG is the client. The IE Insurance and Tech Lab is co-chaired by <a href="https://ie.edu/university/about/faculty/ikhlaq-sidhu">Ikhlaq Sidhu</a>, Dean of the IE School of Science and Technology, and <a href="https://www.efcongress.com/osoby/klaus-muhleder/">Klaus Mühleder</a>, Head of Opportunity Management at Vienna Insurance Group. The project is led by David Gómez-Ullate, Vice Dean at IE University. Phase 1 ran in 2025/26 and I was a member of the research team. I developed the dashboard together with <a href="https://www.ie.edu/ieresearchdatalab/news-events/2026/03/francisco-suarez/">Francisco Suárez Pedraza</a>, Research Associate at IE University. Phase 2 runs in 2026/27, after the VIG board approved it in May 2026.</p>
+<p>In phase 2, I lead the package on mortality related to temperature and air quality. I develop the models, code, dashboard, reports and presentations as an individual contributor. I coordinate the project meetings with Ikhlaq Sidhu and David Gómez-Ullate, and I present the results to the Lab's steering committee.</p>
 
 <h2>What I contributed</h2>
 <ul>
