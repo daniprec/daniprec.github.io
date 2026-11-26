@@ -18,9 +18,12 @@ contribution: "I developed part of the device’s Python library, proposed the h
 result: "Second global prize and first prize in Europe, Russia and Australasia among more than 1,400 projects. A proof of concept ran in the neonatal unit of Hospital Puerta del Mar. Paper in IEEE JBHI, 2023."
 partners:
   - name: Caleta Team, University of Cádiz
-    url: https://imeymat.uca.es/noticia/neocam-de-caleta-team-obtiene-el-segundo-puesto-a-nivel-global-en-la-opencv-ai-competition-2021/
+    logo: /images/logos/caleta-team.png
+    url: https://github.com/Caleta-Team-UCA
     role: Interdisciplinary team led by Lionel Cervera Gontard (IMEYMAT). It built the device and the platform.
   - name: UCA Datalab
+    logo: /images/logos/uca-datalab.png
+    url: https://datalab.uca.es/
     role: The AI and image analysis group where I worked.
   - name: Hospital Universitario Puerta del Mar
     role: Neonatal specialists who guided the design and hosted the tests.
