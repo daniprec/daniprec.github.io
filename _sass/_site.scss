@@ -128,8 +128,9 @@ thead { background: var(--paper-2); border-color: var(--line); }
 .hero__grid { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: clamp(2rem, 6vw, 5rem); align-items: center; }
 .hero h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); line-height: 1.08; margin: 0 0 .6rem; }
 .hero__role { font: 500 1.05rem/1.4 var(--sans); color: var(--sea); margin: 0 0 1.1rem; }
-.hero__intro { font-size: 1.14rem; line-height: 1.65; max-width: 48ch; margin: 0 0 1rem; }
-.hero__roles { color: var(--ink-soft); max-width: 52ch; margin: 0 0 1.5rem; font-size: .86rem; }
+.hero__intro { font-size: 1.3rem; line-height: 1.5; max-width: 34ch; margin: 0 0 1rem; }
+.hero__roles { color: var(--ink-soft); max-width: 52ch; margin: 0 0 .5rem; font-size: .95rem; font-weight: 500; }
+.hero__where { color: var(--ink-soft); max-width: 52ch; margin: 0 0 1.5rem; font-size: .88rem; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: .75rem; }
 .hero__photo { margin: 0; justify-self: end; max-width: 280px; width: 100%; }
 .hero__photo img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; object-position: center 35%; border-radius: var(--radius); display: block; }
@@ -148,6 +149,7 @@ thead { background: var(--paper-2); border-color: var(--line); }
 .work-card__body .work-card__kicker { color: var(--sea); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; font-weight: 600; }
 .work-card__body .work-card__proof { border-top: 1px solid var(--line); padding-top: .75rem; font-size: .8rem; margin-top: auto; }
 .work-card__link { font-size: .88rem; font-weight: 600; }
+.work-summary { max-width: var(--measure); margin: 1.75rem 0 0; color: var(--ink-soft); font-size: 1.02rem; }
 .work-more { display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 1.5rem 0 0; }
 .work-more a { font-weight: 600; font-size: .9rem; }
 .lesson-preview { display: flex; flex-direction: column; justify-content: space-between; height: 100%; padding: 1.1rem 1.25rem; color: var(--sea); background: var(--paper-2); }

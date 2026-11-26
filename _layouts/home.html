@@ -11,9 +11,10 @@ layout: default
         <p class="hero__role">{{ h.role }}</p>
         <p class="hero__intro">{{ h.intro }}</p>
         <p class="hero__roles">{{ h.roles }}</p>
+        <p class="hero__where">{{ h.location }}</p>
         <div class="hero__cta">
           <a class="s-btn" href="#work">Explore my work</a>
-          <a class="s-btn s-btn--ghost" href="/cv/">CV and experience</a>
+          <a class="s-btn s-btn--ghost" href="/cv/cv_daniel_precioso.pdf" download>Download CV</a>
         </div>
       </div>
       <figure class="hero__photo">{% include responsive-image.html src=h.photo alt=h.photo_alt sizes="(max-width: 600px) 120px, 280px" loading="eager" priority=true %}</figure>

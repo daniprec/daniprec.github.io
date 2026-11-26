@@ -1,12 +1,15 @@
 hero:
   name: Daniel Precioso
-  role: Applied data scientist
-  intro: I build models and decision tools for climate risk and maritime transport, and teach applied mathematics at IE University.
-  roles: Researcher at IE University · Co-founder of Canonical Green
+  role: Senior Applied Data Scientist
+  intro: I turn complex data into models and decision tools.
+  roles: PhD · Machine learning · Forecasting · Optimisation
+  location: Madrid, Spain · Open to senior data science and machine learning roles
   photo: /images/profile_2026.jpg
   photo_alt: Portrait of Daniel Precioso
 strengths:
 - id: climate
+  area: Research
+  area_summary: Climate risk, forecasting and applied machine learning.
   title: Climate risk for VIG
   summary: Turning climate projections into models for life and health insurance.
   proof_value: Applied research
@@ -28,6 +31,8 @@ strengths:
       url: https://doi.org/10.63537/144174297
   url: /portfolio/climate-risk-insurance/
 - id: navigation
+  area: Products
+  area_summary: Maritime routing, dashboards and decision-support tools.
   title: Green Navigation
   summary: Optimizing maritime routes to reduce fuel consumption and emissions.
   proof_value: Entrepreneurship
@@ -49,6 +54,8 @@ strengths:
       url: https://weatherrouting.org
   url: /portfolio/green-navigation/
 - id: teaching
+  area: Communication
+  area_summary: Technical teaching, executive presentations and public outreach.
   title: Teaching at IE
   summary: Python and applied mathematics, taught through practical problems.
   proof_value: Communication
@@ -70,3 +77,4 @@ strengths:
       url: /posts/2025/teaching-excellence-award
   url: /teaching/
   preview_type: lesson
+summary: I build models, data products and optimisation tools for complex real-world problems. My work combines a PhD in computer engineering with hands-on experience in climate risk, maritime transport, healthcare and industrial data.

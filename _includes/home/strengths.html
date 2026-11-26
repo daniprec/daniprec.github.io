@@ -1,7 +1,7 @@
 <section class="s-section" id="work" aria-labelledby="strengths-h">
   <div class="s-wrap">
-    <h2 id="strengths-h">Research, industry and teaching</h2>
-    <p class="s-lead">Three ways I put data science to work.</p>
+    <h2 id="strengths-h">Research, products and communication</h2>
+    <p class="s-lead">Three ways I put data science to work, each with an example.</p>
     <div class="work-grid">
       {% for s in site.data.home.strengths %}
       <article class="work-card">
@@ -18,15 +18,15 @@
           {% endif %}
         </a>
         <div class="work-card__body">
-          <p class="work-card__kicker">{{ s.proof_value }}</p>
-          <h3><a href="{{ s.url }}">{{ s.title }}</a></h3>
-          <p>{{ s.summary }}</p>
+          <h3>{{ s.area }}</h3>
+          <p>{{ s.area_summary }}</p>
           <p class="work-card__proof">{{ s.proof }}</p>
-          <a class="work-card__link" href="{{ s.url }}">{% if s.id == 'teaching' %}Courses and materials{% else %}Read the case study{% endif %} &rarr;</a>
+          <a class="work-card__link" href="{{ s.url }}">Example: {{ s.title }} &rarr;</a>
         </div>
       </article>
       {% endfor %}
     </div>
+    <p class="work-summary">{{ site.data.home.summary }}</p>
     <p class="work-more"><a href="/portfolio/">All projects &rarr;</a><a href="/papers/">Research papers &rarr;</a></p>
   </div>
 </section>
